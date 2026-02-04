@@ -1,0 +1,54 @@
+---
+output:
+  pdf_document:
+    keep_tex: yes
+    number_sections: yes
+    citation_package: natbib  # comentado usa: pandoc-citeproc
+    template: latex/templateMemoriaTFE.tex
+    pandoc_args: ["--metadata-file=cabecera_capitulos.yaml"]
+  html_document: default
+#bibliography: bib/library.bib # descomentar si: editor visual RStudio  
+---
+
+<!-- escribir 2 para capítulo 3 -->
+<!-- \setcounter{chapter}{2} --> 
+<!-- \pagenumbering{arabic} -->
+
+`r xfun::file_string('cabecera_capitulos.tex')`
+
+```{r include=FALSE}
+source("cabecera_chunk_inicio.R")
+```
+
+
+# Fundamentos de la Teoría de Juegos
+
+## Conceptos básicos
+
+La teoría de juegos es un conjunto de herramientas analíticas diseñadas para ayudarnos a comprender los fenómenos que observamos cuando los agentes decisores interactúan. Los supuestos básicos que subyacen a la teoría son que los decisores persiguen objetivos exógenos bien definidos (son racionales) y tienen en cuenta su conocimiento o expectativas sobre el comportamiento de los demás decisores (razonan estratégicamente).
+Los modelos de la teoría de juegos son representaciones altamente abstractas de clases de situaciones de la vida real. Su carácter abstracto permite que sean utilizados para estudiar una amplia gama de fenómenos.
+
+En un juego podemos destacar los siguientes elementos funamentales:
+
+**1.Jugadores**
+
+En todos los modelos de la teoría de juegos, la entidad básica es el jugador. Un jugador puede interpretarse como un individuo (empresas, instituciones, etc) o como un grupo de individuos que toma una decisión. 
+
+Los jugadores intentan maximizar su utilidad mediante las acciones que realizan. Suelen tomar decisiones en condiciones de incertidumbre ya que pueden:
+
+  - desconocer los parámetros objetivos del entorno
+
+  - contar con información imperfecta sobre los sucesos que ocurren durante el juego
+
+  - no saber con certeza cuáles serán las acciones de los demás jugadores
+
+  - tener incertidumbre acerca del razonamiento de los otros jugadores
+  
+Denotaremos N al conjunto de jugadores $N = {1,2,...,n}$
+
+
+
+## Clasificación de juegos
+
+## Representaciones de los juegos
+

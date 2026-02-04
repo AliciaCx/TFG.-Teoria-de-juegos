@@ -1,0 +1,38 @@
+---
+output:
+  pdf_document:
+    keep_tex: yes
+    number_sections: yes
+    citation_package: natbib  # comentado usa: pandoc-citeproc
+    template: latex/templateMemoriaTFE.tex
+    pandoc_args: ["--metadata-file=cabecera_capitulos.yaml"]
+  html_document: default
+#bibliography: bib/library.bib # descomentar si: editor visual RStudio  
+---
+
+<!-- escribir 2 para capítulo 3 -->
+<!-- \setcounter{chapter}{2} -->
+<!-- \pagenumbering{arabic} -->
+
+`r xfun::file_string('cabecera_capitulos.tex')`
+
+```{r include=FALSE}
+source("cabecera_chunk_inicio.R")
+```
+
+# Introducción
+
+La teoría de juegos es la rama del conocimiento matemático que estudia situaciones de toma de decisiones estratégicas en las que intervienen más de un agente decisor y en las que las decisiones de un jugador influyen en los resultados obtenidos por los demás. Este tipo de situaciones aparece de forma natural en numerosos contextos reales. Por ejemplo, en economía es habitual encontrar escenarios que se pueden modelizar en forma de un juego, ya que las decisiones de una empresa, como la fijación de un determinado producto, están claramente condicionadas por las decisiones adoptadas por otra compañía de la competencia. 
+
+La teoría de juegos suele situarse en el año 1944, con la publicación del libro *"Theory of Games and Economic Behavior"* escrito por el matematico John von Neumann y el economista Oskar Morgenstern. 
+
+Un avance fundamental en el desarrollo de esta disciplina fue la introducción del **equilibrio de Nash**, propuesto por John Nash a principios de la década de 1950. nash demostró que en todo juego en donde los participantes pueden escoger entre un número finito de estrategias (que pueden ser puras o mixtas) siempre existirá al menos un equilibrio de Nash. Este concepto describe situaciones donde los jugadores eligen su mejor estrategia posible, asumiendo las decisiones de los demás, y ninguno tiene incentivos para cambiar unilateralmente, ya que hacerlo no mejoraría su beneficio. En otras palabras, nadie ganará nada si decide cambiar su estrategia bajo el supuesto de que los demás individuos no cambian la suya.
+
+El objetivo de este trabajo es explorar los aspectos teóricos fundamentales de la teoría de juegos y aplicar dichos conceptos mediante el uso del progama informático R. Para ello, se estudiarán los principales tipos de juegos y conceptos de solución. Además, se analizarán distintos ejemplos a través de su implementación prática.
+
+
+
+
+
+
+
