@@ -5,44 +5,44 @@ The style file: flexbib.bst
 Database file #1: bib/library.bib
 Database file #2: bib/paquetes.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 2 entries,
+You've used 4 entries,
             3608 wiz_defined-function locations,
-            686 strings with 7844 characters,
-and the built_in function-call counts, 1171 in all, are:
-= -- 79
-> -- 28
-< -- 2
-+ -- 13
-- -- 9
-* -- 104
-:= -- 168
-add.period$ -- 5
-call.type$ -- 2
-change.case$ -- 11
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 107
-empty$ -- 109
-format.name$ -- 18
-if$ -- 227
+            700 strings with 8115 characters,
+and the built_in function-call counts, 2216 in all, are:
+= -- 155
+> -- 48
+< -- 4
++ -- 21
+- -- 15
+* -- 179
+:= -- 319
+add.period$ -- 10
+call.type$ -- 4
+change.case$ -- 23
+chr.to.int$ -- 4
+cite$ -- 4
+duplicate$ -- 209
+empty$ -- 211
+format.name$ -- 28
+if$ -- 441
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 24
-newline$ -- 20
-num.names$ -- 8
-pop$ -- 45
+missing$ -- 50
+newline$ -- 31
+num.names$ -- 16
+pop$ -- 88
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 21
 quote$ -- 0
-skip$ -- 36
+skip$ -- 70
 stack$ -- 0
-substring$ -- 24
-swap$ -- 57
+substring$ -- 48
+swap$ -- 107
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 15
+type$ -- 30
 warning$ -- 0
-while$ -- 6
+while$ -- 12
 width$ -- 0
-write$ -- 36
+write$ -- 65

@@ -8,7 +8,7 @@ fontsize: 12pt # 10pt,11pt
 #fontmathfamily: mathptmx
 #codigoajusta: true
 #codigofuente: "normalsize"
-geometry: margin=2.5cm
+geometry: margin = 2.5cm
 bibliography: ["bib/library.bib", "bib/paquetes.bib"]
 #biblio-title: "Referencias"
 # metodobib -> true: natbib (descomentar: citation_package: natbib) 
@@ -41,7 +41,7 @@ output:
     fig_caption: yes
     template: latex/templateMemoriaTFE.tex
     includes:
-      before_body: portadas/latex_paginatitulo_mod_OV02.tex
+      before_body: portadas/latex_paginatitulo_modTFE.tex
 #      before_body: portadas/latex_paginatitulo_modTFGE.tex
 #      before_body: portadas/latex_paginatitulo_modTFGM.tex
 #      before_body: portadas/latex_paginatitulo_modTFDGME.tex
@@ -49,11 +49,6 @@ output:
 #      before_body: portadas/latex_paginatitulo_mod_OV01.tex
       #in_header: latex/latex_preambulo.tex
       #after_body: latex/latex_antes_enddoc.tex
-      
-# Candidatos
-# portadas/latex_paginatitulo_mod_OV02.tex
-# portadas/latex_paginatitulo_mod_ST02.tex
-# portadas/latex_paginatitulo_modTFGE.tex
 ---
 
 <!-- Si "metodobib: false", modificar este "nocite:"  -->
@@ -106,6 +101,15 @@ knitr::write_bib(c("knitr","rmarkdown"),
 
 \cleardoublepage   
 <!--  \clearpage -->
+\section*{Prólogo}
+\addcontentsline{toc}{section}{Prólogo}
+
+```{r child = 'prologo.Rmd'}
+```
+
+
+\cleardoublepage   
+<!--  \clearpage -->
 \section*{Resumen}
 \addcontentsline{toc}{section}{Resumen}
 
@@ -120,13 +124,13 @@ knitr::write_bib(c("knitr","rmarkdown"),
 ```{r child = 'abstract.Rmd'}
 ```
 
-<!-- Comentar o eliminar las siguientes tres líneas si no quiere que aparezca Índice de Figuras-->
+
 \cleardoublepage   
 \listoffigures
 \addcontentsline{toc}{section}{Índice de Figuras}
 
-<!-- Comentar o eliminar las siguientes 4 líneas si no quiere que aparezca Índice de Tablas-->
 \cleardoublepage   
+
 \listoftables
 <!-- \addcontentsline{toc}{section}{Índice de Cuadros} -->
 \addcontentsline{toc}{section}{Índice de Tablas}
@@ -168,24 +172,36 @@ knitr::write_bib(c("knitr","rmarkdown"),
 ```{r child = 'capitulo04n.Rmd'}
 ```
 
+
+<!-- 
+Descomentarlo para incluir el capítulo 5 el cual contiene utilidades de ejemplo
+para copiar y pegar.
+Atención: necesitará la instalación de algunos paquetes R 
+que puede no tener instalados. Son:
+install.packages(c("ggplot2","kableExtra","dplyr"))
+-->
+
+
+<!-- \FloatBarrier -->
+
+<!-- ```{r child = 'capitulo05.Rmd'} -->
+<!-- ``` -->
+
+
+
+
 \FloatBarrier
 
-```{r child = 'capitulo05n.Rmd'}
+\appendix
+
+
+```{r child = 'apendice01n.Rmd'}
 ```
 
 
-<!-- Comentar o eliminar las siguientes líneas si no se necesitan apéndices o anexos -->
 
-<!-- \FloatBarrier -->
-<!-- \appendix -->
-
-
-<!-- ```{r child = 'apendice01n.Rmd'} -->
-<!-- ``` -->
-
-
-<!-- ```{r child = 'apendice02n.Rmd'} -->
-<!-- ``` -->
+```{r child = 'apendice02n.Rmd'}
+```
 
 
 <!-- \cleardoublepage -->
@@ -223,6 +239,9 @@ knitr::write_bib(c("knitr","rmarkdown"),
 <!-- Si "metodobib: false", modificar el "nocite:" del inicio de este fichero  -->
 
 <!-- \nocite{*} -->
-\nocite{Roldan2024Nash, OsborneRubinstein1994, PinoMejias2024Apuntes, Binmore2007}
+\nocite{Luque2017,Luque2019,RStudio,R-base2,
+R-knitr,R-rmarkdown,Techopedia,
+webfacmatematicasus1,webUS2a,webPedroLuque,
+lopez2007aplicacion}
 
 \fi 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{4}
 %Comandos de formato, por si no est'an definidos.
 \ProvideTextCommand{\guillemotleft}{OT1}{\leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}} \ProvideTextCommand{\guillemotright}{OT1}{\leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
 \providecommand{\enquote}[1]{\guillemotleft#1\guillemotright} \providecommand{\natexlab}[1]{#1} \providecommand{\bibnamefont}[1]{\textsc{#1}} \providecommand{\bibfnamefont}[1]{\textsc{#1}} \providecommand{\bibfnamefontand}[1]{#1} \providecommand{\citenamefont}[1]{#1} \providecommand{\bibnamefont}[1]{\textsc{#1}} \providecommand{\bbletalfont}[1]{\emph{#1}}  \providecommand{\citeandfont}[1]{#1} \providecommand{\citetalfont}[1]{#1} \providecommand{\bibyearfont}[1]{#1} \providecommand{\isbn}[1]{ISBN #1} \providecommand{\url}[1]{\texttt{#1}} \providecommand{\urlprefix}{} \providecommand{\nameseparator}{;} \providecommand{\namereplace}[1]{{---{}---} \ifx\datebegin\relax \else \def\datebegin #1.{\relax}\fi} \providecommand{\dateend}[1]{, #1} \providecommand{\bibtitle}[1]{#1}\providecommand{\bibtranslator}[1]{#1} \providecommand{\bibtranslatorname}{Traducido por } \providecommand{\selectlanguage}[1]{\relax} \providecommand{\finalpoint}{.} \providecommand{\namesend}{:} \providecommand{\Capitalize}[1]{\uppercase{#1}} \providecommand{\capitalize}[1]{\expandafter\Capitalize#1} \providecommand{\bibinfont}[1]{\textbf{#1}} \providecommand{\inbooktitlefont}[1]{\emph{#1}} \providecommand{\bibvolfont}[1]{\textbf{#1}} \providecommand{\bibandfont}[1]{#1}  \providecommand{\bibcommentname}{\textsc{Obs:}} \providecommand{\bibcomment}[2]{\begin{quotation} \noindent\textsc{\bibcommentname}\ #2\end{quotation}} \providecommand{\bibabstract}[2]{\begin{quotation} \noindent\textsc{\Abstractname:}\ #2\end{quotation}}
@@ -6,11 +6,22 @@
 %Para resultados estilo plain descomente la l'inea siguiente
 %\let\oldbibitem=\bibitem \def\bibitem[#1]#2{\oldbibitem{#2}}
 
+\bibitem[{\citenamefont{Binmore}(2007)}]{Binmore2007}
+\bibnamefont{Binmore}, \bibfnamefont{Ken}\namesend{}\datebegin 2007.
+  \newblock \bibtitle{\emph{La teoría de juegos: Una breve introducción}}.
+  \newblock McGraw-Hill, Madrid, España, primera edición\bbledition{}\dateend{2007}.
+  \newblock ISBN 9788448177097\finalpoint{}
+
 \bibitem[{\citenamefont{Osborne} \citeandfont{\bbland{}} \citenamefont{Rubinstein}(1994)}]{OsborneRubinstein1994}
 \bibnamefont{Osborne}, \bibfnamefont{Martin~J.} \bibandfont{\bbland{}} \bibnamefont{Rubinstein}, \bibfnamefont{Ariel}\namesend{}\datebegin 1994.
   \newblock \bibtitle{\emph{A Course in Game Theory}}.
   \newblock MIT Press\dateend{1994}.
   \newblock ISBN 9780262650403\finalpoint{}
+
+\bibitem[{\citenamefont{Pino~Mejías}(2024)}]{PinoMejias2024Apuntes}
+\bibnamefont{Pino~Mejías}, \bibfnamefont{José~Luis}\namesend{}\datebegin 2024.
+  \newblock \bibtitle{\enquote{Apuntes de clase}}\dateend{2024}.
+  \newblock Asignatura: Ampliación de Investigación Operativa\finalpoint{}
 
 \bibitem[{\citenamefont{Roldán}(2024)}]{Roldan2024Nash}
 \bibnamefont{Roldán}, \bibfnamefont{Pablo~N.}\namesend{}\datebegin 2024.

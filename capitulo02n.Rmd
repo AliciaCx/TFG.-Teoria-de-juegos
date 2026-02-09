@@ -28,9 +28,10 @@ source("cabecera_chunk_inicio.R")
 La teoría de juegos es un conjunto de herramientas analíticas diseñadas para ayudarnos a comprender los fenómenos que observamos cuando los agentes decisores interactúan. Los supuestos básicos que subyacen a la teoría son que los decisores persiguen objetivos exógenos bien definidos (son racionales) y tienen en cuenta su conocimiento o expectativas sobre el comportamiento de los demás decisores (razonan estratégicamente).
 Los modelos de la teoría de juegos son representaciones altamente abstractas de clases de situaciones de la vida real. Su carácter abstracto permite que sean utilizados para estudiar una amplia gama de fenómenos.
 
-En un juego podemos destacar los siguientes elementos funamentales:
+En un juego podemos destacar los siguientes elementos fundamentales:
 
-**1.Jugadores**
+
+**1. Jugadores**
 
 En todos los modelos de la teoría de juegos, la entidad básica es el jugador. Un jugador puede interpretarse como un individuo (empresas, instituciones, etc) o como un grupo de individuos que toma una decisión. 
 
@@ -43,12 +44,49 @@ Los jugadores intentan maximizar su utilidad mediante las acciones que realizan.
   - no saber con certeza cuáles serán las acciones de los demás jugadores
 
   - tener incertidumbre acerca del razonamiento de los otros jugadores
+
+Denotaremos por N al conjunto de jugadores $N = {1,2,...,n}$
+
+
+**2. Estrategia**
+
+La estrategia es la planificación que sigue un jugador para elegir entre sus posibles alternativas, a partir de un conjunto de información (información que posee el jugador cuando va a realizar una jugada). Es una regla predeterminada que especifica por completo cómo se intenta responder a cada posible circunstancia en cada etapa del juego.
+
+A diferencia de la acción (diversas elecciones que posee el jugador en cada jugada), la estrategia es mental, no observable por los demás jugadores. 
+
+Podemos encontrar dos tipos de estrategias:
+
+  - ***Estrategias puras:*** las elecciones son libres del jugador, es decir, el jugador elige una acción concreta de forma determinista, sin recurrir al azar
   
-Denotaremos N al conjunto de jugadores $N = {1,2,...,n}$
+  - ***Estrategias mixtas:*** cuando la probabilidad influye
+
+Denotamos por $\Delta({A_i})$ el conjunto de distribuciones de probabilidad sobre $A_i$ y nos referimos a un elemento de $\Delta({A_i})$ como una **estrategia mixta** del jugador *i*, suponemos que las estrategias mixtas de los jugadores son aleatorizaciones independientes. Para mayor claridad, a veces nos referimos a un elemento de $A_i$ como una **estrategia pura**. 
+
+Para cualquier conjunto finito $X$ y cualquier $\delta \in \Delta(X)$, denotamos por $\delta(x)$ la probabilidad que $\delta$ asigna a $x \in X$ y definimos el soporte de $\delta$ como el conjunto de elementos $x \in X \,\, \mbox{tales que} \,\, \delta(x) > 0$. 
 
 
+**3. Función de pago**
+
+Cada jugador posee una **función de pago**, que notaremos por $\prod_i(s_1, \ldots, s_n)$ y que refleja la utilidad obtenida por el jugador i-ésimo cuando cada jugador ha elegido su estrategia, o también se puede considerar como utilidad esperada utilizando el mismo nombre indistintamente, dependiendo de si interviene el azar o no.
+
+Esta función permite comparar distintos perfiles de estrategias y constituye la base para definir conceptos de solución como el equilibrio de Nash.
 
 ## Clasificación de juegos
+Los juegos se pueden clasificar de diversas maneras y atendiendo a varios criterios. 
+
+### Juegos cooperativos y no cooperativos
+Los **juegos cooperativos** permiten la formación en grupos entre jugadores, conocidos como coaliciones, para que no compitan entre ellos sino que colaboren para conseguir el mismo objetivo coordinando sus decisiones y repartiendo los beneficios obtenidos, por tanto ganan o pierden en conjunto. 
+
+En cambio, en los **juegos no cooperativos** los jugadores actúan de forma individual compitiendo entre sí. Cada jugador decide su estrategia de manera autónoma, teniendo en cuenta el comportamiento esperado de los demás participantes. En esta teoría, las oportunidades estratégicas de los jugadores se exploran en detalle y se hacen predicciones sobre su comportamiento empleando la idea del equilibrio de Nash.
+
+
+
+
+### Juegos de suma nula 
+### Juegos estáticos y dinámicos
+### Juegos de información completa e incompleta
+### Juegos de información perfecta e imperfecta
+### Juegos finitos e infinitos
 
 ## Representaciones de los juegos
 
