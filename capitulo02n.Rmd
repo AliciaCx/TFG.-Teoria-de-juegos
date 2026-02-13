@@ -79,6 +79,19 @@ Los **juegos cooperativos** permiten la formación en grupos entre jugadores, co
 
 En cambio, en los **juegos no cooperativos** los jugadores actúan de forma individual compitiendo entre sí. Cada jugador decide su estrategia de manera autónoma, teniendo en cuenta el comportamiento esperado de los demás participantes. En esta teoría, las oportunidades estratégicas de los jugadores se exploran en detalle y se hacen predicciones sobre su comportamiento empleando la idea del equilibrio de Nash.
 
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (cooperativo)}
+Dos empresas acuerdan fijar precios conjuntamente para maximizar beneficios.  
+Pueden repartirse los beneficios como deseen y coordinan sus estrategias.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (no cooperativo)}
+El Dilema del Prisionero: dos sospechosos deciden confesar o callar sin posibilidad de acuerdos.  
+Cada uno busca maximizar su propio beneficio de forma individual.
+\end{tcolorbox}
+
+
 ### Juegos de suma nula 
 En los juegos de **suma nula**, la suma de los pagos de todos los jugadores es constante. En el caso particular de dos jugadores, la ganancia de uno coincide exactamente con la pérdida del otro.  
 
@@ -91,6 +104,20 @@ En este caso, decimos que el jugador i aplica el criterio de maximin si elige un
 El estudio sistemático de este tipo de juegos fue iniciado por John von Neumann, quien en 1928 demostró el teorema minimax, que garantiza que en juegos finitos de suma cero con dos jugadores existe un valor del juego y un equilibrio en estrategias mixtas. Esta propiedad explica por qué los juegos de suma cero constituyen una de las pocas clases de juegos para las cuales puede obtenerse una solución única bien definida.
 
 Sin embargo, la mayoría de ejemplos reales son juegos de **suma no nula**, puesto que la ganacia de un jugador no necesariamente se corresponde con la pérdida de otro.
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (suma nula)}
+Un partido de tenis.  
+Si un jugador gana el partido, el otro lo pierde.  
+La victoria de uno es exactamente la derrota del otro.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (suma no nula)}
+Dos empresas deciden si colaborar en un proyecto.  
+Si ambas colaboran, las dos obtienen beneficios.  
+No necesariamente lo que gana una lo pierde la otra.
+\end{tcolorbox}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.13)  13 FEB 2026 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.13)  13 FEB 2026 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1122,22 +1122,27 @@ l.777 \chapter
 ]
 Cap\'{\i }tulo 2.
 [3{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-LaTeX Info: Redefining \. on input line 898.
-LaTeX Info: Redefining \% on input line 898.
+LaTeX Info: Redefining \. on input line 899.
+LaTeX Info: Redefining \% on input line 899.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 898.
-LaTeX Info: Redefining \. on input line 898.
-LaTeX Info: Redefining \% on input line 898.
+(babel)             Reported on input line 899.
+LaTeX Info: Redefining \. on input line 899.
+LaTeX Info: Redefining \% on input line 899.
 [4{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-LaTeX Info: Redefining \. on input line 964.
-LaTeX Info: Redefining \% on input line 964.
-LaTeX Info: Redefining \. on input line 964.
-LaTeX Info: Redefining \% on input line 964.
-[5] [6
-
-]
+LaTeX Info: Redefining \. on input line 990.
+LaTeX Info: Redefining \% on input line 990.
+LaTeX Info: Redefining \. on input line 990.
+LaTeX Info: Redefining \% on input line 990.
+[5]
+LaTeX Info: Redefining \. on input line 990.
+LaTeX Info: Redefining \% on input line 990.
+LaTeX Info: Redefining \. on input line 990.
+LaTeX Info: Redefining \% on input line 990.
+[6]
 Cap\'{\i }tulo 3.
-[7] [8
+[7
+
+] [8
 
 ]
 Cap\'{\i }tulo 4.
@@ -1164,15 +1169,15 @@ Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
 (rerunfilecheck)             Checksum: 58F9BB0F59C59756DF024FC21DBEC2C9;4384.
  ) 
 Here is how much of TeX's memory you used:
- 31096 strings out of 469496
- 590153 string characters out of 5468067
- 1091051 words of memory out of 5000000
- 59106 multiletter control sequences out of 15000+600000
+ 31149 strings out of 469496
+ 591493 string characters out of 5468067
+ 1092051 words of memory out of 5000000
+ 59159 multiletter control sequences out of 15000+600000
  690334 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,12n,94p,1597b,553s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,94p,1597b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tfe_principal.pdf (23 pages, 264204 bytes).
+Output written on tfe_principal.pdf (23 pages, 266509 bytes).
 PDF statistics:
  322 PDF objects out of 1000 (max. 8388607)
  267 compressed objects within 3 object streams
