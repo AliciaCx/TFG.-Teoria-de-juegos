@@ -79,10 +79,22 @@ Los **juegos cooperativos** permiten la formación en grupos entre jugadores, co
 
 En cambio, en los **juegos no cooperativos** los jugadores actúan de forma individual compitiendo entre sí. Cada jugador decide su estrategia de manera autónoma, teniendo en cuenta el comportamiento esperado de los demás participantes. En esta teoría, las oportunidades estratégicas de los jugadores se exploran en detalle y se hacen predicciones sobre su comportamiento empleando la idea del equilibrio de Nash.
 
-
-
-
 ### Juegos de suma nula 
+En los juegos de **suma nula**, la suma de los pagos de todos los jugadores es constante. En el caso particular de dos jugadores, la ganancia de uno coincide exactamente con la pérdida del otro.  
+
+Desde un punto más general, un juego estratégico $\langle \{1,2\}, (A_i), (\succeq_i)_i \rangle$ es estrictamente competitivo si para cualquier $a \in A$ y $b \in A$ se cumple que $a \succeq_1 b$ si y solo si $b \succeq_2 a$
+
+Por tanto, un juego estrictamente competitivo a veces se denomina juego de suma cero, porque si la relación de preferencia $\succeq_1$ del jugador 1 está representada por la función de pagos $u_1$, entonces la relación de preferencia del jugador 2 está representada por $u_2$. Luego, se tiene que cumplir $u_1 + u_2 = 0$
+
+En este caso, decimos que el jugador i aplica el criterio de maximin si elige una acción que es la mejor para él bajo el supuesto de que, haga lo que haga, el jugador j elegirá su acción para perjudicarlo lo máximo posible.
+
+El estudio sistemático de este tipo de juegos fue iniciado por John von Neumann, quien en 1928 demostró el teorema minimax, que garantiza que en juegos finitos de suma cero con dos jugadores existe un valor del juego y un equilibrio en estrategias mixtas. Esta propiedad explica por qué los juegos de suma cero constituyen una de las pocas clases de juegos para las cuales puede obtenerse una solución única bien definida.
+
+Sin embargo, la mayoría de ejemplos reales son juegos de **suma no nula**, puesto que la ganacia de un jugador no necesariamente se corresponde con la pérdida de otro.
+
+
+
+
 ### Juegos estáticos y dinámicos
 ### Juegos de información completa e incompleta
 ### Juegos de información perfecta e imperfecta
