@@ -120,10 +120,89 @@ No necesariamente lo que gana una lo pierde la otra.
 \end{tcolorbox}
 
 
-
-
 ### Juegos estáticos y dinámicos
+Los juegos **estáticos** o **simultáneos** consisten en que los jugadores eligen sus estrategias simultáneamente sin conocer las decisiones de los demás, y a continuación reciben sus ganancias, que dependen de la combinación de acciones que acaban de elegir.
+
+En cambio, los juegos **dinámicos** o **secuenciales** son aquellos en los que los jugadores toman decisiones en distintos momentos del tiempo. En este caso, las acciones de los jugadores pueden depender de las decisiones observadas previamente, por lo que la información disponible es relevante.
+
+Los juegos estáticos se representan en **forma normal**, es decir, un juego con $n$ jugadores especifica los espacios de estrategias de los jugadores $S_1, \ldots, S_n$ y sus funciones de ganancia $u_1, \ldots, u_n$. Denotamos este juego con G = $\{S_1, \ldots, S_n;u_1, \ldots, u_n\}$. Y se resuelven utilizando el concepto de equilibrio de Nash.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (juego estático)}
+
+Piedra, papel o tijera.  
+Dos jugadores eligen simultáneamente una de las tres acciones posibles.  
+Cada uno decide sin conocer la elección del otro y los pagos se determinan según la acción elegida.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|ccc}
+ & Piedra & Papel & Tijera \\
+\hline
+Piedra & (0,0) & (-1,1) & (1,-1) \\
+Papel & (1,-1) & (0,0) & (-1,1) \\
+Tijera & (-1,1) & (1,-1) & (0,0) \\
+\end{tabular}
+\caption{Forma normal del juego Piedra, Papel o Tijera}
+\label{tab:ppt}
+\end{table}
+
+
+\end{tcolorbox}
+
+Los juegos dinámicos se representan en **forma extensiva** que especifica:
+
+  1.  Los jugadores del juego
+  
+  2a. Cuando cada jugador tiene el turno de mover
+  
+  2b. Que puede hacer cada jugador en cada una de sus oportunidades de movimiento.
+  
+  2c. Que sabe cada jugador en cada una de sus oportunidades de movimiento
+  
+  3. El pago que recibe cada jugador para cada combinación de acciones que puedan elegir los jugadores.
+  
+Y se resuelven utilizando el concepto de reversión o equilibrio perfecto en subjuegos.
+
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (dinámico)} \\
+
+1. El jugador 1 elige una acción $a_1$ del conjunto factible $A_1 = \{L, R\}$ \\
+2. El jugador 2 observa $a_1$ y luego elige su acción $a_2$ del conjunto $A_2 = \{L', R'\}$ \\
+3. Los pagos son $u_1(a_1,a_2)$ y $u_2(a_1,a_2)$ como se muestra en el siguiente árbol de juego
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{arbol_juego.png}
+    \caption{Árbol del juego dinámico}
+    \label{fig:arbol_juego}
+\end{figure}
+
+\end{tcolorbox}
+
 ### Juegos de información completa e incompleta
+
+En los juegos de **información completa** todos los jugadores tienen la misma información sobre el juego, conocen el conjunto de jugadores, las recompensas, las funciones de pagos y las estrategias disponibles para todos los participantes, y saben que los demás también disponen de esta información.
+
+En los juegos de **información incompleta** también denominados como juegos bayesianos, al menos un jugador desconoce alguna característica del juego, por lo tanto puede causar incertidumbre entre los jugadores.
+
+En los juegos de información completa las ganancias de los jugadores son de dominio público mientras que en los de información incompleta al menos un jugador no está seguro de la función de ganancia de otro jugador.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (información completa)}
+Ajedrez: cada jugador conoce todas las reglas, los movimientos posibles y el estado completo del tablero.  
+No hay información oculta; ambos saben la posición de todas las piezas en todo momento.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (información incompleta)}
+Poker: cada jugador conoce solo sus propias cartas y no las de los rivales.
+Las decisiones se basan en probabilidades y comportamiento de los demás jugadores.
+\end{tcolorbox}
+
+
+
 ### Juegos de información perfecta e imperfecta
 ### Juegos finitos e infinitos
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.13)  13 FEB 2026 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.16)  16 FEB 2026 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,7 +290,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2026/01/26 v26.2 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count311
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
@@ -1129,33 +1129,52 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 LaTeX Info: Redefining \. on input line 899.
 LaTeX Info: Redefining \% on input line 899.
 [4{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-LaTeX Info: Redefining \. on input line 990.
-LaTeX Info: Redefining \% on input line 990.
-LaTeX Info: Redefining \. on input line 990.
-LaTeX Info: Redefining \% on input line 990.
+LaTeX Info: Redefining \. on input line 967.
+LaTeX Info: Redefining \% on input line 967.
+LaTeX Info: Redefining \. on input line 967.
+LaTeX Info: Redefining \% on input line 967.
 [5]
-LaTeX Info: Redefining \. on input line 990.
-LaTeX Info: Redefining \% on input line 990.
-LaTeX Info: Redefining \. on input line 990.
-LaTeX Info: Redefining \% on input line 990.
-[6]
-Cap\'{\i }tulo 3.
-[7
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1022
 
-] [8
+ []
+
+<arbol_juego.png, id=213, 432.61626pt x 243.91125pt>
+File: arbol_juego.png Graphic file (type png)
+<use arbol_juego.png>
+Package pdftex.def Info: arbol_juego.png  used on input line 1029.
+(pdftex.def)             Requested size: 254.37029pt x 143.4151pt.
+LaTeX Info: Redefining \. on input line 1035.
+LaTeX Info: Redefining \% on input line 1035.
+LaTeX Info: Redefining \. on input line 1035.
+LaTeX Info: Redefining \% on input line 1035.
+[6]
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
+[7 <./arbol_juego.png>]
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
+[8]
+Cap\'{\i }tulo 3.
+[9
+
+] [10
 
 ]
 Cap\'{\i }tulo 4.
-[9] [10
+[11] [12
 
 ]
 Cap\'{\i }tulo 5.
-[11] [12
+[13] [14
 
 ] (./tfe_principal.bbl
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotleft (encoding OT1) on input line 3.
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotright (encoding OT1) on input line 3.
-) [13
+) [15
 
 ] (./tfe_principal.aux
 LaTeX Info: Redefining \. on input line 9.
@@ -1166,21 +1185,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
-(rerunfilecheck)             Checksum: 58F9BB0F59C59756DF024FC21DBEC2C9;4384.
+(rerunfilecheck)             Checksum: A1FE4041001785A67A64192E2877194E;4384.
  ) 
 Here is how much of TeX's memory you used:
- 31149 strings out of 469496
- 591493 string characters out of 5468067
- 1092051 words of memory out of 5000000
- 59159 multiletter control sequences out of 15000+600000
+ 31190 strings out of 469496
+ 592247 string characters out of 5468067
+ 1093186 words of memory out of 5000000
+ 59193 multiletter control sequences out of 15000+600000
  690334 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,12n,94p,1597b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tfe_principal.pdf (23 pages, 266509 bytes).
+</Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on tfe_principal.pdf (25 pages, 304656 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 
