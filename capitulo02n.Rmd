@@ -72,7 +72,19 @@ Cada jugador posee una **función de pago**, que notaremos por $\prod_i(s_1, \ld
 Esta función permite comparar distintos perfiles de estrategias y constituye la base para definir conceptos de solución como el equilibrio de Nash.
 
 ## Clasificación de juegos
+Un objetivo primordial de la teoría de juegos es desarrollar criterios racionales para seleccionar una estrategia, los cuales implican dos supuestos importantes:
+
+  1.  Ambos jugadores son racionales
+  
+  2.  Ambos jugadores eligen sus estrategias solo para promover su propio bienestar
+
 Los juegos se pueden clasificar de diversas maneras y atendiendo a varios criterios. 
+
+### Juegos según el número de jugadores
+Atendiendo el número de jugadores se distinguen juegos **bipersinales**, si participan dos jugadores, y juegos **n-personales**, cuando participan más de dos.
+
+### Juegos finitos e infinitos
+Atendiendo al número de alternativas que posee cada jugador, señalaremos los juegos finitos, cuando éstas son un numero finito e infinitos, en otro caso.
 
 ### Juegos cooperativos y no cooperativos
 Los **juegos cooperativos** permiten la formación en grupos entre jugadores, conocidos como coaliciones, para que no compitan entre ellos sino que colaboren para conseguir el mismo objetivo coordinando sus decisiones y repartiendo los beneficios obtenidos, por tanto ganan o pierden en conjunto. 
@@ -103,7 +115,7 @@ En este caso, decimos que el jugador i aplica el criterio de maximin si elige un
 
 El estudio sistemático de este tipo de juegos fue iniciado por John von Neumann, quien en 1928 demostró el teorema minimax, que garantiza que en juegos finitos de suma cero con dos jugadores existe un valor del juego y un equilibrio en estrategias mixtas. Esta propiedad explica por qué los juegos de suma cero constituyen una de las pocas clases de juegos para las cuales puede obtenerse una solución única bien definida.
 
-Sin embargo, la mayoría de ejemplos reales son juegos de **suma no nula**, puesto que la ganacia de un jugador no necesariamente se corresponde con la pérdida de otro.
+Sin embargo, la mayoría de ejemplos reales son juegos de **suma no nula**, puesto que la ganancia de un jugador no necesariamente se corresponde con la pérdida de otro.
 
 \begin{tcolorbox}[colback=blue!10] 
 \textbf{Ejemplo (suma nula)}
@@ -125,61 +137,19 @@ Los juegos **estáticos** o **simultáneos** consisten en que los jugadores elig
 
 En cambio, los juegos **dinámicos** o **secuenciales** son aquellos en los que los jugadores toman decisiones en distintos momentos del tiempo. En este caso, las acciones de los jugadores pueden depender de las decisiones observadas previamente, por lo que la información disponible es relevante.
 
-Los juegos estáticos se representan en **forma normal**, es decir, un juego con $n$ jugadores especifica los espacios de estrategias de los jugadores $S_1, \ldots, S_n$ y sus funciones de ganancia $u_1, \ldots, u_n$. Denotamos este juego con G = $\{S_1, \ldots, S_n;u_1, \ldots, u_n\}$. Y se resuelven utilizando el concepto de equilibrio de Nash.
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (estático)}
+
+Competencia de precios entre dos empresas: ambas fijan sus precios al mismo tiempo sin conocer la elección de la otra.
+\end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!10]
-\textbf{Ejemplo (juego estático)}
+\textbf{Ejemplo (dinámico)}
 
-Piedra, papel o tijera.  
-Dos jugadores eligen simultáneamente una de las tres acciones posibles.  
-Cada uno decide sin conocer la elección del otro y los pagos se determinan según la acción elegida.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{c|ccc}
- & Piedra & Papel & Tijera \\
-\hline
-Piedra & (0,0) & (-1,1) & (1,-1) \\
-Papel & (1,-1) & (0,0) & (-1,1) \\
-Tijera & (-1,1) & (1,-1) & (0,0) \\
-\end{tabular}
-\caption{Forma normal del juego Piedra, Papel o Tijera}
-\label{tab:ppt}
-\end{table}
-
-
+Ajedrez o damas: los jugadores mueven alternadamente, conociendo el estado completo del tablero antes de cada turno.
 \end{tcolorbox}
 
-Los juegos dinámicos se representan en **forma extensiva** que especifica:
 
-  1.  Los jugadores del juego
-  
-  2a. Cuando cada jugador tiene el turno de mover
-  
-  2b. Que puede hacer cada jugador en cada una de sus oportunidades de movimiento.
-  
-  2c. Que sabe cada jugador en cada una de sus oportunidades de movimiento
-  
-  3. El pago que recibe cada jugador para cada combinación de acciones que puedan elegir los jugadores.
-  
-Y se resuelven utilizando el concepto de reversión o equilibrio perfecto en subjuegos.
-
-
-\begin{tcolorbox}[colback=blue!10] 
-\textbf{Ejemplo (dinámico)} \\
-
-1. El jugador 1 elige una acción $a_1$ del conjunto factible $A_1 = \{L, R\}$ \\
-2. El jugador 2 observa $a_1$ y luego elige su acción $a_2$ del conjunto $A_2 = \{L', R'\}$ \\
-3. Los pagos son $u_1(a_1,a_2)$ y $u_2(a_1,a_2)$ como se muestra en el siguiente árbol de juego
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{arbol_juego.png}
-    \caption{Árbol del juego dinámico}
-    \label{fig:arbol_juego}
-\end{figure}
-
-\end{tcolorbox}
 
 ### Juegos de información completa e incompleta
 
@@ -202,9 +172,85 @@ Las decisiones se basan en probabilidades y comportamiento de los demás jugador
 \end{tcolorbox}
 
 
-
 ### Juegos de información perfecta e imperfecta
-### Juegos finitos e infinitos
+Un juego es de **información perfecta** si, en el turno de cada jugador, este conoce todas las acciones que se han realizado previamente antes de tomar su decisión. Asimismo, se dice que un juego es de **información imperfecta** si un jugador no sabe exactamente qué acciones tomaron otros jugadores hasta ese momento.
+
+Estos conceptos se aplican a juegos dinámicos.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (información perfecta)}
+
+Tres en raya: cada jugador conoce todas las jugadas previas antes de decidir su siguiente movimiento.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (información imperfecta)}
+
+Hundir la flota: cada jugador desconoce la ubicación de los barcos del rival y toma decisiones sin observar completamente el estado del juego.
+\end{tcolorbox}
 
 ## Representaciones de los juegos
 
+### Notación general de un juego
+Un juego puede definirse mediante:
+
+$$G = \langle N, (S_i)_{i \in N}, (u_i)_{i \in N} \rangle$$
+
+donde 
+
+  - N = {1,2,...,n} es el conjunto de jugadores
+
+### Forma normal
+Los juegos estáticos se representan en **forma normal**, es decir, un juego con $n$ jugadores especifica los espacios de estrategias de los jugadores $S_1, \ldots, S_n$ y sus funciones de ganancia $u_1, \ldots, u_n$. Denotamos este juego con G = $\{S_1, \ldots, S_n;u_1, \ldots, u_n\}$. 
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo}
+
+Piedra, papel o tijera.  
+Dos jugadores eligen simultáneamente una de las tres acciones posibles.  
+Cada uno decide sin conocer la elección del otro y los pagos se determinan según la acción elegida.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|ccc}
+ & Piedra & Papel & Tijera \\
+\hline
+Piedra & (0,0) & (-1,1) & (1,-1) \\
+Papel & (1,-1) & (0,0) & (-1,1) \\
+Tijera & (-1,1) & (1,-1) & (0,0) \\
+\end{tabular}
+\caption{Forma normal del juego Piedra, Papel o Tijera}
+\label{tab:ppt}
+\end{table}
+
+
+\end{tcolorbox}
+
+### Forma extensiva
+Los juegos dinámicos se representan en **forma extensiva** que especifica:
+
+  1.  Los jugadores del juego
+  
+  2a. Cuando cada jugador tiene el turno de mover
+  
+  2b. Que puede hacer cada jugador en cada una de sus oportunidades de movimiento.
+  
+  2c. Que sabe cada jugador en cada una de sus oportunidades de movimiento
+  
+  3. El pago que recibe cada jugador para cada combinación de acciones que puedan elegir los jugadores.
+  
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo} \\
+
+1. El jugador 1 elige una acción $a_1$ del conjunto factible $A_1 = \{L, R\}$ \\
+2. El jugador 2 observa $a_1$ y luego elige su acción $a_2$ del conjunto $A_2 = \{L', R'\}$ \\
+3. Los pagos son $u_1(a_1,a_2)$ y $u_2(a_1,a_2)$ como se muestra en el siguiente árbol de juego
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{arbol_juego.png}
+    \caption{Árbol del juego dinámico}
+    \label{fig:arbol_juego}
+\end{figure}
+
+\end{tcolorbox}
