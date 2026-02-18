@@ -9,7 +9,6 @@ output:
   html_document: default
 #bibliography: bib/library.bib # descomentar si: editor visual RStudio  
 ---
-
 <!-- escribir 2 para capítulo 3 -->
 <!-- \setcounter{chapter}{2} --> 
 <!-- \pagenumbering{arabic} -->
@@ -191,24 +190,44 @@ Hundir la flota: cada jugador desconoce la ubicación de los barcos del rival y 
 
 ## Representaciones de los juegos
 
-### Notación general de un juego
-Un juego puede definirse mediante:
-
-$$G = \langle N, (S_i)_{i \in N}, (u_i)_{i \in N} \rangle$$
-
-donde 
-
-  - N = {1,2,...,n} es el conjunto de jugadores
-
 ### Forma normal
-Los juegos estáticos se representan en **forma normal**, es decir, un juego con $n$ jugadores especifica los espacios de estrategias de los jugadores $S_1, \ldots, S_n$ y sus funciones de ganancia $u_1, \ldots, u_n$. Denotamos este juego con G = $\{S_1, \ldots, S_n;u_1, \ldots, u_n\}$. 
+Los juegos estáticos se representan en **forma normal** G que consta de tres elementos $$G = (N,S,u)$$ donde,
+
+  - 1.  $N = \{1, \ldots, n\}$ es el conjunto de tomadores de decisiones, es decir, lo jugadores
+  
+  - 2.  $S = S_1$ x $S_2$ x ... x $S_n$ describe las acciones factibles de los jugadores. Los juagdores eligen simultaneamente una estrategia $s = (s_1, \ldots, s_n) \in S$. Se obtienen los resultados
+  
+  - 3.  $u = (u_1, \ldots, u_n)$ describe la satisfacción (los pagos) de los jugadores ante los resultados. Para cada $i = 1, \ldots, n, u_i : S \to \mathbb{R}$
 
 \begin{tcolorbox}[colback=blue!10]
 \textbf{Ejemplo}
 
-Piedra, papel o tijera.  
-Dos jugadores eligen simultáneamente una de las tres acciones posibles.  
-Cada uno decide sin conocer la elección del otro y los pagos se determinan según la acción elegida.
+Dos jugadores eligen simultáneamente una de las tres acciones posibles: Piedra, Papel o Tijera. 
+Cada uno decide sin conocer la elección del otro, y los pagos dependen de la combinación de acciones.
+
+Este juego puede describirse como un juego en forma normal con:
+
+\begin{enumerate}
+    \item Los jugadores son los dos participantes del juego:
+    \[
+    N = \{1,2\}.
+    \]
+
+    \item Cada jugador puede elegir entre tres acciones: Piedra (P), Papel (Pa) o Tijera (T). 
+    Por tanto,
+    \[
+    S_1 = S_2 = \{P, Pa, T\}.
+    \]
+
+    \item Los pagos representan el resultado del enfrentamiento:
+    \begin{itemize}
+        \item Si ambos eligen la misma acción $\rightarrow$ empate $\rightarrow (0,0)$.
+        \item Si un jugador gana $\rightarrow$ recibe $1$.
+        \item El jugador que pierde $\rightarrow$ recibe $-1$.
+    \end{itemize}
+\end{enumerate}
+
+Luego, la matriz de pagos es:
 
 \begin{table}[H]
 \centering
@@ -223,11 +242,11 @@ Tijera & (-1,1) & (1,-1) & (0,0) \\
 \label{tab:ppt}
 \end{table}
 
-
 \end{tcolorbox}
 
+
 ### Forma extensiva
-Los juegos dinámicos se representan en **forma extensiva** que especifica:
+Los juegos dinámicos se representan en **forma extensiva** tienen una estructura similar a la de los juegos en forma normal. Es decir, también constan de un conjunto de jugadores, sus conjuntos de estrategias y sus pagos. Se especifica:
 
   1.  Los jugadores del juego
   
@@ -240,7 +259,7 @@ Los juegos dinámicos se representan en **forma extensiva** que especifica:
   3. El pago que recibe cada jugador para cada combinación de acciones que puedan elegir los jugadores.
   
 \begin{tcolorbox}[colback=blue!10] 
-\textbf{Ejemplo} \\
+\textbf{Ejemplo 1} \\
 
 1. El jugador 1 elige una acción $a_1$ del conjunto factible $A_1 = \{L, R\}$ \\
 2. El jugador 2 observa $a_1$ y luego elige su acción $a_2$ del conjunto $A_2 = \{L', R'\}$ \\
@@ -254,3 +273,54 @@ Los juegos dinámicos se representan en **forma extensiva** que especifica:
 \end{figure}
 
 \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo 2} \\
+
+Un monopolista (M) en un mercado que genera beneficios de 100 millones de dólares se enfrenta a la posibilidad de que un competidor (E) entre en el mercado. En primer lugar, el competidor decide si entrar (I) o no entrar (O) en el mercado.
+
+Si el competidor entra en el mercado, el monopolista observa la acción del entrante y decide si luchar (F) o acomodar (A) al competidor. Si el monopolista lucha, se inicia una guerra de precios. Como resultado, ambas empresas terminan perdiendo 50 millones de dólares cada una. Si el monopolista acomoda, ambas empresas comparten el mercado a partes iguales. Supóngase que no hay costes de entrada para el competidor.
+
+Podemos representar esta situación mediante un árbol de juego.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{arbol_juego2.png}
+    \caption{Árbol de decisión de entrada de mercado con un monopolista y un competidor}
+    \label{fig:arbol_juego}
+\end{figure}
+
+En el ejemplo anterior, vemos que el árbol de juego contiene toda la información relevante de la situación, a saber:
+\begin{enumerate}
+\item Los jugadores.
+
+\item Las decisiones secuenciales posibles de los jugadores.
+
+\item La información que conocen los jugadores.
+
+\item Los pagos de los jugadores.
+\end{enumerate}
+
+El conjunto de estrategias de los jugadores es \(S_1 = \{O, I\},\; S_2 = \{F, A\}\). El juego puede representarse mediante la tabla
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+ & \multicolumn{2}{c}{\textbf{Monopolista (M)}} \\
+\textbf{Competidor (E)} & A & F \\ 
+\hline
+I & (50,50) & (-50,-50) \\
+O & (0,100) & (0,100)
+\end{tabular}
+\caption{Forma normal del juego entre un monopolista y un competidor}
+\label{tab:monopolio}
+\end{table}
+
+\end{tcolorbox}
+
+
+
+
+
+
+

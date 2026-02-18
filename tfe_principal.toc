@@ -16,13 +16,13 @@
 \contentsline {subsection}{\numberline {2.2.7}Juegos de información perfecta e imperfecta}{7}{subsection.2.2.7}%
 \contentsline {section}{\numberline {2.3}Representaciones de los juegos}{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Forma normal}{7}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Forma extensiva}{7}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Concepto de solución}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Estrategias dominantes}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Equilibrio de Nash}{9}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Implementación en R}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducción a R como herramienta de análisis}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Represenacion de juegos en R}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Paquetes de R}{11}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Aplicaciones prácticas}{13}{chapter.5}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{15}{chapter*.8}%
+\contentsline {subsection}{\numberline {2.3.2}Forma extensiva}{8}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Concepto de solución}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Estrategias dominantes}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Equilibrio de Nash}{11}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Implementación en R}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducción a R como herramienta de análisis}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Represenacion de juegos en R}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Paquetes de R}{13}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Aplicaciones prácticas}{15}{chapter.5}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{17}{chapter*.10}%

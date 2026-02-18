@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 %Comandos de formato, por si no est'an definidos.
 \ProvideTextCommand{\guillemotleft}{OT1}{\leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}} \ProvideTextCommand{\guillemotright}{OT1}{\leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
 \providecommand{\enquote}[1]{\guillemotleft#1\guillemotright} \providecommand{\natexlab}[1]{#1} \providecommand{\bibnamefont}[1]{\textsc{#1}} \providecommand{\bibfnamefont}[1]{\textsc{#1}} \providecommand{\bibfnamefontand}[1]{#1} \providecommand{\citenamefont}[1]{#1} \providecommand{\bibnamefont}[1]{\textsc{#1}} \providecommand{\bbletalfont}[1]{\emph{#1}}  \providecommand{\citeandfont}[1]{#1} \providecommand{\citetalfont}[1]{#1} \providecommand{\bibyearfont}[1]{#1} \providecommand{\isbn}[1]{ISBN #1} \providecommand{\url}[1]{\texttt{#1}} \providecommand{\urlprefix}{} \providecommand{\nameseparator}{;} \providecommand{\namereplace}[1]{{---{}---} \ifx\datebegin\relax \else \def\datebegin #1.{\relax}\fi} \providecommand{\dateend}[1]{, #1} \providecommand{\bibtitle}[1]{#1}\providecommand{\bibtranslator}[1]{#1} \providecommand{\bibtranslatorname}{Traducido por } \providecommand{\selectlanguage}[1]{\relax} \providecommand{\finalpoint}{.} \providecommand{\namesend}{:} \providecommand{\Capitalize}[1]{\uppercase{#1}} \providecommand{\capitalize}[1]{\expandafter\Capitalize#1} \providecommand{\bibinfont}[1]{\textbf{#1}} \providecommand{\inbooktitlefont}[1]{\emph{#1}} \providecommand{\bibvolfont}[1]{\textbf{#1}} \providecommand{\bibandfont}[1]{#1}  \providecommand{\bibcommentname}{\textsc{Obs:}} \providecommand{\bibcomment}[2]{\begin{quotation} \noindent\textsc{\bibcommentname}\ #2\end{quotation}} \providecommand{\bibabstract}[2]{\begin{quotation} \noindent\textsc{\Abstractname:}\ #2\end{quotation}}
@@ -11,6 +11,16 @@
   \newblock \bibtitle{\emph{La teoría de juegos: Una breve introducción}}.
   \newblock McGraw-Hill, Madrid, España, primera edición\bbledition{}\dateend{2007}.
   \newblock ISBN 9788448177097\finalpoint{}
+
+\bibitem[{\citenamefont{Departamento~de Economía}(2020)}]{UC3MGameTheory2020Ch1}
+\bibnamefont{Departamento~de Economía}, \bibfnamefont{Universidad Carlos III de~Madrid}\namesend{}\datebegin 2020.
+  \newblock \bibtitle{\enquote{Chapter 1: Introduction to Game Theory. Normal Form Games}}\dateend{2020}.
+  \newblock \preurl{} \url{https://economia.uc3m.es/docencia/ME-MEIM-Game-Theory/classnotes/Chapter1-2020-eng.pdf}\finalpoint{}
+
+\bibitem[{\citenamefont{Departamento~de Economía}(2024)}]{UC3MGameTheory2020Ch2}
+ \namereplace{\bibnamefont{Departamento~de Economía}, \bibfnamefont{Universidad Carlos III de~Madrid}}\namesend{}\datebegin 2024.
+  \newblock \bibtitle{\enquote{Chapter 2: Extensive Form Games}}\dateend{2024}.
+  \newblock \preurl{} \url{https://economia.uc3m.es/docencia/ME-MEIM-Game-Theory/classnotes/Chapter2-2020-eng.pdf}\finalpoint{}
 
 \bibitem[{\citenamefont{Gibbons}(1992)}]{Gibbons1992}
 \bibnamefont{Gibbons}, \bibfnamefont{Robert}\namesend{}\datebegin 1992.

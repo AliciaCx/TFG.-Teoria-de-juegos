@@ -552,9 +552,9 @@ modelos de la teoría de juegos son representaciones altamente abstractas
 de clases de situaciones de la vida real. Su carácter abstracto permite
 que sean utilizados para estudiar una amplia gama de fenómenos.
 
-En un juego podemos destacar los siguientes elementos funamentales:
+En un juego podemos destacar los siguientes elementos fundamentales:
 
-\{\Large **1. Jugadores**\}
+\textbf{1. Jugadores}
 
 En todos los modelos de la teoría de juegos, la entidad básica es el
 jugador. Un jugador puede interpretarse como un individuo (empresas,
@@ -576,7 +576,7 @@ pueden:
   tener incertidumbre acerca del razonamiento de los otros jugadores
 \end{itemize}
 
-Denotaremos N al conjunto de jugadores \(N = {1,2,...,n}\)
+Denotaremos por N al conjunto de jugadores \(N = {1,2,...,n}\)
 
 \textbf{2. Estrategia}
 
@@ -595,17 +595,19 @@ Podemos encontrar dos tipos de estrategias:
 \begin{itemize}
 \item
   \textbf{\emph{Estrategias puras:}} las elecciones son libres del
-  jugador
+  jugador, es decir, el jugador elige una acción concreta de forma
+  determinista, sin recurrir al azar
 \item
-  \textbf{\emph{Estrategias mixtas:}} cuando la probabilidad infuye
+  \textbf{\emph{Estrategias mixtas:}} cuando la probabilidad influye
 \end{itemize}
 
 Denotamos por \(\Delta({A_i})\) el conjunto de distribuciones de
 probabilidad sobre \(A_i\) y nos referimos a un elemento de
 \(\Delta({A_i})\) como una \textbf{estrategia mixta} del jugador
-\emph{i}, suponemos que las estrategias ixtas de los jugadores son
+\emph{i}, suponemos que las estrategias mixtas de los jugadores son
 aleatorizaciones independientes. Para mayor claridad, a veces nos
 referimos a un elemento de \(A_i\) como una \textbf{estrategia pura}.
+
 Para cualquier conjunto finito \(X\) y cualquier
 \(\delta \in \Delta(X)\), denotamos por \(\delta(x)\) la probabilidad
 que \(\delta\) asigna a \(x \in X\) y definimos el soporte de \(\delta\)
@@ -620,10 +622,374 @@ jugador i-ésimo cuando cada jugador ha elegido su estrategia, o también
 se puede considerar como utilidad esperada utilizando el mismo nombre
 indistintamente, dependiendo de si interviene el azar o no.
 
+Esta función permite comparar distintos perfiles de estrategias y
+constituye la base para definir conceptos de solución como el equilibrio
+de Nash.
+
 \section{Clasificación de juegos}\label{clasificaciuxf3n-de-juegos}
+
+Un objetivo primordial de la teoría de juegos es desarrollar criterios
+racionales para seleccionar una estrategia, los cuales implican dos
+supuestos importantes:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Ambos jugadores son racionales
+\item
+  Ambos jugadores eligen sus estrategias solo para promover su propio
+  bienestar
+\end{enumerate}
+
+Los juegos se pueden clasificar de diversas maneras y atendiendo a
+varios criterios.
+
+\subsection{Juegos según el número de
+jugadores}\label{juegos-seguxfan-el-nuxfamero-de-jugadores}
+
+Atendiendo el número de jugadores se distinguen juegos
+\textbf{bipersinales}, si participan dos jugadores, y juegos
+\textbf{n-personales}, cuando participan más de dos.
+
+\subsection{Juegos finitos e
+infinitos}\label{juegos-finitos-e-infinitos}
+
+Atendiendo al número de alternativas que posee cada jugador, señalaremos
+los juegos finitos, cuando éstas son un numero finito e infinitos, en
+otro caso.
+
+\subsection{Juegos cooperativos y no
+cooperativos}\label{juegos-cooperativos-y-no-cooperativos}
+
+Los \textbf{juegos cooperativos} permiten la formación en grupos entre
+jugadores, conocidos como coaliciones, para que no compitan entre ellos
+sino que colaboren para conseguir el mismo objetivo coordinando sus
+decisiones y repartiendo los beneficios obtenidos, por tanto ganan o
+pierden en conjunto.
+
+En cambio, en los \textbf{juegos no cooperativos} los jugadores actúan
+de forma individual compitiendo entre sí. Cada jugador decide su
+estrategia de manera autónoma, teniendo en cuenta el comportamiento
+esperado de los demás participantes. En esta teoría, las oportunidades
+estratégicas de los jugadores se exploran en detalle y se hacen
+predicciones sobre su comportamiento empleando la idea del equilibrio de
+Nash.
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (cooperativo)}
+Dos empresas acuerdan fijar precios conjuntamente para maximizar beneficios.  
+Pueden repartirse los beneficios como deseen y coordinan sus estrategias.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (no cooperativo)}
+El Dilema del Prisionero: dos sospechosos deciden confesar o callar sin posibilidad de acuerdos.  
+Cada uno busca maximizar su propio beneficio de forma individual.
+\end{tcolorbox}
+
+\subsection{Juegos de suma nula}\label{juegos-de-suma-nula}
+
+En los juegos de \textbf{suma nula}, la suma de los pagos de todos los
+jugadores es constante. En el caso particular de dos jugadores, la
+ganancia de uno coincide exactamente con la pérdida del otro.
+
+Desde un punto más general, un juego estratégico
+\(\langle \{1,2\}, (A_i), (\succeq_i)_i \rangle\) es estrictamente
+competitivo si para cualquier \(a \in A\) y \(b \in A\) se cumple que
+\(a \succeq_1 b\) si y solo si \(b \succeq_2 a\)
+
+Por tanto, un juego estrictamente competitivo a veces se denomina juego
+de suma cero, porque si la relación de preferencia \(\succeq_1\) del
+jugador 1 está representada por la función de pagos \(u_1\), entonces la
+relación de preferencia del jugador 2 está representada por \(u_2\).
+Luego, se tiene que cumplir \(u_1 + u_2 = 0\)
+
+En este caso, decimos que el jugador i aplica el criterio de maximin si
+elige una acción que es la mejor para él bajo el supuesto de que, haga
+lo que haga, el jugador j elegirá su acción para perjudicarlo lo máximo
+posible.
+
+El estudio sistemático de este tipo de juegos fue iniciado por John von
+Neumann, quien en 1928 demostró el teorema minimax, que garantiza que en
+juegos finitos de suma cero con dos jugadores existe un valor del juego
+y un equilibrio en estrategias mixtas. Esta propiedad explica por qué
+los juegos de suma cero constituyen una de las pocas clases de juegos
+para las cuales puede obtenerse una solución única bien definida.
+
+Sin embargo, la mayoría de ejemplos reales son juegos de \textbf{suma no
+nula}, puesto que la ganancia de un jugador no necesariamente se
+corresponde con la pérdida de otro.
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (suma nula)}
+Un partido de tenis.  
+Si un jugador gana el partido, el otro lo pierde.  
+La victoria de uno es exactamente la derrota del otro.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo (suma no nula)}
+Dos empresas deciden si colaborar en un proyecto.  
+Si ambas colaboran, las dos obtienen beneficios.  
+No necesariamente lo que gana una lo pierde la otra.
+\end{tcolorbox}
+
+\subsection{Juegos estáticos y
+dinámicos}\label{juegos-estuxe1ticos-y-dinuxe1micos}
+
+Los juegos \textbf{estáticos} o \textbf{simultáneos} consisten en que
+los jugadores eligen sus estrategias simultáneamente sin conocer las
+decisiones de los demás, y a continuación reciben sus ganancias, que
+dependen de la combinación de acciones que acaban de elegir.
+
+En cambio, los juegos \textbf{dinámicos} o \textbf{secuenciales} son
+aquellos en los que los jugadores toman decisiones en distintos momentos
+del tiempo. En este caso, las acciones de los jugadores pueden depender
+de las decisiones observadas previamente, por lo que la información
+disponible es relevante.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (estático)}
+
+Competencia de precios entre dos empresas: ambas fijan sus precios al mismo tiempo sin conocer la elección de la otra.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (dinámico)}
+
+Ajedrez o damas: los jugadores mueven alternadamente, conociendo el estado completo del tablero antes de cada turno.
+\end{tcolorbox}
+
+\subsection{Juegos de información completa e
+incompleta}\label{juegos-de-informaciuxf3n-completa-e-incompleta}
+
+En los juegos de \textbf{información completa} todos los jugadores
+tienen la misma información sobre el juego, conocen el conjunto de
+jugadores, las recompensas, las funciones de pagos y las estrategias
+disponibles para todos los participantes, y saben que los demás también
+disponen de esta información.
+
+En los juegos de \textbf{información incompleta} también denominados
+como juegos bayesianos, al menos un jugador desconoce alguna
+característica del juego, por lo tanto puede causar incertidumbre entre
+los jugadores.
+
+En los juegos de información completa las ganancias de los jugadores son
+de dominio público mientras que en los de información incompleta al
+menos un jugador no está seguro de la función de ganancia de otro
+jugador.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (información completa)}
+Ajedrez: cada jugador conoce todas las reglas, los movimientos posibles y el estado completo del tablero.  
+No hay información oculta; ambos saben la posición de todas las piezas en todo momento.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (información incompleta)}
+Poker: cada jugador conoce solo sus propias cartas y no las de los rivales.
+Las decisiones se basan en probabilidades y comportamiento de los demás jugadores.
+\end{tcolorbox}
+
+\subsection{Juegos de información perfecta e
+imperfecta}\label{juegos-de-informaciuxf3n-perfecta-e-imperfecta}
+
+Un juego es de \textbf{información perfecta} si, en el turno de cada
+jugador, este conoce todas las acciones que se han realizado previamente
+antes de tomar su decisión. Asimismo, se dice que un juego es de
+\textbf{información imperfecta} si un jugador no sabe exactamente qué
+acciones tomaron otros jugadores hasta ese momento.
+
+Estos conceptos se aplican a juegos dinámicos.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (información perfecta)}
+
+Tres en raya: cada jugador conoce todas las jugadas previas antes de decidir su siguiente movimiento.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo (información imperfecta)}
+
+Hundir la flota: cada jugador desconoce la ubicación de los barcos del rival y toma decisiones sin observar completamente el estado del juego.
+\end{tcolorbox}
 
 \section{Representaciones de los
 juegos}\label{representaciones-de-los-juegos}
+
+\subsection{Forma normal}\label{forma-normal}
+
+Los juegos estáticos se representan en \textbf{forma normal} G que
+consta de tres elementos \[G = (N,S,u)\] donde,
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    \(N = \{1, \ldots, n\}\) es el conjunto de tomadores de decisiones,
+    es decir, lo jugadores
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    \(S = S_1\) x \(S_2\) x \ldots{} x \(S_n\) describe las acciones
+    factibles de los jugadores. Los juagdores eligen simultaneamente una
+    estrategia \(s = (s_1, \ldots, s_n) \in S\). Se obtienen los
+    resultados
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    \(u = (u_1, \ldots, u_n)\) describe la satisfacción (los pagos) de
+    los jugadores ante los resultados. Para cada
+    \(i = 1, \ldots, n, u_i : S \to \mathbb{R}\)
+  \end{enumerate}
+\end{itemize}
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo}
+
+Dos jugadores eligen simultáneamente una de las tres acciones posibles: Piedra, Papel o Tijera. 
+Cada uno decide sin conocer la elección del otro, y los pagos dependen de la combinación de acciones.
+
+Este juego puede describirse como un juego en forma normal con:
+
+\begin{enumerate}
+    \item Los jugadores son los dos participantes del juego:
+    \[
+    N = \{1,2\}.
+    \]
+
+    \item Cada jugador puede elegir entre tres acciones: Piedra (P), Papel (Pa) o Tijera (T). 
+    Por tanto,
+    \[
+    S_1 = S_2 = \{P, Pa, T\}.
+    \]
+
+    \item Los pagos representan el resultado del enfrentamiento:
+    \begin{itemize}
+        \item Si ambos eligen la misma acción $\rightarrow$ empate $\rightarrow (0,0)$.
+        \item Si un jugador gana $\rightarrow$ recibe $1$.
+        \item El jugador que pierde $\rightarrow$ recibe $-1$.
+    \end{itemize}
+\end{enumerate}
+
+Luego, la matriz de pagos es:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|ccc}
+ & Piedra & Papel & Tijera \\
+\hline
+Piedra & (0,0) & (-1,1) & (1,-1) \\
+Papel & (1,-1) & (0,0) & (-1,1) \\
+Tijera & (-1,1) & (1,-1) & (0,0) \\
+\end{tabular}
+\caption{Forma normal del juego Piedra, Papel o Tijera}
+\label{tab:ppt}
+\end{table}
+
+\end{tcolorbox}
+
+\subsection{Forma extensiva}\label{forma-extensiva}
+
+Los juegos dinámicos se representan en \textbf{forma extensiva} tienen
+una estructura similar a la de los juegos en forma normal. Es decir,
+también constan de un conjunto de jugadores, sus conjuntos de
+estrategias y sus pagos. Se especifica:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Los jugadores del juego
+\end{enumerate}
+
+2a. Cuando cada jugador tiene el turno de mover
+
+2b. Que puede hacer cada jugador en cada una de sus oportunidades de
+movimiento.
+
+2c. Que sabe cada jugador en cada una de sus oportunidades de movimiento
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  El pago que recibe cada jugador para cada combinación de acciones que
+  puedan elegir los jugadores.
+\end{enumerate}
+
+\begin{tcolorbox}[colback=blue!10] 
+\textbf{Ejemplo 1} \\
+
+1. El jugador 1 elige una acción $a_1$ del conjunto factible $A_1 = \{L, R\}$ \\
+2. El jugador 2 observa $a_1$ y luego elige su acción $a_2$ del conjunto $A_2 = \{L', R'\}$ \\
+3. Los pagos son $u_1(a_1,a_2)$ y $u_2(a_1,a_2)$ como se muestra en el siguiente árbol de juego
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{arbol_juego.png}
+    \caption{Árbol del juego dinámico}
+    \label{fig:arbol_juego}
+\end{figure}
+
+\end{tcolorbox}
+
+\usepackage[most]{tcolorbox}
+\begin{tcolorbox}[colback=blue!10, title=Ejemplo 2, breakable] 
+\textbf{Ejemplo 2} \\
+
+Un monopolista (M) en un mercado que genera beneficios de 100 millones de dólares se enfrenta a la posibilidad de que un competidor (E) entre en el mercado. En primer lugar, el competidor decide si entrar (I) o no entrar (O) en el mercado.
+
+Si el competidor entra en el mercado, el monopolista observa la acción del entrante y decide si luchar (F) o acomodar (A) al competidor. Si el monopolista lucha, se inicia una guerra de precios. Como resultado, ambas empresas terminan perdiendo 50 millones de dólares cada una. Si el monopolista acomoda, ambas empresas comparten el mercado a partes iguales. Supóngase que no hay costes de entrada para el competidor.
+
+Podemos representar esta situación mediante un árbol de juego.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{arbol_juego2.png}
+    \caption{Árbol de decisión de entrada de mercado con un monopolista y un competidor}
+    \label{fig:arbol_juego}
+\end{figure}
+
+En el ejemplo anterior, vemos que el árbol de juego contiene toda la información relevante de la situación, a saber:
+\begin{enumerate}
+\item Los jugadores.
+
+\item Las decisiones secuenciales posibles de los jugadores.
+
+\item La información que conocen los jugadores.
+
+\item Los pagos de los jugadores.
+\end{enumerate}
+
+El conjunto de estrategias de los jugadores es \(S_1 = \{O, I\},\; S_2 = \{F, A\}\). El juego puede representarse mediante la tabla
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+ & \multicolumn{2}{c}{\textbf{Monopolista (M)}} \\
+\textbf{Competidor (E)} & A & F \\ 
+\hline
+I & (50,50) & (-50,-50) \\
+O & (0,100) & (0,100)
+\end{tabular}
+\caption{Forma normal del juego entre un monopolista y un competidor}
+\label{tab:monopolio}
+\end{table}
+
+\end{tcolorbox}
 
 \bibliography{bib/library.bib,bib/paquetes.bib}
 
