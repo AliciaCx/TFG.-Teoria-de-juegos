@@ -33,7 +33,90 @@ En muchos juegos, un mismo concepto de solución puede dar lugar a varias soluci
 
 A continuación, se presentan algunos conceptos de solución:
 
-## Estrategias dominantes
+## Estrategias dominadas y dominantes
+
+Una estrategia de un jugador se dice dominante si es tan buena o más que cualquier otra como respuesta a cualquier combinación de estrategias que elijan los demás jugadores, y una estrategia dada $s_i$ de un jugador se dice que está dominada por otra estrategia $s'_i$ del mismo jugador si la segunda le conviene más que la primera, independientemente de lo que hagan los otros jugadores. El argumento básico de dominación consiste en que un jugador racional no debería jugar estrategias dominadas y en que, en caso de saber que otros jugadores son racionales, debería suponer que éstos no van a jugar tal clase de estrategias.
+
+**Definición 3.1.** En el juego $G = \{S_1, \ldots, S_n; u_1,\ldots,u_n\}$, sean $s'_i$ y $s''_i$ dos estrategias del jugador *i*.
+
+  a)  Decimos que $s'_i$ está **dominada**, o también **débilmente dominada**, por $s''_i$ cuando la desigualdad
+  $$u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)\le u_i(s_1,\ldots,s_{i-1},s''_i,s_{i+1},\ldots,s_n)$$
+  
+  se cumple para toda combinación de estrategias $s_{-i}$ de los otros jugadores, y para alguna de esas combinaciones se cumple de modo estricto. Decimos de manera equivalente que $s''_i$ **domina** a $s'_i$. (Es decir, siempre le conviene usar $s''_i$ al menos tanto como usar $s'_i$, hagan lo que hagan los otros jugadores, y a veces le conviene más)
+  
+  b) Decimos que $s'_i$ está **estrictamente dominada** por $s''_i$ cuando la desigualdad
+  $$u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)<u_i(s_1,\ldots,s_{i-1},s''_i,s_{i+1},\ldots,s_n)$$
+  se cumple para toda combinación de estrategias $s_{-i}$ de los otros jugadores. (Es decir, le conviene más usar $s''_i$ que $s'_i$, hagan lo que hagan los otros jugadores)
+  
+  c)  Decimos que $s'_i$ es **no dominada** si no existe ninguna otra estrategia del jugador *i* que la domine, y decimos que $s'_i$ es **no dominada estrictamente** si no existe ninguna otra estrategia del jugador i que la domine estrictamente.
+  
+
+  
+Por otra parte, el concepto de estrategia dominante que se define a continuación, se aplica a una estrategia de un jugador cuando ésta es tan buena o más que cualquier otra como respuesta a cualquier combinación de estrategias qie elijan los demás jugadores.
+
+**Definición 3.2.** En el juegos $G = \{S_1,\ldots,S_n;u_1,\ldots,u_n\}$, sea $s'_i$ una estrategia del jugador *i*.
+
+  a) Decimos qie $s'_i$ es **dominante** cuando la desigualdad
+  $$u_i(s_1,\ldots,s_{i-1},s_i,s_{i+1},\ldots,s_n)\le u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)$$
+  se cumple para toda estrategia $s_i$ de dicho jugador y para toda combinación de estrategias $s_{-i}$ de los otros jugadores. (Es decir, siempre le conviene usar la estrategia $s'_i$ al menos tanto como cualquier otra, hagan lo que hagan los otros jugadores)
+    
+  b)  Si todas las desigualdades se cumplen de manera estricta (para $s_i \neq s'_i$), decimos que $s'_i$ es **estrictamente dominante**.
+  
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo 3.1} \\
+
+Consideremos el siguiente juego de dos jugadores (Dilema del Prisionero)
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+ & \multicolumn{2}{c}{\textbf{Preso 2}} \\ 
+\textbf{Preso 1} & Callar & Confesar \\ \hline
+Callar & (4,4) & (0,5) \\
+Confesar & (5,0) & (1,1)
+\end{tabular}
+\caption{Pagos del Dilema del Prisionero}
+\label{tab:dilema_prisionero}
+\end{table}
+
+\textbf{Análisis:}  
+
+Para el jugador 1:
+
+\[
+u_1(\text{Callar, Callar}) = 4 < 5 = u_1(\text{Confesar, Callar})
+\]
+
+\[
+u_1(\text{Callar, Confesar}) = 0 < 1 = u_1(\text{Confesar, Confesar})
+\]
+
+De manera análoga, para el jugador 2:
+
+\[
+u_2(\text{Callar, Callar}) = 4 < 5 = u_2(\text{Callar, Confesar})
+\]
+
+\[
+u_2(\text{Confesar, Callar}) = 0 < 1 = u_2(\text{Confesar, Confesar})
+\]
+
+\textbf{Conclusión:}  
+
+Para ambos jugadores, la estrategia \textbf{Callar} está \textbf{estrictamente dominada} por la estrategia \textbf{Confesar}.  
+Por lo tanto, si los jugadores son racionales, ambos elegirán \textbf{Confesar} y el equilibrio estrictamente dominante es \((\text{Confesar}, \text{Confesar})\).
+\end{tcolorbox}
+
+### Uso de Estrategias Dominantes (UED)
+Según este concepto de solución, pertenecen a la solución del juego todos aquellos perfiles de estrategias en los cuales cada jugador usa una estrategia dominante.
+
+Naturalmente, en caso de ser aplicable, este concepto de solución es obvio, pues cualquier jugador racional jugará una estrategia dominante si dispone de ella, independientemente de cualquier otra consideración (y si tiene varias, jugará una de ellas). En particular lo hará independientemente de lo que sepa o suponga acerca de cómo van a jugar los otros jugadores, y de qué sepa acerca de las características de dichos jugadores. De hecho, incluso cabe la posibilidad de que los jugadores tengan un conocimiento muy limitado de aquellos aspectos del juego que afectan a los demás jugadores (por ejemplo, podrían no conocer los pagos de los otros), y aun así tender a jugar su estrategia dominante.
+
+Por desgracia, este concepto de solución no siempre es aplicable. Los juegos en los que cada jugador tiene alguna estrategia dominante son más bien la excepción que la regla.
+
+### Eliminación Iterativa Estricta (EIE)
+### Eliminación Iterativa Débil (EID)
+### Juegos resolubles por dominación
+
 
 ## Equilibrio de Nash
-

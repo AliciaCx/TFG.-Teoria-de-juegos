@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  9 MAR 2026 11:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  9 MAR 2026 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -769,23 +769,23 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box81
 \tcb@temp=\box82
 \tcb@temp=\box83
+) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip155
+\multirow@cntb=\count364
+\multirow@dima=\skip156
+\bigstrutjot=\dimen287
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen287
+\col@sep=\dimen288
 \ar@mcellbox=\box84
-\extrarowheight=\dimen288
+\extrarowheight=\dimen289
 \NC@list=\toks54
-\extratabsurround=\skip155
-\backup@length=\skip156
+\extratabsurround=\skip157
+\backup@length=\skip158
 \ar@cellbox=\box85
-) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip157
-\multirow@cntb=\count364
-\multirow@dima=\skip158
-\bigstrutjot=\dimen289
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen290
 \WF@size=\dimen291
@@ -958,24 +958,24 @@ LaTeX Warning: Label `fig:arbol_juego' multiply defined.
 )
 \openout1 = `tfe_principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 504.
-LaTeX Font Info:    ... okay on input line 504.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 505.
+LaTeX Font Info:    ... okay on input line 505.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1010,7 +1010,7 @@ LaTeX Font Info:    ... okay on input line 504.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 504.
+Package hyperref Info: Link coloring OFF on input line 505.
 (./tfe_principal.out) (./tfe_principal.out)
 \@outlinefile=\write4
 \openout4 = `tfe_principal.out'.
@@ -1021,8 +1021,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 504.
-LaTeX Info: Redefining \% on input line 504.
+LaTeX Info: Redefining \. on input line 505.
+LaTeX Info: Redefining \% on input line 505.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: longtable package is loaded.
@@ -1031,10 +1031,10 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<logo.png, id=119, 301.125pt x 262.9825pt>
+<logo.png, id=135, 301.125pt x 262.9825pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 562.
+Package pdftex.def Info: logo.png  used on input line 563.
 (pdftex.def)             Requested size: 170.71652pt x 149.09901pt.
 [1
 
@@ -1112,102 +1112,121 @@ Cap\'{\i }tulo 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.777 \chapter
+l.778 \chapter
               {Fundamentos de la Teoría de [1
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.777 \chapter
+l.778 \chapter
               {Fundamentos de la Teoría de [2
 
 ]
 Cap\'{\i }tulo 2.
 [3{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-LaTeX Info: Redefining \. on input line 906.
-LaTeX Info: Redefining \% on input line 906.
+LaTeX Info: Redefining \. on input line 907.
+LaTeX Info: Redefining \% on input line 907.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 906.
-LaTeX Info: Redefining \. on input line 906.
-LaTeX Info: Redefining \% on input line 906.
+(babel)             Reported on input line 907.
+LaTeX Info: Redefining \. on input line 907.
+LaTeX Info: Redefining \% on input line 907.
 [4{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-LaTeX Info: Redefining \. on input line 973.
-LaTeX Info: Redefining \% on input line 973.
-LaTeX Info: Redefining \. on input line 973.
-LaTeX Info: Redefining \% on input line 973.
+LaTeX Info: Redefining \. on input line 974.
+LaTeX Info: Redefining \% on input line 974.
+LaTeX Info: Redefining \. on input line 974.
+LaTeX Info: Redefining \% on input line 974.
 [5]
-LaTeX Info: Redefining \. on input line 1039.
-LaTeX Info: Redefining \% on input line 1039.
-LaTeX Info: Redefining \. on input line 1039.
-LaTeX Info: Redefining \% on input line 1039.
+LaTeX Info: Redefining \. on input line 1040.
+LaTeX Info: Redefining \% on input line 1040.
+LaTeX Info: Redefining \. on input line 1040.
+LaTeX Info: Redefining \% on input line 1040.
 [6]
-LaTeX Info: Redefining \. on input line 1160.
-LaTeX Info: Redefining \% on input line 1160.
-LaTeX Info: Redefining \. on input line 1160.
-LaTeX Info: Redefining \% on input line 1160.
+LaTeX Info: Redefining \. on input line 1161.
+LaTeX Info: Redefining \% on input line 1161.
+LaTeX Info: Redefining \. on input line 1161.
+LaTeX Info: Redefining \% on input line 1161.
 [7]
-LaTeX Info: Redefining \. on input line 1180.
-LaTeX Info: Redefining \% on input line 1180.
-LaTeX Info: Redefining \. on input line 1180.
-LaTeX Info: Redefining \% on input line 1180.
+LaTeX Info: Redefining \. on input line 1181.
+LaTeX Info: Redefining \% on input line 1181.
+LaTeX Info: Redefining \. on input line 1181.
+LaTeX Info: Redefining \% on input line 1181.
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
+Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
 
  []
 
-<arbol_juego.png, id=254, 432.61626pt x 243.91125pt>
+<arbol_juego.png, id=276, 432.61626pt x 243.91125pt>
 File: arbol_juego.png Graphic file (type png)
 <use arbol_juego.png>
-Package pdftex.def Info: arbol_juego.png  used on input line 1208.
+Package pdftex.def Info: arbol_juego.png  used on input line 1209.
 (pdftex.def)             Requested size: 254.37029pt x 143.4151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1216--1217
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
 
  []
 
-<arbol_juego2.png, id=256, 241.90375pt x 160.6pt>
+<arbol_juego2.png, id=278, 241.90375pt x 160.6pt>
 File: arbol_juego2.png Graphic file (type png)
 <use arbol_juego2.png>
-Package pdftex.def Info: arbol_juego2.png  used on input line 1226.
+Package pdftex.def Info: arbol_juego2.png  used on input line 1227.
 (pdftex.def)             Requested size: 254.37029pt x 168.88492pt.
-LaTeX Info: Redefining \. on input line 1258.
-LaTeX Info: Redefining \% on input line 1258.
-LaTeX Info: Redefining \. on input line 1258.
-LaTeX Info: Redefining \% on input line 1258.
+LaTeX Info: Redefining \. on input line 1259.
+LaTeX Info: Redefining \% on input line 1259.
+LaTeX Info: Redefining \. on input line 1259.
+LaTeX Info: Redefining \% on input line 1259.
 [9 <./arbol_juego.png>]
-LaTeX Info: Redefining \. on input line 1287.
-LaTeX Info: Redefining \% on input line 1287.
-LaTeX Info: Redefining \. on input line 1287.
-LaTeX Info: Redefining \% on input line 1287.
+LaTeX Info: Redefining \. on input line 1288.
+LaTeX Info: Redefining \% on input line 1288.
+LaTeX Info: Redefining \. on input line 1288.
+LaTeX Info: Redefining \% on input line 1288.
 [10 <./arbol_juego2.png>]
 Cap\'{\i }tulo 3.
 [11
 
-] [12
-
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1387
+
+ []
+
+LaTeX Info: Redefining \. on input line 1429.
+LaTeX Info: Redefining \% on input line 1429.
+LaTeX Info: Redefining \. on input line 1429.
+LaTeX Info: Redefining \% on input line 1429.
+[12]
+LaTeX Info: Redefining \. on input line 1492.
+LaTeX Info: Redefining \% on input line 1492.
+LaTeX Info: Redefining \. on input line 1492.
+LaTeX Info: Redefining \% on input line 1492.
+[13]
+LaTeX Info: Redefining \. on input line 1492.
+LaTeX Info: Redefining \% on input line 1492.
+LaTeX Info: Redefining \. on input line 1492.
+LaTeX Info: Redefining \% on input line 1492.
+[14]
 Cap\'{\i }tulo 4.
-[13] [14
+[15
+
+] [16
 
 ]
 Cap\'{\i }tulo 5.
-[15] [16
+[17] [18
 
 ] (./tfe_principal.bbl
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotleft (encoding OT1) on input line 3.
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotright (encoding OT1) on input line 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
 []$\T1/lmr/m/n/12 https : / / economia . uc3m . es / docencia / ME-[]MEIM-[]Game-[]Theory / classnotes /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
 []$\T1/lmr/m/n/12 https : / / economia . uc3m . es / docencia / ME-[]MEIM-[]Game-[]Theory / classnotes /
  []
 
-) [17
+) [19
 
 ] (./tfe_principal.aux
 LaTeX Info: Redefining \. on input line 9.
@@ -1221,21 +1240,21 @@ L3 programming layer <2026-01-19>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
-(rerunfilecheck)             Checksum: FD25305F39AA354E26E90C180EEF5172;4908.
+(rerunfilecheck)             Checksum: 85DD344FD5E11FEDD5F3DF34802DFA84;5971.
  ) 
 Here is how much of TeX's memory you used:
- 31245 strings out of 469497
- 593216 string characters out of 5468083
- 1097990 words of memory out of 5000000
- 59225 multiletter control sequences out of 15000+600000
- 690334 words of font info for 74 fonts, out of 8000000 for 9000
+ 31272 strings out of 469497
+ 593688 string characters out of 5468083
+ 1098275 words of memory out of 5000000
+ 59238 multiletter control sequences out of 15000+600000
+ 693322 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,13n,94p,1597b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,94p,1597b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfe_principal.pdf (27 pages, 333958 bytes).
+Output written on tfe_principal.pdf (29 pages, 345260 bytes).
 PDF statistics:
- 409 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
