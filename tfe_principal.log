@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.16)  18 FEB 2026 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  9 MAR 2026 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -146,7 +146,7 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks23
 \inpenc@posthook=\toks24
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+Package: geometry 2026/03/07 v6.0 Page Geometry
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
@@ -638,9 +638,9 @@ Package: mdframed 2013/07/01 1.9b: mdframed
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/zref/zref-abspage.sty
-Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
+Package: zref-abspage 2026-03-07 v2.37 Module abspage for zref (HO)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/zref/zref-base.sty
-Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
+Package: zref-base 2026-03-07 v2.37 Module base for zref (HO)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
@@ -1142,43 +1142,44 @@ LaTeX Info: Redefining \% on input line 1039.
 LaTeX Info: Redefining \. on input line 1039.
 LaTeX Info: Redefining \% on input line 1039.
 [6]
-LaTeX Info: Redefining \. on input line 1139.
-LaTeX Info: Redefining \% on input line 1139.
-LaTeX Info: Redefining \. on input line 1139.
-LaTeX Info: Redefining \% on input line 1139.
+LaTeX Info: Redefining \. on input line 1160.
+LaTeX Info: Redefining \% on input line 1160.
+LaTeX Info: Redefining \. on input line 1160.
+LaTeX Info: Redefining \% on input line 1160.
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 1171--1172
+LaTeX Info: Redefining \. on input line 1180.
+LaTeX Info: Redefining \% on input line 1180.
+LaTeX Info: Redefining \. on input line 1180.
+LaTeX Info: Redefining \% on input line 1180.
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
 
  []
 
-<arbol_juego.png, id=246, 432.61626pt x 243.91125pt>
+<arbol_juego.png, id=254, 432.61626pt x 243.91125pt>
 File: arbol_juego.png Graphic file (type png)
 <use arbol_juego.png>
-Package pdftex.def Info: arbol_juego.png  used on input line 1179.
+Package pdftex.def Info: arbol_juego.png  used on input line 1208.
 (pdftex.def)             Requested size: 254.37029pt x 143.4151pt.
-LaTeX Info: Redefining \. on input line 1185.
-LaTeX Info: Redefining \% on input line 1185.
-LaTeX Info: Redefining \. on input line 1185.
-LaTeX Info: Redefining \% on input line 1185.
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1217
 
  []
 
-<arbol_juego2.png, id=257, 241.90375pt x 160.6pt>
+<arbol_juego2.png, id=256, 241.90375pt x 160.6pt>
 File: arbol_juego2.png Graphic file (type png)
 <use arbol_juego2.png>
-Package pdftex.def Info: arbol_juego2.png  used on input line 1197.
+Package pdftex.def Info: arbol_juego2.png  used on input line 1226.
 (pdftex.def)             Requested size: 254.37029pt x 168.88492pt.
-LaTeX Info: Redefining \. on input line 1229.
-LaTeX Info: Redefining \% on input line 1229.
-LaTeX Info: Redefining \. on input line 1229.
-LaTeX Info: Redefining \% on input line 1229.
+LaTeX Info: Redefining \. on input line 1258.
+LaTeX Info: Redefining \% on input line 1258.
+LaTeX Info: Redefining \. on input line 1258.
+LaTeX Info: Redefining \% on input line 1258.
 [9 <./arbol_juego.png>]
-LaTeX Info: Redefining \. on input line 1258.
-LaTeX Info: Redefining \% on input line 1258.
-LaTeX Info: Redefining \. on input line 1258.
-LaTeX Info: Redefining \% on input line 1258.
+LaTeX Info: Redefining \. on input line 1287.
+LaTeX Info: Redefining \% on input line 1287.
+LaTeX Info: Redefining \. on input line 1287.
+LaTeX Info: Redefining \% on input line 1287.
 [10 <./arbol_juego2.png>]
 Cap\'{\i }tulo 3.
 [11
@@ -1223,18 +1224,18 @@ Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
 (rerunfilecheck)             Checksum: FD25305F39AA354E26E90C180EEF5172;4908.
  ) 
 Here is how much of TeX's memory you used:
- 31236 strings out of 469496
- 593013 string characters out of 5468067
- 1095667 words of memory out of 5000000
- 59218 multiletter control sequences out of 15000+600000
+ 31245 strings out of 469497
+ 593216 string characters out of 5468083
+ 1097990 words of memory out of 5000000
+ 59225 multiletter control sequences out of 15000+600000
  690334 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,12n,94p,1597b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,94p,1597b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfe_principal.pdf (27 pages, 328418 bytes).
+Output written on tfe_principal.pdf (27 pages, 333958 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 341 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 500000)
  252 words of extra memory for PDF output out of 10000 (max. 10000000)
 

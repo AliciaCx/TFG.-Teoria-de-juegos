@@ -23,6 +23,16 @@ source("cabecera_chunk_inicio.R")
 
 # Concepto de solución
 
+En la teoría de juegos, un **concepto de solución** es una regla formal para predecir cómo se jugará un juego. Estas predicciones se denominan "soluciones", y describen las estrategias que adoptarán los jugadores y, por tanto, el resultado que puede esperarse del juego. 
+
+En general, los conceptos de solución tratan de identificar perfiles de estrategias que puedan considerarse racionales o estables, teniendo en cuenta que cada jugador toma sus decisiones considerando las posibles acciones de los demás participantes.
+
+Los conceptos de solución más comúnmente utilizados son conceptos de equilibrio, el más famoso de ellos es el equilibrio de Nash.
+
+En muchos juegos, un mismo concepto de solución puede dar lugar a varias soluciones posibles. Por este motivo, la teoría de juegos introduce en ocasiones refinamientos de equilibrio, cuyo objetivo es reducir el conjunto de soluciones y seleccionar aquellas que resultan más razonables.
+
+A continuación, se presentan algunos conceptos de solución:
+
 ## Estrategias dominantes
 
 ## Equilibrio de Nash

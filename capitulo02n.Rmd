@@ -191,13 +191,15 @@ Hundir la flota: cada jugador desconoce la ubicación de los barcos del rival y 
 ## Representaciones de los juegos
 
 ### Forma normal
-Los juegos estáticos se representan en **forma normal** G que consta de tres elementos $$G = (N,S,u)$$ donde,
+Los juegos estáticos (o simultaneos) se representan normalmente en **forma normal** G que consta de tres elementos $$G = (N,S,u)$$ donde,
 
   - 1.  $N = \{1, \ldots, n\}$ es el conjunto de tomadores de decisiones, es decir, lo jugadores
   
   - 2.  $S = S_1$ x $S_2$ x ... x $S_n$ describe las acciones factibles de los jugadores. Los juagdores eligen simultaneamente una estrategia $s = (s_1, \ldots, s_n) \in S$. Se obtienen los resultados
   
   - 3.  $u = (u_1, \ldots, u_n)$ describe la satisfacción (los pagos) de los jugadores ante los resultados. Para cada $i = 1, \ldots, n, u_i : S \to \mathbb{R}$
+  
+En los casos particulares de juegos bipersonales finitos, la forma normal de un juego se puede expresar mediante dos matrices que recogen las funciones de pagos para cada jugador, aunque se puede escribir en una, mediante un par de elementos en cada casilla. Por eso, a los juegos bipersonales finitos se les denomina también juegos rectangulares o matriciales. Si además el juego es de suma nula, bastaría con mostrar una matriz, puesto que la del otro jugador es la misma pero con el signo cambiado.
 
 \begin{tcolorbox}[colback=blue!10]
 \textbf{Ejemplo}
@@ -242,11 +244,22 @@ Tijera & (-1,1) & (1,-1) & (0,0) \\
 \label{tab:ppt}
 \end{table}
 
+Y puesto que el juego es de suma nula, podemos escribir la matriz para el jugador I:
+
+\[
+\begin{pmatrix}
+0 & -1 & 1 \\
+1 & 0 & -1 \\
+-1 & 1 & 0
+\end{pmatrix}
+\]
+
+entendiendo que el juego siempre muestra la matriz de pago del jugador I, siendo la opuesta la del jugador II.
 \end{tcolorbox}
 
 
 ### Forma extensiva
-Los juegos dinámicos se representan en **forma extensiva** tienen una estructura similar a la de los juegos en forma normal. Es decir, también constan de un conjunto de jugadores, sus conjuntos de estrategias y sus pagos. Se especifica:
+Los juegos dinámicos (o secuencales) se representan en **forma extensiva** tienen una estructura similar a la de los juegos en forma normal. Es decir, también constan de un conjunto de jugadores, sus conjuntos de estrategias y sus pagos. Se especifica:
 
   1.  Los jugadores del juego
   
@@ -257,6 +270,11 @@ Los juegos dinámicos se representan en **forma extensiva** tienen una estructur
   2c. Que sabe cada jugador en cada una de sus oportunidades de movimiento
   
   3. El pago que recibe cada jugador para cada combinación de acciones que puedan elegir los jugadores.
+  
+Normalmente uno realiza una representación visual llamada ”árbol de juego”. Cada punto
+donde empieza una rama es un ”nodo de decisión”, donde un jugador tiene que realizar una acción.
+
+Además, todo juego en forma extensiva puede transformarse en forma normal, pero en ese caso las estrategias se definen como planes completos de acción para cada posible contingencia.
   
 \begin{tcolorbox}[colback=blue!10] 
 \textbf{Ejemplo 1} \\

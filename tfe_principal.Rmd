@@ -223,6 +223,6 @@ knitr::write_bib(c("knitr","rmarkdown"),
 <!-- Si "metodobib: false", modificar el "nocite:" del inicio de este fichero  -->
 
 <!-- \nocite{*} -->
-\nocite{Roldan2024Nash, OsborneRubinstein1994, PinoMejias2024Apuntes, Binmore2007, Gibbons1992, UC3MGameTheory2020Ch1, UC3MGameTheory2020Ch2}
+\nocite{Roldan2024Nash, OsborneRubinstein1994, PinoMejias2024Apuntes, Binmore2007, Gibbons1992, UC3MGameTheory2020Ch1, UC3MGameTheory2020Ch2, Luque2017, WikipediaConceptoSolucion}
 
 \fi 
