@@ -4,5 +4,6 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Árbol del juego dinámico}}{9}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Árbol de decisión de entrada de mercado con un monopolista y un competidor}}{10}{figure.caption.8}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Eliminación iterativa de estrategias: J1 elimina B porque A domina estrictamente a B, J2 elimina I porque C domina estrictamente a I, J2 elimina D porque C domina débilmente a D, y finalmente J1 elimina M. El perfil superviviente único es $(A,C)$.}}{18}{figure.caption.19}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

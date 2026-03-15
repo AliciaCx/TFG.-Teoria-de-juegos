@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.15)  15 MAR 2026 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.15)  15 MAR 2026 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**tfe_principal.tex
-(./tfe_principal.tex
+**capitulo03n.tex
+(./capitulo03n.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
@@ -264,8 +264,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip54
 )
-Package hyperref Info: Option `unicode' set `true' on input line 33.
-Package hyperref Info: Option `breaklinks' set `true' on input line 33.
+Package hyperref Info: Option `unicode' set `true' on input line 35.
+Package hyperref Info: Option `breaklinks' set `true' on input line 35.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -312,8 +312,8 @@ Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks27
 \es@quotdepth=\count313
 ))
-LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 78.
-LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 78.
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 80.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 80.
 (./flexbib.sty
 Package: flexbib 2018/09/15 v. 1.999
 (./spanishbst.tex) (./spanishbst.tex)
@@ -321,10 +321,8 @@ Package: flexbib 2018/09/15 v. 1.999
 \bibsep=\skip56
 LaTeX Info: Redefining \cite on input line 448.
 \c@NAT@ctr=\count314
-(./tfe_principal.bbl
-LaTeX Encoding Info:    Ignoring declaration for text command \guillemotleft (encoding OT1) on input line 3.
-LaTeX Encoding Info:    Ignoring declaration for text command \guillemotright (encoding OT1) on input line 3.
-)) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
+No file capitulo03n.bbl.
+) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count315
 \float@exts=\toks28
@@ -947,14 +945,11 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen329
 \c@nlinenum=\count394
 \TeXr@lab=\toks62
-) (./tfe_principal.aux
+) (./capitulo03n.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 9.
-
-LaTeX Warning: Label `fig:arbol_juego' multiply defined.
-
 
 LaTeX Warning: Label `tab:EIE' multiply defined.
 
@@ -971,26 +966,26 @@ LaTeX Warning: Label `tab:EID' multiply defined.
 LaTeX Warning: Label `tab:EID' multiply defined.
 
 )
-\openout1 = `tfe_principal.aux'.
+\openout1 = `capitulo03n.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 505.
-LaTeX Font Info:    ... okay on input line 505.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1025,10 +1020,10 @@ LaTeX Font Info:    ... okay on input line 505.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 505.
-(./tfe_principal.out) (./tfe_principal.out)
+Package hyperref Info: Link coloring OFF on input line 507.
+(./capitulo03n.out) (./capitulo03n.out)
 \@outlinefile=\write4
-\openout4 = `tfe_principal.out'.
+\openout4 = `capitulo03n.out'.
 
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1036,8 +1031,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 505.
-LaTeX Info: Redefining \% on input line 505.
+LaTeX Info: Redefining \. on input line 507.
+LaTeX Info: Redefining \% on input line 507.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: longtable package is loaded.
@@ -1046,249 +1041,112 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<logo.png, id=147, 301.125pt x 262.9825pt>
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 563.
-(pdftex.def)             Requested size: 170.71652pt x 149.09901pt.
-[1
-
-
-{/Users/aliciac/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./logo.png>] [2
-
-] (./tfe_principal.toc
+(./capitulo03n.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 2.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 2.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 2.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+(Font)              <6> on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-])
+))
 \tf@toc=\write5
-\openout5 = `tfe_principal.toc'.
+\openout5 = `capitulo03n.toc'.
 
-[2] [3
-
-] [4
-
-] (./tfe_principal.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@lof=\write6
-\openout6 = `tfe_principal.lof'.
-
-[5
+[1
 
 
-{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [6
-
-] (./tfe_principal.lot
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@lot=\write7
-\openout7 = `tfe_principal.lot'.
-
-[7
-
-] [8
+{/Users/aliciac/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] [2
 
 ]
 Cap\'{\i }tulo 1.
+[3{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.778 \chapter
-              {Fundamentos de la Teoría de [1
+ []
 
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.778 \chapter
-              {Fundamentos de la Teoría de [2
-
-]
-Cap\'{\i }tulo 2.
-[3]
-LaTeX Info: Redefining \. on input line 907.
-LaTeX Info: Redefining \% on input line 907.
+LaTeX Info: Redefining \. on input line 682.
+LaTeX Info: Redefining \% on input line 682.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 907.
-LaTeX Info: Redefining \. on input line 907.
-LaTeX Info: Redefining \% on input line 907.
-[4{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-LaTeX Info: Redefining \. on input line 974.
-LaTeX Info: Redefining \% on input line 974.
-LaTeX Info: Redefining \. on input line 974.
-LaTeX Info: Redefining \% on input line 974.
+(babel)             Reported on input line 682.
+LaTeX Info: Redefining \. on input line 682.
+LaTeX Info: Redefining \% on input line 682.
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
+
+ []
+
+LaTeX Info: Redefining \. on input line 729.
+LaTeX Info: Redefining \% on input line 729.
+LaTeX Info: Redefining \. on input line 729.
+LaTeX Info: Redefining \% on input line 729.
 [5]
-LaTeX Info: Redefining \. on input line 1040.
-LaTeX Info: Redefining \% on input line 1040.
-LaTeX Info: Redefining \. on input line 1040.
-LaTeX Info: Redefining \% on input line 1040.
-[6]
-LaTeX Info: Redefining \. on input line 1161.
-LaTeX Info: Redefining \% on input line 1161.
-LaTeX Info: Redefining \. on input line 1161.
-LaTeX Info: Redefining \% on input line 1161.
-[7]
-LaTeX Info: Redefining \. on input line 1181.
-LaTeX Info: Redefining \% on input line 1181.
-LaTeX Info: Redefining \. on input line 1181.
-LaTeX Info: Redefining \% on input line 1181.
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
-
- []
-
-<arbol_juego.png, id=316, 432.61626pt x 243.91125pt>
-File: arbol_juego.png Graphic file (type png)
-<use arbol_juego.png>
-Package pdftex.def Info: arbol_juego.png  used on input line 1209.
-(pdftex.def)             Requested size: 254.37029pt x 143.4151pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
-
- []
-
-<arbol_juego2.png, id=318, 241.90375pt x 160.6pt>
-File: arbol_juego2.png Graphic file (type png)
-<use arbol_juego2.png>
-Package pdftex.def Info: arbol_juego2.png  used on input line 1227.
-(pdftex.def)             Requested size: 254.37029pt x 168.88492pt.
-LaTeX Info: Redefining \. on input line 1259.
-LaTeX Info: Redefining \% on input line 1259.
-LaTeX Info: Redefining \. on input line 1259.
-LaTeX Info: Redefining \% on input line 1259.
-[9 <./arbol_juego.png>]
-LaTeX Info: Redefining \. on input line 1288.
-LaTeX Info: Redefining \% on input line 1288.
-LaTeX Info: Redefining \. on input line 1288.
-LaTeX Info: Redefining \% on input line 1288.
-[10 <./arbol_juego2.png>]
-Cap\'{\i }tulo 3.
-[11
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1386--1387
-
- []
-
-LaTeX Info: Redefining \. on input line 1429.
-LaTeX Info: Redefining \% on input line 1429.
-LaTeX Info: Redefining \. on input line 1429.
-LaTeX Info: Redefining \% on input line 1429.
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 1454--1455
-
- []
-
-LaTeX Info: Redefining \. on input line 1476.
-LaTeX Info: Redefining \% on input line 1476.
-LaTeX Info: Redefining \. on input line 1476.
-LaTeX Info: Redefining \% on input line 1476.
-[13]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1486.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 739.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1508--1509
+Underfull \hbox (badness 10000) in paragraph at lines 761--762
 
  []
 
-LaTeX Info: Redefining \. on input line 1556.
-LaTeX Info: Redefining \% on input line 1556.
-LaTeX Info: Redefining \. on input line 1556.
-LaTeX Info: Redefining \% on input line 1556.
-[14{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Info: Redefining \. on input line 1564.
-LaTeX Info: Redefining \% on input line 1564.
-LaTeX Info: Redefining \. on input line 1564.
-LaTeX Info: Redefining \% on input line 1564.
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1589
+LaTeX Info: Redefining \. on input line 809.
+LaTeX Info: Redefining \% on input line 809.
+LaTeX Info: Redefining \. on input line 809.
+LaTeX Info: Redefining \% on input line 809.
+[6{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+LaTeX Info: Redefining \. on input line 817.
+LaTeX Info: Redefining \% on input line 817.
+LaTeX Info: Redefining \. on input line 817.
+LaTeX Info: Redefining \% on input line 817.
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 841--842
 
  []
 
-LaTeX Info: Redefining \. on input line 1655.
-LaTeX Info: Redefining \% on input line 1655.
-LaTeX Info: Redefining \. on input line 1655.
-LaTeX Info: Redefining \% on input line 1655.
-[16]
-LaTeX Info: Redefining \. on input line 1688.
-LaTeX Info: Redefining \% on input line 1688.
-LaTeX Info: Redefining \. on input line 1688.
-LaTeX Info: Redefining \% on input line 1688.
-[17]
-LaTeX Info: Redefining \. on input line 1774.
-LaTeX Info: Redefining \% on input line 1774.
-LaTeX Info: Redefining \. on input line 1774.
-LaTeX Info: Redefining \% on input line 1774.
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 1779--1780
-
+LaTeX Info: Redefining \. on input line 908.
+LaTeX Info: Redefining \% on input line 908.
+LaTeX Info: Redefining \. on input line 908.
+LaTeX Info: Redefining \% on input line 908.
+[8]
+Overfull \hbox (246.34818pt too wide) in paragraph at lines 940--941
+ [] 
  []
 
-LaTeX Info: Redefining \. on input line 1845.
-LaTeX Info: Redefining \% on input line 1845.
-LaTeX Info: Redefining \. on input line 1845.
-LaTeX Info: Redefining \% on input line 1845.
-[19] [20
-
-]
-Cap\'{\i }tulo 4.
-[21] [22
-
-]
-Cap\'{\i }tulo 5.
-[23] [24
-
-] (./tfe_principal.bbl
-LaTeX Encoding Info:    Ignoring declaration for text command \guillemotleft (encoding OT1) on input line 3.
-LaTeX Encoding Info:    Ignoring declaration for text command \guillemotright (encoding OT1) on input line 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
-[]$\T1/lmr/m/n/12 https : / / economia . uc3m . es / docencia / ME-[]MEIM-[]Game-[]Theory / classnotes /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
-[]$\T1/lmr/m/n/12 https : / / economia . uc3m . es / docencia / ME-[]MEIM-[]Game-[]Theory / classnotes /
- []
-
-) [25
-
-] (./tfe_principal.aux
+LaTeX Info: Redefining \. on input line 941.
+LaTeX Info: Redefining \% on input line 941.
+LaTeX Info: Redefining \. on input line 941.
+LaTeX Info: Redefining \% on input line 941.
+[9]
+No file capitulo03n.bbl.
+LaTeX Info: Redefining \. on input line 965.
+LaTeX Info: Redefining \% on input line 965.
+LaTeX Info: Redefining \. on input line 965.
+LaTeX Info: Redefining \% on input line 965.
+[10] (./capitulo03n.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 )
@@ -1299,22 +1157,22 @@ L3 programming layer <2026-01-19>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
-(rerunfilecheck)             Checksum: 21A0A4AB2F6C292A21ADA25A40A9A4AA;6676.
+Package rerunfilecheck Info: File `capitulo03n.out' has not changed.
+(rerunfilecheck)             Checksum: 6BF0580E081A347D21F2C51AD8B08B9D;2465.
  ) 
 Here is how much of TeX's memory you used:
- 31600 strings out of 469497
- 601051 string characters out of 5468082
- 1109193 words of memory out of 5000000
- 59539 multiletter control sequences out of 15000+600000
- 702526 words of font info for 79 fonts, out of 8000000 for 9000
+ 31254 strings out of 469497
+ 594904 string characters out of 5468082
+ 1098501 words of memory out of 5000000
+ 59284 multiletter control sequences out of 15000+600000
+ 689870 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,13n,94p,1597b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfe_principal.pdf (35 pages, 386173 bytes).
+ 84i,12n,94p,654b,1040s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on capitulo03n.pdf (10 pages, 214868 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 447 compressed objects within 5 object streams
- 114 named destinations out of 1000 (max. 500000)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

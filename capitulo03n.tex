@@ -1,0 +1,965 @@
+\documentclass[12pt,a4paper,]{book}
+\def\ifdoblecara{} %% set to true
+\def\ifprincipal{} %% set to true
+\let\ifprincipal\undefined %% set to false
+\def\ifcitapandoc{} %% set to true
+\let\ifcitapandoc\undefined %% set to false
+\usepackage{lmodern}
+% sin fontmathfamily
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+%\usepackage{fixltx2e} % provides \textsubscript %PLLC
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin = 2.5cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdfauthor={Nombre Completo Autor},
+              pdfborder={0 0 0},
+              breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+%
+\usepackage[usenames,dvipsnames]{xcolor}  %new PLLC
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+
+  \title{}
+    \author{Nombre Completo Autor}
+      \date{18/11/2021}
+
+
+%%%%%%% inicio: latex_preambulo.tex PLLC
+
+
+%% UTILIZA CODIFICACIÓN UTF-8
+%% MODIFICARLO CONVENIENTEMENTE PARA USARLO CON OTRAS CODIFICACIONES
+
+
+%\usepackage[spanish,es-nodecimaldot,es-noshorthands]{babel}
+\usepackage[spanish,es-nodecimaldot,es-noshorthands,es-tabla]{babel}
+% Ver: es-tabla (en: https://osl.ugr.es/CTAN/macros/latex/contrib/babel-contrib/spanish/spanish.pdf)
+% es-tabla (en: https://tex.stackexchange.com/questions/80443/change-the-word-table-in-table-captions)
+\usepackage[spanish, plain, datebegin,sortcompress,nocomment,
+noabstract]{flexbib}
+ 
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{fancyhdr}
+% Solucion: ! LaTeX Error: Command \counterwithout already defined.
+% https://tex.stackexchange.com/questions/425600/latex-error-command-counterwithout-already-defined
+\let\counterwithout\relax
+\let\counterwithin\relax
+\usepackage{chngcntr}
+%\usepackage{microtype}  %antes en template PLLC
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % Usa codificación 8-bit que tiene 256 glyphs
+
+%\usepackage[dvipsnames]{xcolor}
+%\usepackage[usenames,dvipsnames]{xcolor}  %new
+\usepackage{pdfpages}
+%\usepackage{natbib}
+
+
+
+
+% Para portada: latex_paginatitulo_mod_ST02.tex (inicio)
+\usepackage{tikz}
+\usepackage{epigraph}
+\input{portadas/latex_paginatitulo_mod_ST02_add.sty}
+% Para portada: latex_paginatitulo_mod_ST02.tex (fin)
+
+% Para portada: latex_paginatitulo_mod_OV01.tex (inicio)
+\usepackage{cpimod}
+% Para portada: latex_paginatitulo_mod_OV01.tex (fin)
+
+% Para portada: latex_paginatitulo_mod_OV03.tex (inicio)
+\usepackage{KTHEEtitlepage}
+% Para portada: latex_paginatitulo_mod_OV03.tex (fin)
+
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\listfigurename}{Índice de figuras}
+\renewcommand{\listtablename}{Índice de tablas}
+\newcommand{\bcols}{}
+\newcommand{\ecols}{}
+\newcommand{\bcol}[1]{\begin{minipage}{#1\linewidth}}
+\newcommand{\ecol}{\end{minipage}}
+\newcommand{\balertblock}[1]{\begin{alertblock}{#1}}
+\newcommand{\ealertblock}{\end{alertblock}}
+\newcommand{\bitemize}{\begin{itemize}}
+\newcommand{\eitemize}{\end{itemize}}
+\newcommand{\benumerate}{\begin{enumerate}}
+\newcommand{\eenumerate}{\end{enumerate}}
+\newcommand{\saltopagina}{\newpage}
+\newcommand{\bcenter}{\begin{center}}
+\newcommand{\ecenter}{\end{center}}
+\newcommand{\beproof}{\begin{proof}} %new
+\newcommand{\eeproof}{\end{proof}} %new
+%De: https://texblog.org/2007/11/07/headerfooter-in-latex-with-fancyhdr/
+% \fancyhead
+% E: Even page
+% O: Odd page
+% L: Left field
+% C: Center field
+% R: Right field
+% H: Header
+% F: Footer
+%\fancyhead[CO,CE]{Resultados}
+
+%OPCION 1
+% \fancyhead[LE,RO]{\slshape \rightmark}
+% \fancyhead[LO,RE]{\slshape \leftmark}
+% \fancyfoot[C]{\thepage}
+% \renewcommand{\headrulewidth}{0.4pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+%OPCION 2
+% \fancyhead[LE,RO]{\slshape \rightmark}
+% \fancyfoot[LO,RE]{\slshape \leftmark}
+% \fancyfoot[LE,RO]{\thepage}
+% \renewcommand{\headrulewidth}{0.4pt}
+% \renewcommand{\footrulewidth}{0.4pt}
+%%%%%%%%%%
+\usepackage{calc,amsfonts}
+% Elimina la cabecera de páginas impares vacías al finalizar los capítulos
+\usepackage{emptypage}
+\makeatletter
+
+%\definecolor{ocre}{RGB}{25,25,243} % Define el color azul (naranja) usado para resaltar algunas salidas
+\definecolor{ocre}{RGB}{0,0,0} % Define el color a negro (aparece en los teoremas
+
+%\usepackage{calc} 
+
+
+%era if(csl-refs) con dolares
+% metodobib: true
+
+
+\usepackage{lipsum}
+
+%\usepackage{tikz} % Requerido para dibujar formas personalizadas
+
+%\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{amsthm}
+
+
+% Boxed/framed environments
+\newtheoremstyle{ocrenumbox}% % Theorem style name
+{0pt}% Space above
+{0pt}% Space below
+{\normalfont}% % Body font
+{}% Indent amount
+{\small\bf\sffamily\color{ocre}}% % Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+\renewcommand{\qedsymbol}{$\blacksquare$}% Optional qed square
+
+\newtheoremstyle{blacknumex}% Theorem style name
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% Body font
+{} % Indent amount
+{\small\bf\sffamily}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily{\tiny\ensuremath{\blacksquare}}\nobreakspace\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+
+\newtheoremstyle{blacknumbox} % Theorem style name
+{0pt}% Space above
+{0pt}% Space below
+{\normalfont}% Body font
+{}% Indent amount
+{\small\bf\sffamily}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+
+% Non-boxed/non-framed environments
+\newtheoremstyle{ocrenum}% % Theorem style name
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% % Body font
+{}% Indent amount
+{\small\bf\sffamily\color{ocre}}% % Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+\renewcommand{\qedsymbol}{$\blacksquare$}% Optional qed square
+\makeatother
+
+
+
+% Define el estilo texto theorem para cada tipo definido anteriormente
+\newcounter{dummy} 
+\numberwithin{dummy}{section}
+\theoremstyle{ocrenumbox}
+\newtheorem{theoremeT}[dummy]{Teorema}  % (Pedro: Theorem)
+\newtheorem{problem}{Problema}[chapter]  % (Pedro: Problem)
+\newtheorem{exerciseT}{Ejercicio}[chapter] % (Pedro: Exercise)
+\theoremstyle{blacknumex}
+\newtheorem{exampleT}{Ejemplo}[chapter] % (Pedro: Example)
+\theoremstyle{blacknumbox}
+\newtheorem{vocabulary}{Vocabulario}[chapter]  % (Pedro: Vocabulary)
+\newtheorem{definitionT}{Definición}[section]  % (Pedro: Definition)
+\newtheorem{corollaryT}[dummy]{Corolario}  % (Pedro: Corollary)
+\theoremstyle{ocrenum}
+\newtheorem{proposition}[dummy]{Proposición} % (Pedro: Proposition)
+
+
+\usepackage[framemethod=default]{mdframed}
+
+
+
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newtheorem{notation}{Notation}[chapter]
+
+
+\mdfdefinestyle{exampledefault}{%
+rightline=true,innerleftmargin=10,innerrightmargin=10,
+frametitlerule=true,frametitlerulecolor=green,
+frametitlebackgroundcolor=yellow,
+frametitlerulewidth=2pt}
+
+
+% Theorem box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+backgroundcolor=black!5,
+linecolor=ocre,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=10pt,%5pt
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt]{tBox}
+
+% Exercise box	  
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+backgroundcolor=ocre!10,
+linecolor=ocre,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=10pt,%5pt
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt]{eBox}	
+
+% Definition box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+linecolor=ocre,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=10pt,%0pt
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=0pt]{dBox}	
+
+% Corollary box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+linecolor=gray,
+backgroundcolor=black!5,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=10pt,%5pt
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=5pt]{cBox}
+
+% Crea un entorno para cada tipo de theorem y le asigna un estilo 
+% con ayuda de las cajas coloreadas anteriores
+\newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
+\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  
+\newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
+\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
+\newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
+
+%	ENVIRONMENT remark
+\newenvironment{remark}{\par\vspace{10pt}\small 
+% Espacio blanco vertical sobre la nota y tamaño de fuente menor
+\begin{list}{}{
+\leftmargin=35pt % Indentación sobre la izquierda
+\rightmargin=25pt}\item\ignorespaces % Indentación sobre la derecha
+\makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{N}}; \end{tikzpicture}} % R naranja en un círculo (Pedro)
+\advance\baselineskip -1pt}{\end{list}\vskip5pt} 
+% Espaciado de línea más estrecho y espacio en blanco después del comentario
+
+
+\newenvironment{solutionExe}{\par\vspace{10pt}\small 
+\begin{list}{}{
+\leftmargin=35pt 
+\rightmargin=25pt}\item\ignorespaces 
+\makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{S}}; \end{tikzpicture}} 
+\advance\baselineskip -1pt}{\end{list}\vskip5pt} 
+
+\newenvironment{solutionExa}{\par\vspace{10pt}\small 
+\begin{list}{}{
+\leftmargin=35pt 
+\rightmargin=25pt}\item\ignorespaces 
+\makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+\node[draw=ocre!60,line width=1pt,circle,fill=ocre!55,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{S}}; \end{tikzpicture}} 
+\advance\baselineskip -1pt}{\end{list}\vskip5pt} 
+
+\usepackage{tcolorbox}
+\usepackage{multirow}
+
+\usetikzlibrary{trees}
+
+\theoremstyle{ocrenum}
+\newtheorem{solutionT}[dummy]{Solución}  % (Pedro: Corollary)
+\newenvironment{solution}{\begin{cBox}\begin{solutionT}}{\end{solutionT}\end{cBox}}	
+
+
+\newcommand{\tcolorboxsolucion}[2]{%
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=#1] 
+ #2
+ %\tcblower  % pone una línea discontinua
+\end{tcolorbox}
+}% final definición comando
+
+\newtcbox{\mybox}[1][green]{on line,
+arc=0pt,outer arc=0pt,colback=#1!10!white,colframe=#1!50!black, boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt, boxrule=0pt,bottomrule=1pt,toprule=1pt}
+
+
+
+\mdfdefinestyle{exampledefault}{%
+rightline=true,innerleftmargin=10,innerrightmargin=10,
+frametitlerule=true,frametitlerulecolor=green,
+frametitlebackgroundcolor=yellow,
+frametitlerulewidth=2pt}
+
+
+
+
+
+\newcommand{\betheorem}{\begin{theorem}}
+\newcommand{\eetheorem}{\end{theorem}}
+\newcommand{\bedefinition}{\begin{definition}}
+\newcommand{\eedefinition}{\end{definition}}
+
+\newcommand{\beremark}{\begin{remark}}
+\newcommand{\eeremark}{\end{remark}}
+\newcommand{\beexercise}{\begin{exercise}}
+\newcommand{\eeexercise}{\end{exercise}}
+\newcommand{\beexample}{\begin{example}}
+\newcommand{\eeexample}{\end{example}}
+\newcommand{\becorollary}{\begin{corollary}}
+\newcommand{\eecorollary}{\end{corollary}}
+
+
+\newcommand{\besolutionExe}{\begin{solutionExe}}
+\newcommand{\eesolutionExe}{\end{solutionExe}}
+\newcommand{\besolutionExa}{\begin{solutionExa}}
+\newcommand{\eesolutionExa}{\end{solutionExa}}
+
+
+%%%%%%%%
+
+
+% Caja Salida Markdown
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+backgroundcolor=GreenYellow!10,
+linecolor=GreenYellow!80,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=10pt,%5pt
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt]{mBox}	
+
+%% RMarkdown
+\newenvironment{markdownsal}{\begin{mBox}}{\end{mBox}}	
+
+\newcommand{\bmarkdownsal}{\begin{markdownsal}}
+\newcommand{\emarkdownsal}{\end{markdownsal}}
+
+
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{subfig} %new
+%\usepackage{booktabs,dcolumn,rotating,thumbpdf,longtable}
+\usepackage{dcolumn,rotating}  %new
+\usepackage[graphicx]{realboxes} %new de: https://stackoverflow.com/questions/51633434/prevent-pagebreak-in-kableextra-landscape-table
+
+%define el interlineado vertical
+%\renewcommand{\baselinestretch}{1.5}
+
+%define etiqueta para las Tablas o Cuadros
+%\renewcommand\spanishtablename{Tabla}
+
+%%\bibliographystyle{plain} %new no necesario
+
+
+%%%%%%%%%%%% PARA USO CON biblatex
+% \DefineBibliographyStrings{english}{%
+%   backrefpage = {ver pag.\adddot},%
+%   backrefpages = {ver pags.\adddot}%
+% }
+
+% \DefineBibliographyStrings{spanish}{%
+%   backrefpage = {ver pag.\adddot},%
+%   backrefpages = {ver pags.\adddot}%
+% }
+% 
+% \DeclareFieldFormat{pagerefformat}{\mkbibparens{{\color{red}\mkbibemph{#1}}}}
+% \renewbibmacro*{pageref}{%
+%   \iflistundef{pageref}
+%     {}
+%     {\printtext[pagerefformat]{%
+%        \ifnumgreater{\value{pageref}}{1}
+%          {\bibstring{backrefpages}\ppspace}
+%          {\bibstring{backrefpage}\ppspace}%
+%        \printlist[pageref][-\value{listtotal}]{pageref}}}}
+% 
+%%% de kableExtra
+\usepackage{booktabs}
+\usepackage{longtable}
+%\usepackage{array}
+%\usepackage{multirow}
+%\usepackage{wrapfig}
+%\usepackage{float}
+%\usepackage{colortbl}
+%\usepackage{pdflscape}
+%\usepackage{tabu}
+%\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+%\usepackage{xcolor}
+
+%%%%%%% fin: latex_preambulo.tex PLLC
+
+
+\begin{document}
+
+\bibliographystyle{flexbib}
+
+
+
+\raggedbottom
+
+\ifdefined\ifprincipal
+\else
+\setlength{\parindent}{1em}
+\pagestyle{fancy}
+\setcounter{tocdepth}{4}
+\tableofcontents
+
+\fi
+
+\ifdefined\ifdoblecara
+\fancyhead{}{}
+\fancyhead[LE,RO]{\scriptsize\rightmark}
+\fancyfoot[LO,RE]{\scriptsize\slshape \leftmark}
+\fancyfoot[C]{}
+\fancyfoot[LE,RO]{\footnotesize\thepage}
+\else
+\fancyhead{}{}
+\fancyhead[RO]{\scriptsize\rightmark}
+\fancyfoot[LO]{\scriptsize\slshape \leftmark}
+\fancyfoot[C]{}
+\fancyfoot[RO]{\footnotesize\thepage}
+\fi
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\chapter{Concepto de solución}\label{concepto-de-soluciuxf3n}
+
+En la teoría de juegos, un \textbf{concepto de solución} es una regla
+formal para predecir cómo se jugará un juego. Estas predicciones se
+denominan ``soluciones'', y describen las estrategias que adoptarán los
+jugadores y, por tanto, el resultado que puede esperarse del juego.
+
+En general, los conceptos de solución tratan de identificar perfiles de
+estrategias que puedan considerarse racionales o estables, teniendo en
+cuenta que cada jugador toma sus decisiones considerando las posibles
+acciones de los demás participantes.
+
+Los conceptos de solución más comúnmente utilizados son conceptos de
+equilibrio, el más famoso de ellos es el equilibrio de Nash.
+
+En muchos juegos, un mismo concepto de solución puede dar lugar a varias
+soluciones posibles. Por este motivo, la teoría de juegos introduce en
+ocasiones refinamientos de equilibrio, cuyo objetivo es reducir el
+conjunto de soluciones y seleccionar aquellas que resultan más
+razonables.
+
+A continuación, se presentan algunos conceptos de solución:
+
+\section{Estrategias dominadas y
+dominantes}\label{estrategias-dominadas-y-dominantes}
+
+Una estrategia de un jugador se dice dominante si es tan buena o más que
+cualquier otra como respuesta a cualquier combinación de estrategias que
+elijan los demás jugadores, y una estrategia dada \(s_i\) de un jugador
+se dice que está dominada por otra estrategia \(s'_i\) del mismo jugador
+si la segunda le conviene más que la primera, independientemente de lo
+que hagan los otros jugadores. El argumento básico de dominación
+consiste en que un jugador racional no debería jugar estrategias
+dominadas y en que, en caso de saber que otros jugadores son racionales,
+debería suponer que éstos no van a jugar tal clase de estrategias.
+
+\textbf{Definición 3.1.} En el juego
+\(G = \{S_1, \ldots, S_n; u_1,\ldots,u_n\}\), sean \(s'_i\) y \(s''_i\)
+dos estrategias del jugador \emph{i}.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Decimos que \(s'_i\) está \textbf{dominada}, o también
+  \textbf{débilmente dominada}, por \(s''_i\) cuando la desigualdad
+  \[u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)\le u_i(s_1,\ldots,s_{i-1},s''_i,s_{i+1},\ldots,s_n)\]
+\end{enumerate}
+
+se cumple para toda combinación de estrategias \(s_{-i}\) de los otros
+jugadores, y para alguna de esas combinaciones se cumple de modo
+estricto. Decimos de manera equivalente que \(s''_i\) \textbf{domina} a
+\(s'_i\). (Es decir, siempre le conviene usar \(s''_i\) al menos tanto
+como usar \(s'_i\), hagan lo que hagan los otros jugadores, y a veces le
+conviene más)
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\item
+  Decimos que \(s'_i\) está \textbf{estrictamente dominada} por
+  \(s''_i\) cuando la desigualdad
+  \[u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)<u_i(s_1,\ldots,s_{i-1},s''_i,s_{i+1},\ldots,s_n)\]
+  se cumple para toda combinación de estrategias \(s_{-i}\) de los otros
+  jugadores. (Es decir, le conviene más usar \(s''_i\) que \(s'_i\),
+  hagan lo que hagan los otros jugadores)
+\item
+  Decimos que \(s'_i\) es \textbf{no dominada} si no existe ninguna otra
+  estrategia del jugador \emph{i} que la domine, y decimos que \(s'_i\)
+  es \textbf{no dominada estrictamente} si no existe ninguna otra
+  estrategia del jugador i que la domine estrictamente.
+\end{enumerate}
+
+Por otra parte, el concepto de estrategia dominante que se define a
+continuación, se aplica a una estrategia de un jugador cuando ésta es
+tan buena o más que cualquier otra como respuesta a cualquier
+combinación de estrategias qie elijan los demás jugadores.
+
+\textbf{Definición 3.2.} En el juegos
+\(G = \{S_1,\ldots,S_n;u_1,\ldots,u_n\}\), sea \(s'_i\) una estrategia
+del jugador \emph{i}.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Decimos qie \(s'_i\) es \textbf{dominante} cuando la desigualdad
+  \[u_i(s_1,\ldots,s_{i-1},s_i,s_{i+1},\ldots,s_n)\le u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)\]
+  se cumple para toda estrategia \(s_i\) de dicho jugador y para toda
+  combinación de estrategias \(s_{-i}\) de los otros jugadores. (Es
+  decir, siempre le conviene usar la estrategia \(s'_i\) al menos tanto
+  como cualquier otra, hagan lo que hagan los otros jugadores)
+\item
+  Si todas las desigualdades se cumplen de manera estricta (para
+  \(s_i \neq s'_i\)), decimos que \(s'_i\) es \textbf{estrictamente
+  dominante}.
+\end{enumerate}
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo 3.1} \\
+
+Consideremos el siguiente juego de dos jugadores (Dilema del Prisionero)
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+ & \multicolumn{2}{c}{\textbf{Preso 2}} \\ 
+\textbf{Preso 1} & Callar & Confesar \\ \hline
+Callar & (4,4) & (0,5) \\
+Confesar & (5,0) & (1,1)
+\end{tabular}
+\caption{Pagos del Dilema del Prisionero}
+\label{tab:dilema_prisionero}
+\end{table}
+
+\textbf{Análisis:}  
+
+Para el jugador 1:
+
+\[
+u_1(\text{Callar, Callar}) = 4 < 5 = u_1(\text{Confesar, Callar})
+\]
+
+\[
+u_1(\text{Callar, Confesar}) = 0 < 1 = u_1(\text{Confesar, Confesar})
+\]
+
+De manera análoga, para el jugador 2:
+
+\[
+u_2(\text{Callar, Callar}) = 4 < 5 = u_2(\text{Callar, Confesar})
+\]
+
+\[
+u_2(\text{Confesar, Callar}) = 0 < 1 = u_2(\text{Confesar, Confesar})
+\]
+
+\textbf{Conclusión:}  
+
+Para ambos jugadores, la estrategia \textbf{Callar} está \textbf{estrictamente dominada} por la estrategia \textbf{Confesar}.  
+Por lo tanto, si los jugadores son racionales, ambos elegirán \textbf{Confesar} y el equilibrio estrictamente dominante es \((\text{Confesar}, \text{Confesar})\).
+\end{tcolorbox}
+
+\subsection{Uso de Estrategias Dominantes
+(UED)}\label{uso-de-estrategias-dominantes-ued}
+
+Según este concepto de solución, pertenecen a la solución del juego
+todos aquellos perfiles de estrategias en los cuales cada jugador usa
+una estrategia dominante.
+
+Naturalmente, en caso de ser aplicable, este concepto de solución es
+obvio, pues cualquier jugador racional jugará una estrategia dominante
+si dispone de ella, independientemente de cualquier otra consideración
+(y si tiene varias, jugará una de ellas). En particular lo hará
+independientemente de lo que sepa o suponga acerca de cómo van a jugar
+los otros jugadores, y de qué sepa acerca de las características de
+dichos jugadores. De hecho, incluso cabe la posibilidad de que los
+jugadores tengan un conocimiento muy limitado de aquellos aspectos del
+juego que afectan a los demás jugadores (por ejemplo, podrían no conocer
+los pagos de los otros), y aun así tender a jugar su estrategia
+dominante.
+
+Por desgracia, este concepto de solución no siempre es aplicable. Los
+juegos en los que cada jugador tiene alguna estrategia dominante son más
+bien la excepción que la regla.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo 3.2} \\
+
+En el dilema del prisionero, este concepto sí es aplicable, pues en este caso cada jugador tiene una estrategia estrictamente dominante, que es confesar.
+
+Mientras en el siguiente ejemplo  
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|ccc}
+ & \multicolumn{3}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & I & C & D \\ \hline
+A & (3,y) & (4,2) & (1,x) \\
+M & (2,4) & (3,5) & (4,0) \\
+B & (1,0) & (2,1) & (0,3)
+\end{tabular}
+\caption{Juego con estrategias estrictamente dominadas pero sin estrategias dominantes}
+\label{tab:contraejemplo_UED}
+\end{table}
+
+\textbf{Conclusión:}  
+En este juego, con x = y = 1, la estrategia B del jugador 1 (J1) está estrictamente dominada por las estrategias A y M. Pero ni A ni M son estrategias dominantes. Por otra parte, para el jugador 2 (J2) la estrategia I está estrictamente dominada por la estrategia C, pero ni C ni D son dominantes. Así pues, aunque el concepto de solución anterior no es aplicable, el argumento básico de dominación (ningún jugador racional debería jugar estrategias dominadas) nos permite concluir inmediatamente que ni J1 jugará B ni J2 jugará I, pero sólo nos permite esa conclusión
+\end{tcolorbox}
+
+\subsection{Eliminación Iterativa Estricta
+(EIE)}\label{eliminaciuxf3n-iterativa-estricta-eie}
+
+\textbf{Definición 3.3.} Dado un juego finito o infinito
+\(G = \{S_1, \ldots, S_n; u_1, \ldots, u_n\}\), llamamos
+\textbf{Eliminación Iterativa Estricta (EIE)}, o bien
+\textbf{Eliminación Iterativa de Estrategias Estrictamente Dominadas},
+al siguiente proceso de eliminación:
+
+\textbf{1º Paso.} De cada uno de los jugadores, y a la vez, se eliminan
+todas las estrategias que estén estrictamente dominadas en el juego
+inicial G. Se construye el juego reducido \(G_1\) que resulta de tal
+eliminación.
+
+\textbf{2º Paso.} De cada uno de los jugadores, y a la vez, se eliminan
+todas las estrategias que estén estrictamente dominadas en el juego
+reducido \(G_1\). Se construye el juego reducido \(G_2\) que resulta de
+tal eliminación.
+
+Y así sucesivamente. Se acaba el proceso cuando ya no quedan, para
+ningún jugador, estrategias que eliminar. Denotamos \(S^S_i\) al
+conjunto de las estrategias supervivientes del jugador i, y las llamamos
+estrategias iterativamente no dominadas.
+
+De acuerdo con este concepto de solución, son soluciones todos los
+perfiles estratégicos constituidos por estrategias que sobreviven al
+proceso de eliminación iterativa estricta. LLamaremos
+\(\mathbf{S^{EIE}}\) al conjunto de dichos perfiles estratégicos
+solución.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo 3.3} \\
+
+Dado el juego
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+ & \multicolumn{2}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & Izquierda & Derecha\\ \hline
+Alta & (4,2) & (0,1) \\
+Media & (1,2) & (2,4) \\
+Baja & (3,3) & (4,2)
+\end{tabular}
+\caption{Juego G (EIE)}
+\label{tab:EIE}
+\end{table}
+
+Puesto que la racionalidad de ambos jugadores es una información de dominio público, ambos jugadores son racionales y cada uno sabe que el otro lo es y además sabe que el otro lo sabe. En consecuencia, puede razonarse así:
+
+El jugador 1 (J1), que es racional, elimina la estrategia \textbf{Media} porque está estrictamente dominada por \textbf{Baja} (pagos 1 frente a 3 y 2 frente a 4). El jugador 2 (J2) sabe que J1 es racional y por tanto sabe que J1 ha eliminado \textbf{Media}. Al comparar \textbf{Izquierda} con \textbf{Derecha} en ausencia de Media de J1, el jugador J2, que también es racional, deduce que \textbf{Izquierda} domina estrictamente a \textbf{Derecha} (pagos 2 frente a 1 y 3 frente a 2), por lo que elimina \textbf{Derecha}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c}
+ & \multicolumn{1}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & Izquierda\\ \hline
+Alta & (4,2)\\
+Baja & (3,3)
+\end{tabular}
+\caption{Juego $G_1$ (EIE)}
+\label{tab:EIE}
+\end{table}
+
+El jugador J1 sabe que J2 es racional y que además J2 sabe que J1 es racional, y por tanto sabe que J2 ha eliminado \textbf{Derecha} como consecuencia de la eliminación por J1 de \textbf{Media}. Al comparar \textbf{Alta} con \textbf{Baja} en ausencia de \textbf{Derecha}, J1 deduce que \textbf{Alta} domina estrictamente a \textbf{Baja} (pago 4 frente a 3) por lo que elimina \textbf{Baja}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c}
+ & \multicolumn{1}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & Izquierda\\ \hline
+Alta & (4,2)\\
+\end{tabular}
+\caption{Juego $G_2$ perfil superviviente único (EIE)}
+\label{tab:EIE}
+\end{table}
+
+En conclusión, las únicas estrategias supervivientes al proceso EIE son \textbf{Alta} de J1 e \textbf{Izquierda} de J2. Ambas constituyen el único perfil solución del juego, es decir, $\mathbf{S^{EIE}}$ = \{(Alta, Izquierda)\}
+\end{tcolorbox}
+
+\subsection{Eliminación Iterativa Débil
+(EID)}\label{eliminaciuxf3n-iterativa-duxe9bil-eid}
+
+\textbf{Definición 3.4.} Dado un juego finito o infinito
+\(G = \{S_1,\ldots,S_n;u_1,\ldots,u_n\}\), llamamos \textbf{Eliminación
+Iterativa Débil (EID)}, o bien \textbf{Eliminación Iterativa de
+Estrategias Débilmente Dominadas}, al proceso de eliminación siguiente:
+
+\textbf{1º Paso.} De cada uno de los jugadores, y a la vez, se elimina
+todas las estrategias que estén débilmente dominadas en el juego inicial
+G. Se construye el juego reducido \(G_1\) que resulta de tal
+eliminación.
+
+\textbf{2º Paso.} De cada uno de los jugadores, y a la vez, se eliminan
+todas las estrategias que estén débilmente dominadas en el juego
+reducido \(G_1\). Se construye el juego reducido \(G_2\) que resulta de
+tal eliminación.
+
+Y así sucesivamente. Se acaba el proceso cuando ya no quedan, para
+ningún jugador i, estrategias que eliminar. Denotamos \(S^S_i\) al
+conjunto de las estrategias supervivientes del jugador i, y las llamamos
+estrategias iterativamente no dominadas.
+
+Desgraciadamente, y al contrario de lo que ocurre para los algoritmos de
+eliminación estricta, ahora el resultado final del proceso de
+eliminación sí depende del algoritmo utilizado, es decir, del orden y
+modo en que se han ido seleccionando las estrategias a eliminar.
+
+Este concepto de solución determina como solución \(\mathbf{S^{EID}}\).
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo 3.4} \\
+
+Dado el juego
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|ccc}
+ & \multicolumn{3}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & I & C & D\\ \hline
+A & (3,1) & (4,2) & (1,2)\\
+M & (2,4) & (3,5) & (4,0) \\
+B & (1,0) & (2,1) & (0,3)
+\end{tabular}
+\caption{Juego G (EID)}
+\label{tab:EID}
+\end{table}
+
+Puesto que la racionalidad de ambos jugadores es información de dominio público, ambos jugadores son racionales y cada uno sabe que el otro lo es y además sabe que el otro lo sabe. En consecuencia, puede razonarse del siguiente modo:
+
+El jugador 1 (J1), que es racional, compara sus estrategias \textbf{A}, \textbf{M} y \textbf{B}. Al comparar \textbf{A} con \textbf{B}, observa que \textbf{A} proporciona siempre un pago mayor que \textbf{B} independientemente de la estrategia elegida por el jugador 2 (pagos 3 frente a 1 si J2 juega \textbf{I}, 4 frente a 2 si J2 juega \textbf{C}, y 1 frente a 0 si J2 juega \textbf{D}). Por tanto, la estrategia \textbf{B} está estrictamente dominada por \textbf{A} y J1 elimina \textbf{B}.
+
+El jugador 2 (J2) sabe que J1 es racional y por tanto sabe que J1 ha eliminado la estrategia \textbf{B}. En consecuencia, J2 compara ahora sus estrategias considerando únicamente las estrategias \textbf{A} y \textbf{M} de J1. Al comparar \textbf{I} con \textbf{C}, observa que \textbf{C} proporciona siempre un pago mayor que \textbf{I} (pagos 2 frente a 1 si J1 juega \textbf{A}, y 5 frente a 4 si J1 juega \textbf{M}). Por tanto, \textbf{C} domina estrictamente a \textbf{I} y J2 elimina la estrategia \textbf{I}.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10]
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+ & \multicolumn{2}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & C & D\\ \hline
+A & (4,2) & (1,2)\\
+M & (3,5) & (4,0)
+\end{tabular}
+\caption{Juego $G_1$ (EID)}
+\label{tab:EID}
+\end{table}
+
+El jugador J1 sabe que J2 es racional y que además J2 sabe que J1 es racional, por lo que sabe que J2 ha eliminado \textbf{I}. Considerando el juego reducido, vemos que para J1 ninguna estrategia domina a otra, es decir, no hay dominancia débil, mientras que J2 compara ahora las estrategias \textbf{C} y \textbf{D}. Observa que \textbf{C} proporciona un pago al menos igual que \textbf{D} cuando J1 juega \textbf{A} (pagos 2 frente a 2) y un pago mayor cuando J1 juega \textbf{M} (pagos 5 frente a 0). Por tanto, \textbf{D} está débilmente dominada por \textbf{C}, y J2 elimina la estrategia \textbf{D}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c}
+ & \multicolumn{1}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & C\\ \hline
+A & (4,2)\\
+M & (3,5)
+\end{tabular}
+\caption{Juego $G_2$ (EID)}
+\label{tab:EID}
+\end{table}
+
+Finalmente, el jugador J1 compara sus estrategias \textbf{A} y \textbf{M}. Observa que \textbf{A} proporciona un pago mayor que \textbf{M} (4 frente a 3), por lo que \textbf{M} está dominada por \textbf{A}. En consecuencia, J1 elimina la estrategia \textbf{M}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c}
+ & \multicolumn{1}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & C\\ \hline
+A & (4,2)
+\end{tabular}
+\caption{Juego $G_3$ perfil superviviente único (EID)}
+\label{tab:EID}
+\end{table}
+
+En conclusión, las únicas estrategias supervivientes al proceso de eliminación iterativa de estrategias débilmente dominadas son \textbf{A} para el jugador 1 y \textbf{C} para el jugador 2. Ambas constituyen el único perfil solución del juego, es decir, $\mathbf{S^{EID}}$ = \{(A,C)\}.
+\end{tcolorbox}
+
+Cabe mencionar que todos estos métods son evidentemente aplicables a
+juegos expresados en su forma extensiva:
+
+\begin{center}
+\begin{tikzpicture}[
+scale=1.2,
+level distance=2.8cm,
+level 1/.style={sibling distance=7cm},
+level 2/.style={sibling distance=2.8cm}
+]
+
+\node[circle,draw]{J1}
+child {node[circle,draw]{J2}
+    child {node[rectangle,draw]{(3,1)} edge from parent node[left]{I}}
+    child {node[rectangle,draw]{(4,2)} edge from parent node[above]{C}}
+    child {node[rectangle,draw]{(1,2)} edge from parent node[right]{D}}
+    edge from parent node[above left]{A}
+}
+child {node[circle,draw]{J2}
+    child {node[rectangle,draw]{(2,4)} edge from parent node[left]{I}}
+    child {node[rectangle,draw]{(3,5)} edge from parent node[above]{C}}
+    child {node[rectangle,draw]{(4,0)} edge from parent node[right]{D}}
+    edge from parent node[above]{M}
+}
+child {node[circle,draw]{J2}
+    child {node[rectangle,draw]{(1,0)} edge from parent node[left]{I}}
+    child {node[rectangle,draw]{(2,1)} edge from parent node[above]{C}}
+    child {node[rectangle,draw]{(0,3)} edge from parent node[right]{D}}
+    edge from parent node[above right]{B}
+};
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Juegos resolubles por
+dominación}\label{juegos-resolubles-por-dominaciuxf3n}
+
+\section{Equilibrio de Nash}\label{equilibrio-de-nash}
+
+\subsection{Equilibrio de Nash en estrategias
+puras}\label{equilibrio-de-nash-en-estrategias-puras}
+
+\subsection{Equilibrio de Nash en estrategias
+mixtas}\label{equilibrio-de-nash-en-estrategias-mixtas}
+
+\section{Optimalidad de Pareto}\label{optimalidad-de-pareto}
+
+\section{Equilibrio perfecto en
+subjuegos}\label{equilibrio-perfecto-en-subjuegos}
+
+\bibliography{bib/library.bib,bib/paquetes.bib}
+
+
+%
+
+
+\end{document}

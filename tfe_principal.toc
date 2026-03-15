@@ -21,12 +21,15 @@
 \contentsline {section}{\numberline {3.1}Estrategias dominadas y dominantes}{11}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Uso de Estrategias Dominantes (UED)}{13}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Eliminación Iterativa Estricta (EIE)}{14}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Eliminación Iterativa Débil (EID)}{14}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Juegos resolubles por dominación}{14}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Equilibrio de Nash}{14}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Implementación en R}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducción a R como herramienta de análisis}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Represenacion de juegos en R}{15}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Paquetes de R}{15}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Aplicaciones prácticas}{17}{chapter.5}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{19}{chapter*.11}%
+\contentsline {subsection}{\numberline {3.1.3}Eliminación Iterativa Débil (EID)}{16}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Equilibrio de Nash}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Equilibrio de Nash en estrategias puras}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Equilibrio de Nash en estrategias mixtas}{19}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Optimalidad de Pareto}{19}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Equilibrio perfecto en subjuegos}{19}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Implementación en R}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducción a R como herramienta de análisis}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Represenacion de juegos en R}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Paquetes de R}{21}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Aplicaciones prácticas}{23}{chapter.5}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{25}{chapter*.21}%
