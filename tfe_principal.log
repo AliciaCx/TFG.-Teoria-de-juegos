@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.15)  15 MAR 2026 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.18)  18 MAR 2026 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,6 +970,12 @@ LaTeX Warning: Label `tab:EID' multiply defined.
 
 LaTeX Warning: Label `tab:EID' multiply defined.
 
+
+LaTeX Warning: Label `tab:dilema_prisionero' multiply defined.
+
+
+LaTeX Warning: Label `tab:dilema_prisionero' multiply defined.
+
 )
 \openout1 = `tfe_principal.aux'.
 
@@ -1171,7 +1177,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
 
  []
 
-<arbol_juego.png, id=316, 432.61626pt x 243.91125pt>
+<arbol_juego.png, id=320, 432.61626pt x 243.91125pt>
 File: arbol_juego.png Graphic file (type png)
 <use arbol_juego.png>
 Package pdftex.def Info: arbol_juego.png  used on input line 1209.
@@ -1181,7 +1187,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
 
  []
 
-<arbol_juego2.png, id=318, 241.90375pt x 160.6pt>
+<arbol_juego2.png, id=322, 241.90375pt x 160.6pt>
 File: arbol_juego2.png Graphic file (type png)
 <use arbol_juego2.png>
 Package pdftex.def Info: arbol_juego2.png  used on input line 1227.
@@ -1259,19 +1265,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 1779--1780
 
  []
 
-LaTeX Info: Redefining \. on input line 1845.
-LaTeX Info: Redefining \% on input line 1845.
-LaTeX Info: Redefining \. on input line 1845.
-LaTeX Info: Redefining \% on input line 1845.
-[19] [20
+LaTeX Info: Redefining \. on input line 1834.
+LaTeX Info: Redefining \% on input line 1834.
+LaTeX Info: Redefining \. on input line 1834.
+LaTeX Info: Redefining \% on input line 1834.
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 1866--1868
 
-]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1869--1870
+
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 1872.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1876--1877
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1878--1880
+
+ []
+
+LaTeX Info: Redefining \. on input line 1917.
+LaTeX Info: Redefining \% on input line 1917.
+LaTeX Info: Redefining \. on input line 1917.
+LaTeX Info: Redefining \% on input line 1917.
+[20]
+LaTeX Info: Redefining \. on input line 1954.
+LaTeX Info: Redefining \% on input line 1954.
+LaTeX Info: Redefining \. on input line 1954.
+LaTeX Info: Redefining \% on input line 1954.
+[21]
+LaTeX Info: Redefining \. on input line 1954.
+LaTeX Info: Redefining \% on input line 1954.
+LaTeX Info: Redefining \. on input line 1954.
+LaTeX Info: Redefining \% on input line 1954.
+[22]
 Cap\'{\i }tulo 4.
-[21] [22
+[23
+
+] [24
 
 ]
 Cap\'{\i }tulo 5.
-[23] [24
+[25] [26
 
 ] (./tfe_principal.bbl
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotleft (encoding OT1) on input line 3.
@@ -1286,7 +1328,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 []$\T1/lmr/m/n/12 https : / / economia . uc3m . es / docencia / ME-[]MEIM-[]Game-[]Theory / classnotes /
  []
 
-) [25
+) [27
 
 ] (./tfe_principal.aux
 LaTeX Info: Redefining \. on input line 9.
@@ -1300,21 +1342,21 @@ L3 programming layer <2026-01-19>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
-(rerunfilecheck)             Checksum: 21A0A4AB2F6C292A21ADA25A40A9A4AA;6676.
+(rerunfilecheck)             Checksum: 301F15A5EEC2D7F1FCF8731097C888E1;6676.
  ) 
 Here is how much of TeX's memory you used:
- 31600 strings out of 469497
- 601051 string characters out of 5468082
+ 31625 strings out of 469497
+ 601381 string characters out of 5468082
  1109193 words of memory out of 5000000
- 59539 multiletter control sequences out of 15000+600000
- 702526 words of font info for 79 fonts, out of 8000000 for 9000
+ 59553 multiletter control sequences out of 15000+600000
+ 728265 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,13n,94p,1597b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfe_principal.pdf (35 pages, 386173 bytes).
+</Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on tfe_principal.pdf (37 pages, 451277 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 447 compressed objects within 5 object streams
- 114 named destinations out of 1000 (max. 500000)
+ 565 PDF objects out of 1000 (max. 8388607)
+ 474 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
  308 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -420,10 +420,89 @@ B & (2,3) & (1,4) & (8,3)
 En los dos casos, podemos decir que el juego es resoluble por dominación, aunque en el primero de ellos hay múltiples perfiles solución (todos ellos equilibrios sofisticados).
 \end{tcolorbox}
 
-
-
 ## Equilibrio de Nash
+Un punto es llamado de **equilibrio de Nash** si ningún jugador aumenta su función de pago cuando cambia su estrategia elegida, supuesto que los demás jugadores no varían sus estrategias de equilibrio.
+
+Un equilibrio de Nash de un juego estratégico $\langle N, (A_i), (\succeq_i) \rangle$ es un perfil $a^* \in A$ de acciones con la propiedad de que para todo jugador $i \in N$ se cumple que:
+\[(a^*_{-i}, a^*_i) \succeq_i (a^*_{-i}, a_i) \quad \text{para todo } a_i \in A_i.\]
+
+Así, para que $a^*$ sea un equilibrio de Nash, debe ocurrir que ningún jugador 
+$i$ tenga una acción que produzca un resultado que prefiera al generado cuando 
+elige $a^*_i$, dado que todos los demás jugadores $j$ eligen su acción de equilibrio $a^*_j$. En pocas palabras, ningún jugador puede desviarse de forma rentable, dadas las acciones de los demás.
+
+Para determinar los puntos de equilibrio de Nash es importante conocer el siguiente concepto:
+  
+Una estrategia es dominante si independientemente de las estrategias elegidas por los demás jugadores es la mejor respuesta del jugador i-ésimo. Dicho de otra manera, si somos capaces de obtener una estrategia dominante para cada jugador, la combinación de las mismas representa un punto de equilibrio de Nash.
+
+Por otra parte, las estrategias dominadas nunca pueden estar en los puntos de equilibrio, luego se pueden eliminar del juego.
+
 ### Equilibrio de Nash en estrategias puras
+**Definición 3.6.** En el juego $G = \{S_1, \ldots, S_n; u_1, \ldots, u_n\}$, decimos que el perfil de estrategias puras $(s^*_1, s^*_2, \ldots,s^*_i, \ldots, s^*_n)$ es un **equilibrio de Nash (EN)** si para cada jugador i,
+$$u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \geq u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \,\, \mbox{para todo} \,\, s_i \,\, \mbox{de} \,\, S_i $$
+
+Es decir, ara cada jugador i, $s^*_i$ es una solución del problema
+$$\mbox{max} \, u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \,\, \mbox{donde} \,\, s_i \,\, \mbox{es la variable de decisión y pertenece a} \,\, S_i$$
+
+O dicho de otro modo, para cada juagador i, $s^*_i$ es una respuesta óptima a $s^*_{-i}$.
+
+De esta definición se deduce que un Equilibrio de Nash (EN) es un perfil de estrategias del que ningún jugador desearía desviarse unilateralmente, es decir, ninguno se arrepiente de la decisión tomada, dadas las estrategias decididas por el resto de los jugadores. Un EN está formado por estrategias que son óptimas para cada jugador dadas las estrategias del resto de jugadores.
+
+Esto no significa que en un EN cada jugador esté alcanzando el mejor resultado posible, sino el mejor resultado condicionado por el hecho de que los demás jugadores jueguen las estrategias indicadas para ellos en dicho perfil.
+
+Puede haber múltiples equilibrios de Nash en un juego y, llamaremos $\mathbf{S^{EN}}$ al conjunto de perfiles que son equilibrios de Nash.
+
+\begin{tcolorbox}[colback=blue!10, fontupper=\small]
+\textbf{Ejemplo 3.6} \\
+Para el dilema del prisionero (Tabla 3.1), y siguiendo la definición, vamos a intentar encontrar el equilibrio de Nash. Ello nos obliga a enumerar todos los perfiles de estrategias posibles y ver si fijada una estrategia del perfil para un jugador, la otra estrategia maximiza los pagos del otro jugador. \\
+
+El dilema del prisionero presenta cuatro perfiles como posibles soluciones EN del juego: (Callar, Callar), (Callar, Confesar), (Confesar, Callar) y (Confesar, Confesar). \\
+
+Comencemos analizando el perfil (Callar, Callar) y supongamos que es un EN. Si
+J1 prevé que J2 jugará Callar, ¿le interesará a J1 seguir pensando en jugar Callar? La respuesta es no. Dada la estrategia Callar de J2, el jugador J1 preferirá desviarse de la estrategia indicada para él en el perfil propuesto como solución puesto que con la estrategia Confesar obtiene un pago superior $u_1(Confesar,Callar) = 5 > 4 = u_1(Callar, Callar)$. Este argumento también es aplicable al jugador J2 (por la simetría del juego). 
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10, fontupper=\small]
+Supongamos que se propone como solución EN el perfil (Confesar, Callar). En este caso, si el jugador J2 supusiera que J1 iba a jugar Confesar, a él le convendría jugar la estrategia Confesar pues con ello maximiza su utilidad en este caso particular $u_2(Confesar, Confesar)=1 > 0 = u_2(Confesar, Callar)$. Por tanto, el perfil (Confesar, Callar) tampoco es un EN. El caso (Callar, Confesar) es análogo al anterior intercambiando la posición de los jugadores.\\
+
+Finalmente, nos queda el caso (Confesar, Confesar). Este sí que es un perfil de
+equilibrio, un equilibrio de Nash, ya que ninguno de los jugadores tiene incentivo para desviarse de un modo unilateral de la estrategia que se propone. Si alguno de los jugadores decidiera seguir la estrategia Callar en solitario, perdería utilidad en relación al perfil (Confesar, Confesar), puesto que $u_1(Callar, Confesar) = 0 < 1 = u_1(Confesar,Confesar)$ y $u_2(Confesar, Callar)= 0 < 1 = u_2(Confesar, Confesar)$.\\ 
+
+En el cuadro siguiente se utilizan flechas para señalar, en cada caso, el sentido de la desviación deseada por cada jugador desde cada perfil de estrategias. El único EN es el perfil (Confesar, Confesar), que es el único perfil desde el cual no sale ninguna flecha.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|ccc}
+& \multicolumn{3}{c}{\textbf{Preso 2}} \\ 
+\textbf{Preso 1} & Callar & &Confesar \\ \hline
+Callar & (4,4)& $\Rightarrow$  & (0,5) \\
+& $\Downarrow$ & & $\Downarrow$ \\
+Confesar & (5,0)& $\Rightarrow$  & (1,1)
+\end{tabular}
+\caption{Dilema del Prisionero (desviaciones deseadas)}
+\label{tab:dilema_prisionero}
+\end{table}
+
+Otra manera más sencilla consistiría en comparar, para cualquier combinación de estrategias de sus contrincantes, los pagos que un jugador obtendría si jugara cada una de sus estrategias, y subrayar el pago (o pagos) máximo alcanzable, que corresponden a la estrategia (o las estrategias) de respuesta óptima a dicha combinación. Un perfil de estrategias es EN si y sólo si el vector de pagos correspondiente tiene todos sus pagos subrayados.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+& \multicolumn{2}{c}{\textbf{Preso 2}} \\ 
+\textbf{Preso 1} & Callar & Confesar \\ \hline
+Callar & (4,4) & (0,$\underline{5}$) \\
+Confesar & ($\underline{5}$,0) & ($\underline{1}$,$\underline{1}$)
+\end{tabular}
+\caption{Dilema del Prisionero (pagos subrayados)}
+\label{tab:dilema_prisionero}
+\end{table}
+
+\begin{itemize}
+\item Si el Preso 2 juega \textit{Callar}, el Preso 1 compara los pagos 4 y 5, siendo 5 el mayor; por tanto, su mejor respuesta es \textit{Confesar}.
+\item Si el Preso 2 juega \textit{Confesar}, el Preso 1 compara los pagos 0 y 1, siendo 1 el mayor; por tanto, su mejor respuesta es \textit{Confesar}.
+\end{itemize}
+
+Procediendo de manera análoga para el Preso 2, se concluye que el único equilibrio de Nash es el perfil $(\textit{Confesar}, \textit{Confesar})$, ya que es el único perfil en cuyo vector de pagos están todos los pagos subrayados. En consecuencia, $\mathbf{S^{EN}} = \{(\textit{Confesar}, \textit{Confesar})\}$.
+\end{tcolorbox}
 ### Equilibrio de Nash en estrategias mixtas
 
 ## Optimalidad de Pareto
