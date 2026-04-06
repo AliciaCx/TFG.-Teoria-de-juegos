@@ -34,31 +34,33 @@ En muchos juegos, un mismo concepto de solución puede dar lugar a varias soluci
 A continuación, se presentan algunos conceptos de solución:
 
 ## Estrategias dominadas y dominantes
+Una estrategia de un jugador se dice **dominante** si es tan buena o mejor que cualquier otra como respuesta a cualquier combinación de estrategias que elijan los demás jugadores. Por otro lado, una estrategia $s_i$ de un jugador se dice que está **dominada** por otra estrategia $s'_i$ del mismo jugador si la segunda le proporciona un resultado al menos tan bueno, y en algún caso mejor, independientemente de lo que hagan los otros jugadores. 
 
-Una estrategia de un jugador se dice dominante si es tan buena o más que cualquier otra como respuesta a cualquier combinación de estrategias que elijan los demás jugadores, y una estrategia dada $s_i$ de un jugador se dice que está dominada por otra estrategia $s'_i$ del mismo jugador si la segunda le conviene más que la primera, independientemente de lo que hagan los otros jugadores. El argumento básico de dominación consiste en que un jugador racional no debería jugar estrategias dominadas y en que, en caso de saber que otros jugadores son racionales, debería suponer que éstos no van a jugar tal clase de estrategias.
+El argumento básico de dominación consiste en que un jugador racional no debería jugar estrategias dominadas y que, si sabe que otros jugadores son racionales, puede suponer que éstos tampoco jugarán este tipo de estrategias.
+
 
 **Definición 3.1.** En el juego $G = \{S_1, \ldots, S_n; u_1,\ldots,u_n\}$, sean $s'_i$ y $s''_i$ dos estrategias del jugador *i*.
 
   a)  Decimos que $s'_i$ está **dominada**, o también **débilmente dominada**, por $s''_i$ cuando la desigualdad
   $$u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)\le u_i(s_1,\ldots,s_{i-1},s''_i,s_{i+1},\ldots,s_n)$$
   
-  se cumple para toda combinación de estrategias $s_{-i}$ de los otros jugadores, y para alguna de esas combinaciones se cumple de modo estricto. Decimos de manera equivalente que $s''_i$ **domina** a $s'_i$. (Es decir, siempre le conviene usar $s''_i$ al menos tanto como usar $s'_i$, hagan lo que hagan los otros jugadores, y a veces le conviene más)
+  se cumple para toda combinación de estrategias $s_{-i}$ de los otros jugadores, y para alguna de esas combinaciones se cumple de forma estricta. Decimos de manera equivalente que $s''_i$ **domina** a $s'_i$. (Es decir, siempre le conviene usar $s''_i$ al menos tanto como usar $s'_i$, hagan lo que hagan los otros jugadores, y en algunos casos le conviene más)
   
   b) Decimos que $s'_i$ está **estrictamente dominada** por $s''_i$ cuando la desigualdad
   $$u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)<u_i(s_1,\ldots,s_{i-1},s''_i,s_{i+1},\ldots,s_n)$$
-  se cumple para toda combinación de estrategias $s_{-i}$ de los otros jugadores. (Es decir, le conviene más usar $s''_i$ que $s'_i$, hagan lo que hagan los otros jugadores)
+  se cumple para toda combinación de estrategias $s_{-i}$ de los otros jugadores. (Es decir, siempre le conviene usar más $s''_i$ que $s'_i$, hagan lo que hagan los demás)
   
-  c)  Decimos que $s'_i$ es **no dominada** si no existe ninguna otra estrategia del jugador *i* que la domine, y decimos que $s'_i$ es **no dominada estrictamente** si no existe ninguna otra estrategia del jugador i que la domine estrictamente.
+  c)  Decimos que $s'_i$ es **no dominada** si no existe ninguna otra estrategia del jugador *i* que la domine, y que es **no dominada estrictamente** si no existe ninguna otra estrategia que la domine estrictamente.
   
 
   
-Por otra parte, el concepto de estrategia dominante que se define a continuación, se aplica a una estrategia de un jugador cuando ésta es tan buena o más que cualquier otra como respuesta a cualquier combinación de estrategias qie elijan los demás jugadores.
+Por otra parte, el concepto de estrategia dominante que se define a continuación, se aplica a aquellas estrategias que son óptimas frente a cualquier comportamiento de los demás jugadores.
 
 **Definición 3.2.** En el juegos $G = \{S_1,\ldots,S_n;u_1,\ldots,u_n\}$, sea $s'_i$ una estrategia del jugador *i*.
 
-  a) Decimos qie $s'_i$ es **dominante** cuando la desigualdad
+  a) Decimos que $s'_i$ es **dominante** cuando la desigualdad
   $$u_i(s_1,\ldots,s_{i-1},s_i,s_{i+1},\ldots,s_n)\le u_i(s_1,\ldots,s_{i-1},s'_i,s_{i+1},\ldots,s_n)$$
-  se cumple para toda estrategia $s_i$ de dicho jugador y para toda combinación de estrategias $s_{-i}$ de los otros jugadores. (Es decir, siempre le conviene usar la estrategia $s'_i$ al menos tanto como cualquier otra, hagan lo que hagan los otros jugadores)
+  se cumple para toda estrategia $s_i$ del propio jugador y para toda combinación de estrategias $s_{-i}$ de los otros jugadores. (Es decir, siempre le conviene usar $s'_i$ al menos tanto como cualquier otra estrategia, hagan lo que hagan los otros jugadores)
     
   b)  Si todas las desigualdades se cumplen de manera estricta (para $s_i \neq s'_i$), decimos que $s'_i$ es **estrictamente dominante**.
   
@@ -110,9 +112,9 @@ Por lo tanto, si los jugadores son racionales, ambos elegirán \textbf{Confesar}
 ### Uso de Estrategias Dominantes (UED)
 Según este concepto de solución, pertenecen a la solución del juego todos aquellos perfiles de estrategias en los cuales cada jugador usa una estrategia dominante.
 
-Naturalmente, en caso de ser aplicable, este concepto de solución es obvio, pues cualquier jugador racional jugará una estrategia dominante si dispone de ella, independientemente de cualquier otra consideración (y si tiene varias, jugará una de ellas). En particular lo hará independientemente de lo que sepa o suponga acerca de cómo van a jugar los otros jugadores, y de qué sepa acerca de las características de dichos jugadores. De hecho, incluso cabe la posibilidad de que los jugadores tengan un conocimiento muy limitado de aquellos aspectos del juego que afectan a los demás jugadores (por ejemplo, podrían no conocer los pagos de los otros), y aun así tender a jugar su estrategia dominante.
+Cuando es aplicable, este concepto resulta muy natural, pues cualquier jugador racional elegirá una estrategia dominante si dispone de ella (y si tiene varias, elegirá una de ellas) independientemente de cualquier otra consideración. En particular, tomará esta decisión sin necesidad de tener en cuenta las características de los demás jugadores, ni lo que sepa o suponga de ellos. De hecho, incluso cabe la posibilidad de que los jugadores tengan un conocimiento muy limitado de aquellos aspectos del juego que afectan a los demás jugadores (por ejemplo, podrían no conocer los pagos de los otros), y aun así tender a jugar su estrategia dominante.
 
-Por desgracia, este concepto de solución no siempre es aplicable. Los juegos en los que cada jugador tiene alguna estrategia dominante son más bien la excepción que la regla.
+Por desgracia, este concepto de solución no siempre es aplicable.  Los juegos en los que todos los jugadores disponen de una estrategia dominante son poco frecuentes; más bien constituyen la excepción que la regla.
 
 \begin{tcolorbox}[colback=blue!10]
 \textbf{Ejemplo 3.2} \\
@@ -141,15 +143,15 @@ En este juego, con x = y = 1, la estrategia B del jugador 1 (J1) está estrictam
 
 ### Eliminación Iterativa Estricta (EIE)
 
-**Definición 3.3.** Dado un juego finito o infinito $G = \{S_1, \ldots, S_n; u_1, \ldots, u_n\}$, llamamos **Eliminación Iterativa Estricta (EIE)**, o bien **Eliminación Iterativa de Estrategias Estrictamente Dominadas**, al siguiente proceso de eliminación:
+**Definición 3.3.** Sea un juego finito o infinito $G = \{S_1, \ldots, S_n; u_1, \ldots, u_n\}$, denominamos **Eliminación Iterativa Estricta (EIE)**, o bien **Eliminación Iterativa de Estrategias Estrictamente Dominadas**, al siguiente proceso de eliminación:
 
-  **1º Paso.** De cada uno de los jugadores, y a la vez, se eliminan todas las estrategias que estén estrictamente dominadas en el juego inicial G. Se construye el juego reducido $G_1$ que resulta de tal eliminación.
+  **1º Paso.** Para todos los jugadores simultáneamente, se eliminan del juego inicial G aquellas estrategias que estén estrictamente dominadas. Se construye el juego reducido $G_1$ que resulta de tal eliminación.
   
-  **2º Paso.** De cada uno de los jugadores, y a la vez, se eliminan todas las estrategias que estén estrictamente dominadas en el juego reducido $G_1$. Se construye el juego reducido $G_2$ que resulta de tal eliminación.
+  **2º Paso.** En el juego $G_1$, se vuelven a eliminar simultáneamente para todos los jugadores las estrategias que estén estrictamente dominadas. De este modo se obtiene un nuevo juego reducido $G_2$ 
   
-  Y así sucesivamente. Se acaba el proceso cuando ya no quedan, para ningún jugador, estrategias que eliminar. Denotamos $S^S_i$ al conjunto de las estrategias supervivientes del jugador i, y las llamamos estrategias iterativamente no dominadas.
+  Y así sucesivamente. El proceso finaliza cuando no es posible eliminar más estrategias para ningún jugador. Denotamos $S^S_i$ al conjunto de las estrategias supervivientes del jugador i, y las llamamos **estrategias iterativamente no dominadas**.
   
-De acuerdo con este concepto de solución, son soluciones todos los perfiles estratégicos constituidos por estrategias que sobreviven al proceso de eliminación iterativa estricta. LLamaremos $\mathbf{S^{EIE}}$ al conjunto de dichos perfiles estratégicos solución.
+Según este criterio, los perfiles estratégicos formados únicamente por estrategias que sobreviven a este proceso constituyen las soluciones del juego. LLamaremos $\mathbf{S^{EIE}}$ al conjunto de todos estos perfiles estratégicos solución.
 
 \begin{tcolorbox}[colback=blue!10]
 \textbf{Ejemplo 3.3} \\
@@ -203,15 +205,15 @@ En conclusión, las únicas estrategias supervivientes al proceso EIE son \textb
 
 
 ### Eliminación Iterativa Débil (EID)
-**Definición 3.4.** Dado un juego finito o infinito $G = \{S_1,\ldots,S_n;u_1,\ldots,u_n\}$, llamamos **Eliminación Iterativa Débil (EID)**, o bien **Eliminación Iterativa de Estrategias Débilmente Dominadas**, al proceso de eliminación siguiente:
+**Definición 3.4.** Dado un juego finito o infinito $G = \{S_1,\ldots,S_n;u_1,\ldots,u_n\}$, llamamos **Eliminación Iterativa Débil (EID)**, o bien **Eliminación Iterativa de Estrategias Débilmente Dominadas**, al siguiente procedimiento:
 
-**1º Paso.** De cada uno de los jugadores, y a la vez, se elimina todas las estrategias que estén débilmente dominadas en el juego inicial G. Se construye el juego reducido $G_1$ que resulta de tal eliminación.
+**1º Paso.** Para todos los jugadores simultáneamente, se elimina todas las estrategias que estén débilmente dominadas en el juego inicial G. Se construye el juego reducido $G_1$ que resulta de tal eliminación.
 
-**2º Paso.** De cada uno de los jugadores, y a la vez, se eliminan todas las estrategias que estén débilmente dominadas en el juego reducido $G_1$. Se construye el juego reducido $G_2$ que resulta de tal eliminación.
+**2º Paso.** En el juego reducido $G_1$, se eliminan nuevamente de forma simultánea para todos los jugadores las estrategias que estén débilmente dominadas. Así se obtiene un nuevo juego reducido $G_2$.
 
-Y así sucesivamente. Se acaba el proceso cuando ya no quedan, para ningún jugador i, estrategias que eliminar. Denotamos $S^S_i$ al conjunto de las estrategias supervivientes del jugador i, y las llamamos estrategias iterativamente no dominadas.
+Y así sucesivamente. Se acaba el proceso cuando ya no quedan, para ningún jugador i, estrategias que eliminar. Denotamos $S^S_i$ al conjunto de las estrategias supervivientes del jugador i, y las llamamos **estrategias iterativamente no dominadas**.
 
-Desgraciadamente, y al contrario de lo que ocurre para los algoritmos de eliminación estricta, ahora el resultado final del proceso de eliminación sí depende del algoritmo utilizado, es decir, del orden y modo en que se han ido seleccionando las estrategias a eliminar.
+A diferencia de lo que ocurre con la eliminación iterativa estricta, en este caso el resultado final del proceso de eliminación sí depende del algoritmo utilizado, es decir, del orden y modo en que se han ido seleccionando las estrategias a eliminar.
 
 Este concepto de solución determina como solución $\mathbf{S^{EID}}$.
 
@@ -386,13 +388,14 @@ child {node[circle,draw]{J2}
 
 **Juegos resolubles por dominación**
 
-**Definición 3.5.** En el juego finito o infinito $G = \{S_1,\ldots,S_n;u_1,\ldots,u_n\}$, decimos que G es **resoluble por dominación** si en el proceso de eliminación iterativa débil, usando el algoritmo estándar, quedan como supervivientes únicamente las estrategias $S^S_1 \subset S_1, \ldots,S^S_n \subset S_n$, de modo que se cumple lo siguiente para todo jugador i y para toda combinación $s_{-i}$ de estrategias supervivientes de los demás:
+**Definición 3.5.** En el juego finito o infinito $G = \{S_1,\ldots,S_n;u_1,\ldots,u_n\}$, decimos que G es **resoluble por dominación** si, al aplicar el proceso de eliminación iterativa débil utilizando el algoritmo estándar, quedan como supervivientes únicamente las estrategias $S^S_1 \subset S_1, \ldots,S^S_n \subset S_n$, de modo que se cumple lo siguiente para todo jugador i y para toda combinación $s_{-i}$ de estrategias supervivientes de los demás:
 
 $$s_i,s'_i \in S^S_i \,\, \mbox{implica que} \,\, u_i(s_i,s_{-i}) = u_i(s'_i,s_{-i})$$
+Es decir, todas las estrategias supervivientes de un mismo jugador le proporcionan el mismo resultado frente a cualquier combinación de estrategias supervivientes de los demás.
 
 En el caso en que G es resoluble por dominación, a cada perfil de estrategias supervivientes $s^S \in S^S_1 \times \ldots \times S^S_s$ se le llama **equilibrio sofisticado**.
 
-Cuando la solución que aportan UED o EIE sea única, también lo será la solución que aporte EID. Estaremos ante un juego resoluble por dominación.
+Además, cuando la solución obtenida mediante el uso de estrategias dominantes (UED) o mediante la eliminación iterativa estricta (EIE) es única, entonces también lo será la solución proporcionada por la eliminación iterativa débil (EID). En ese caso estaremos ante un juego resoluble por dominación.
 
 \begin{tcolorbox}[colback=blue!10]
 \textbf{Ejemplo 3.5} \\
@@ -423,12 +426,12 @@ En los dos casos, podemos decir que el juego es resoluble por dominación, aunqu
 ## Equilibrio de Nash
 Un punto es llamado de **equilibrio de Nash** si ningún jugador aumenta su función de pago cuando cambia su estrategia elegida, supuesto que los demás jugadores no varían sus estrategias de equilibrio.
 
-Un equilibrio de Nash de un juego estratégico $\langle N, (A_i), (\succeq_i) \rangle$ es un perfil $a^* \in A$ de acciones con la propiedad de que para todo jugador $i \in N$ se cumple que:
+Formalmente, en un juego estratégico $\langle N, (A_i), (\succeq_i) \rangle$ un equilibrio de Nash es un perfil de acciones $a^* \in A$ tal que, para todo jugador $i \in N$ se cumple que:
 \[(a^*_{-i}, a^*_i) \succeq_i (a^*_{-i}, a_i) \quad \text{para todo } a_i \in A_i.\]
 
 Así, para que $a^*$ sea un equilibrio de Nash, debe ocurrir que ningún jugador 
 $i$ tenga una acción que produzca un resultado que prefiera al generado cuando 
-elige $a^*_i$, dado que todos los demás jugadores $j$ eligen su acción de equilibrio $a^*_j$. En pocas palabras, ningún jugador puede desviarse de forma rentable, dadas las acciones de los demás.
+elige $a^*_i$, dado que todos los demás jugadores $j$ eligen su acción de equilibrio $a^*_j$. En otras palabras, ningún jugador tiene incentivos a desviarse de manera unilateral, dadas las acciones de los demás.
 
 Para determinar los puntos de equilibrio de Nash es importante conocer el siguiente concepto:
   
@@ -440,16 +443,15 @@ Por otra parte, las estrategias dominadas nunca pueden estar en los puntos de eq
 **Definición 3.6.** En el juego $G = \{S_1, \ldots, S_n; u_1, \ldots, u_n\}$, decimos que el perfil de estrategias puras $(s^*_1, s^*_2, \ldots,s^*_i, \ldots, s^*_n)$ es un **equilibrio de Nash (EN)** si para cada jugador i,
 $$u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \geq u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \,\, \mbox{para todo} \,\, s_i \,\, \mbox{de} \,\, S_i $$
 
-Es decir, ara cada jugador i, $s^*_i$ es una solución del problema
+Es decir, para cada jugador i, la estrategia $s^*_i$ resuelve el problema de maximización de su función de pago, dadas las estrategias de los demás jugadores
 $$\mbox{max} \, u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \,\, \mbox{donde} \,\, s_i \,\, \mbox{es la variable de decisión y pertenece a} \,\, S_i$$
+En otras palabras, $s^*_i$ es una respuesta óptima frente a $s^*_{-i}$.
 
-O dicho de otro modo, para cada juagador i, $s^*_i$ es una respuesta óptima a $s^*_{-i}$.
+De esta definición se deduce que un Equilibrio de Nash (EN) es un perfil de estrategias del que ningún jugador desearía desviarse unilateralmente, es decir, cada jugador está tomando la mejor decisión posible dadas las decisiones de los demás. Un EN está formado por estrategias que son óptimas para cada jugador dadas las estrategias del resto de jugadores.
 
-De esta definición se deduce que un Equilibrio de Nash (EN) es un perfil de estrategias del que ningún jugador desearía desviarse unilateralmente, es decir, ninguno se arrepiente de la decisión tomada, dadas las estrategias decididas por el resto de los jugadores. Un EN está formado por estrategias que son óptimas para cada jugador dadas las estrategias del resto de jugadores.
+No obstante, esto no implica que cada jugador esté obteniendo el mejor resultado posible, sino el mejor resultado posible condicionado a las estrategias elegidas por el resto.
 
-Esto no significa que en un EN cada jugador esté alcanzando el mejor resultado posible, sino el mejor resultado condicionado por el hecho de que los demás jugadores jueguen las estrategias indicadas para ellos en dicho perfil.
-
-Puede haber múltiples equilibrios de Nash en un juego y, llamaremos $\mathbf{S^{EN}}$ al conjunto de perfiles que son equilibrios de Nash.
+En un mismo juego pueden existir varios equilibrios de Nash y, llamaremos $\mathbf{S^{EN}}$ al conjunto de perfiles que son equilibrios de Nash.
 
 \begin{tcolorbox}[colback=blue!10, fontupper=\small]
 \textbf{Ejemplo 3.6} \\
@@ -526,7 +528,7 @@ Podemos ahora automatizar el cálculo de los EN mediante un proceso en dos etapa
 
   - Después, identificamos los EN como los perfiles estratégicos que son puntos de intersección de todas las correspondencias de respuesta óptima.
 
-\begin{tcolorbox}[colback=blue!10]
+\begin{tcolorbox}[colback=blue!10, fontupper=\small]
 \textbf{Ejemplo 3.7. Juego básico de Cournot}
 
 Sean dos jugadores, $J_1$ y $J_2$, que eligen simultáneamente cantidades $q_1, q_2 \in [0,1]$. Las funciones de pago vienen dadas por:
@@ -542,7 +544,7 @@ La correspondencia $R_1(q_2)$ de respuesta óptima de J1 se obtiene resolviendo,
 \]
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=blue!10]
+\begin{tcolorbox}[colback=blue!10, fontupper=\small]
 La condición de primer orden (ignorando inicialmente las restricciones) es:
 \[
 \frac{\partial u_1(q_1, q_2)}{\partial q_1} = 1 - 2q_1 - q_2 = 0,
