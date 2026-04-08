@@ -638,52 +638,330 @@ o dicho de otro modo, para cada jugador i, $\sigma^*_i$ es respuesta óptima a $
 
 Téngase en cuenta que una estrategia mixta no es más que una lotería sobre estrategias puras y que la función de pagos es lineal, para cada jugador, en las probabilidades de sus distintas estrategias puras. Por tanto, el pago esperado para un jugador de una estrategia mixta, fijadas las estrategias de los otros jugadores, resulta ser una combinación convexa de los pagos de las estrategias puras soporte de dicha estrategia mixta, y en consecuencia, la ganancia esperada de una estrategia mixta tiene como límites inferior y superior las ganancias mínima y máxima de las estrategias puras soporte de dicha estrategia mixta.
 
-\begin{center}
-\fbox{
-\begin{minipage}{0.95\textwidth}
-En el juego $G = \{S_1, \dots, S_n; u_1, \dots, u_n\}$, la combinación de estrategias mixtas 
-$p^* = (p_1^*, p_2^*, \dots, p_n^*)$ es un equilibrio de Nash si y sólo si para cada jugador $i$, 
-tener $p_{i}^{j*} > 0$ implica que la estrategia pura $s_i^j$ es una respuesta óptima a 
-$p_{-i}^* = (p_1^*, \dots, p_{i-1}^*, p_{i+1}^*, \dots, p_n^*)$.
+\begin{mdframed}
+\textbf{Teorema 3.2.} \\
+En el juego $G=\{S_1, ..., S_n; u_1, ..., u_n\}$, la combinación de estrategias mixtas $\sigma^* = (\sigma^*_1 , \sigma^*_2 , ..., \sigma^*_n)$ es un equilibrio de Nash si y sólo si para cada jugador i con estrategia mixta
+$\sigma^*_i=(\sigma^{1*}_i , \sigma^{2*}_i , ..., \sigma^{j*}_i , ...)$ tener $\sigma^{j*}_i > 0$ implica que la estrategia pura $s^j_i$ es una respuesta óptima a $\sigma^*_{-i} = (\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_{i+1}, ..., \sigma^*_n)$.
 
 \medskip
 
 \textbf{Demostración:}
 
-$(\Rightarrow)$ Supongamos que el perfil $p^* = (p_1^*, p_2^*, \dots, p_n^*)$ cumple, para cada jugador $i$, 
-que todas sus estrategias puras $s_i^j$ en el soporte de $p_i^*$ son respuesta óptima a $p_{-i}^*$.
-
-Llamemos $M_i^*$ a la máxima utilidad que puede ser alcanzada por el jugador $i$ si los demás juegan $p_{-i}^*$, es decir,
+$(\Leftarrow)$ Supongamos que el perfil $\sigma^* = (\sigma^*_1 , \sigma^*_2 , ..., \sigma^*_n)$ cumple, para cada jugador i, que todas sus estrategias puras $s^j_i$ soporte de $\sigma^*_i$ son respuesta óptima a 
+$$\sigma^*_{-i} = (\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_{i+1}, ..., \sigma^*_n)$$
+Llamemos $M^*_i$ a la máxima utilidad que puede ser alcanzada por el jugador i si los demás juegan $\sigma^*_{-i}$ , es decir,
 \[
-M_i^* = \max \{ u_i(p_1^*, \dots, p_{i-1}^*, s_i, p_{i+1}^*, \dots, p_n^*) : s_i \in S_i \}.
+M^*_i = \mbox{max} \, \{U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s_i, \sigma^*_{i+1}, ..., \sigma^*_n):s_i \in S_i\} = 
+\]
+\[
+= \mbox{max} \{U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma_i, \sigma^*_{i+1}, ..., \sigma^*_n) : \sigma_i \in \Delta(S_i)\}
 \]
 
 En ese caso,
 \[
-u_i(p_1^*, \dots, p_{i-1}^*, s_i^j, p_{i+1}^*, \dots, p_n^*) = M_i^*, 
-\quad \forall s_i^j \in \operatorname{supp}(p_i^*).
-\]
-
-Y, en consecuencia,
-\[
-u_i(p_1^*, \dots, p_{i-1}^*, p_i^*, p_{i+1}^*, \dots, p_n^*) 
-= \sum_{j: \, p_i^{j*} > 0} p_i^{j*} \, 
-u_i(p_1^*, \dots, p_{i-1}^*, s_i^j, p_{i+1}^*, \dots, p_n^*)
+U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s^j_i, \sigma^*_{i+1}, ..., \sigma^*_n ) = \mbox{max} \, \{U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s_i, \sigma^*_{i+1}, ..., \sigma^*_n) : s_i \in S_i\} = 
 \]
 \[
-= \sum_{j: \, p_i^{j*} > 0} p_i^{j*} \, M_i^* = M_i^*.
+= M^*_i , \forall s^j_i \in SOP(\sigma^*_i)
 \]
 
-Por otra parte, para cualquier $p_i \in \Delta(S_i)$,
+y, en consecuencia,
+
 \[
-u_i(p_1^*, \dots, p_{i-1}^*, p_i, p_{i+1}^*, \dots, p_n^*) \le M_i^*.
+U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_i , \sigma^*_{i+1}, ..., \sigma^*_n) = \sum_{\sigma^{j*}_i>0} \sigma^{j*}_i U_i (\sigma^*_1 , ..., \sigma^*_{i-1}, s^j_i, \sigma^*_{i+1}, ..., \sigma^*_n) =
+\]
+\[
+= \sum_{\sigma^{j*}_i>0} \sigma^{j*}_i M^*_i = M^*_i \geq U_i(\sigma^*1 , ..., \sigma^*_{i-1}, \sigma_i, \sigma^*_{i+1}, ..., \sigma^*_n), \forall \sigma_i \in \Delta(S_i)
 \]
 
-Así pues, $p_i^*$ es respuesta óptima a $p_{-i}^*$ para todo jugador $i$, por lo que $p^*$ es un equilibrio de Nash.
-\end{minipage}
-}
-\end{center}
+Así pues, $\sigma^*_i$ es respuesta óptima a $\sigma^*_{-i}$ para todo jugador i, por lo que $\sigma^*$ es Equilibrio de Nash.
 
+\medskip
+
+$(\Rightarrow)$ Sea $\sigma^* = (\sigma^*_1 , \sigma^*_2 , ..., \sigma^*_n)$ un EN. Supongamos que, dado un jugador cualquiera i, la estrategia pura $s^j_i$ pertenece al soporte de $\sigma^*_i$ . Demostraremos por reducción al absurdo que $s^j_i$ es respuesta óptima a $\sigma^*_{-i} = (\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_{i+1}, ..., \sigma^*_n)$. Si no lo fuera, existiría una estrategia pura $s^k_i$ tal que
+$$U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s^k_i , \sigma^*_{i+1}, ..., \sigma^*_n) > U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s^j_i, \sigma^*_{i+1}, ..., \sigma^*_n)$$
+Ahora bien, si $\sigma'_i$ es la estrategia mixta que es en todo igual a $\sigma^*_i = (\sigma^{1*}_i , \sigma^{2*}_i , ..., \sigma^{j*}_i , ...)$,
+salvo que juega la estrategia pura $s^j_i$ con probabilidad cero y la estrategia pura $s^k_i$ con probabilidad $\sigma^{j*}_i + \sigma^{k*}_i$ , dicha estrategia $\sigma'_i$ es una respuesta estrictamente mejor a $\sigma^*_{-i}$ que $\sigma^*_i$ . En efecto,
+
+\[
+U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma'_i, \sigma^*_{i+1}, ..., \sigma^*_n)=\sum_{h \neq j,k} \sigma^{h*}_i U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s^h_i , \sigma^*_{i+1}, ..., \sigma^*_n) +
+\]
+\[
++(\sigma^{j*}_i + \sigma^{k*}_i) U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s^k_i , \sigma^*_{i+1}, ..., \sigma^*_n) >
+\]
+\[
+> U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_i , \sigma^*_{i+1}, ..., \sigma^*_n) = 
+\]
+\[
+= \sum_{h \neq j,k} \sigma^{h*}_i U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s^h_i , \sigma^*_{i+1}, ..., \sigma^*_n) +
+\]
+\[
++\sigma^{j*}_i U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, s^j_i, \sigma^*_{i+1}, ..., \sigma^*_n) +
+\]
+\[
++ \sigma^{k*}_i U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, , \sigma^*_{i+1}, ..., \sigma^*_n)
+\]
+
+En consecuencia, $\sigma^*_i$ no es respuesta óptima a $\sigma^*_{-i}$ , lo que contradice la hipótesis y prueba la condición «solo si».
+\end{mdframed}
+
+\begin{tcolorbox}[colback=blue!10, fontupper=\small]
+\textbf{Ejemplo 3.7.}
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+ & \multicolumn{2}{c}{\textbf{Jugador 2}} \\ 
+\textbf{Jugador 1} & I & D\\ \hline
+A & 3, 2 & 1, 4 \\
+C & 1, 3 & 2, 1 \\
+B & 2, 2 & 2, 0
+\end{tabular}
+\caption{EN estrategias mixtas}
+\label{tab:EN}
+\end{table}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10, fontupper=\small]
+Este juego tiene un único EN en estrategias mixtas consistente en el perfil [(1/2, 0, 1/2), (1/2, 1/2)]. Como se demuestra a continuación, cualquier estrategia del jugador 1 cuyo soporte esté contenido en el conjunto \{A, B\}, incluidas las estrategias puras A y B, es respuesta óptima a la estrategia mixta del jugador 2, $\sigma^*_2 = (1/2, 1/2)$. Del mismo modo, cualquier estrategia del jugador 2 (pura o mixta) es respuesta óptima a la estrategia $\sigma^*_1 = (1/2, 0, 1/2)$ del jugador 1. \\
+
+\textbf{a)} Dada la estrategia $\sigma_2^* = \left(\tfrac{1}{2}, \tfrac{1}{2}\right)$ del jugador 2, el jugador 1 obtiene las mismas ganancias al utilizar distintas estrategias con soporte $\{A, B\}$:
+
+\[
+U_1(\sigma_1^*, \sigma_2^*) = \sigma_1^* A_1 \sigma_2^*
+= \left(\tfrac{1}{2}\; 0\; \tfrac{1}{2}\right)
+\begin{pmatrix}
+3 & 1 \\
+1 & 2 \\
+2 & 2
+\end{pmatrix}
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= \left(\tfrac{5}{2}\; \tfrac{3}{2}\right)
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= 2
+\]
+
+\[
+U_1(A, \sigma_2^*) = (1\; 0\; 0)
+\begin{pmatrix}
+3 & 1 \\
+1 & 2 \\
+2 & 2
+\end{pmatrix}
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= (3\; 1)
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= 2
+\]
+
+\[
+U_1(B, \sigma_2^*) = (0\; 0\; 1)
+\begin{pmatrix}
+3 & 1 \\
+1 & 2 \\
+2 & 2
+\end{pmatrix}
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= (2\; 2)
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= 2
+\]
+
+\[
+U_1\left(\left(\tfrac{1}{3}, 0, \tfrac{2}{3}\right), \sigma_2^*\right)
+= \left(\tfrac{1}{3}\; 0\; \tfrac{2}{3}\right)
+\begin{pmatrix}
+3 & 1 \\
+1 & 2 \\
+2 & 2
+\end{pmatrix}
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= \left(\tfrac{7}{3}\; \tfrac{5}{3}\right)
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= 2
+\]
+
+En general, dada la estrategia $\sigma_2^*$ del jugador 2, cualquier estrategia del jugador 1 
+\[
+\sigma_1 = (p_1^k, 0, 1 - p_1^k)
+\]
+que tiene soporte $\{A, B\}$ genera una ganancia de 2 para el jugador 1:
+
+\[
+U_1(\sigma_1, \sigma_2^*) =
+(p_1^k\; 0\; 1 - p_1^k)
+\begin{pmatrix}
+3 & 1 \\
+1 & 2 \\
+2 & 2
+\end{pmatrix}
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= (2 + p_1^k,\; 2 - p_1^k)
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= 2
+\]
+
+\textbf{b)} Dada la estrategia $\sigma_1^* = \left(\tfrac{1}{2}, 0, \tfrac{1}{2}\right)$ del jugador 1, el jugador 2 obtiene las mismas ganancias al utilizar distintas estrategias:
+
+\[
+U_2(\sigma_1^*, \sigma_2^*) = \sigma_1^* A_2 \sigma_2^*
+= \left(\tfrac{1}{2}\; 0\; \tfrac{1}{2}\right)
+\begin{pmatrix}
+2 & 4 \\
+3 & 1 \\
+2 & 0
+\end{pmatrix}
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= (2\; 2)
+\begin{pmatrix}
+\tfrac{1}{2} \\
+\tfrac{1}{2}
+\end{pmatrix}
+= 2
+\]
+
+\[
+U_2(\sigma_1^*, I) =
+\left(\tfrac{1}{2}\; 0\; \tfrac{1}{2}\right)
+\begin{pmatrix}
+2 & 4 \\
+3 & 1 \\
+2 & 0
+\end{pmatrix}
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}
+= (2\; 2)
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}
+= 2
+\]
+
+\[
+U_2(\sigma_1^*, D) =
+\left(\tfrac{1}{2}\; 0\; \tfrac{1}{2}\right)
+\begin{pmatrix}
+2 & 4 \\
+3 & 1 \\
+2 & 0
+\end{pmatrix}
+\begin{pmatrix}
+0 \\
+1
+\end{pmatrix}
+= (2\; 2)
+\begin{pmatrix}
+0 \\
+1
+\end{pmatrix}
+= 2
+\]
+
+\[
+U_2\left(\sigma_1^*, \left(\tfrac{4}{5}, \tfrac{1}{5}\right)\right)
+=
+\left(\tfrac{1}{2}\; 0\; \tfrac{1}{2}\right)
+\begin{pmatrix}
+2 & 4 \\
+3 & 1 \\
+2 & 0
+\end{pmatrix}
+\begin{pmatrix}
+\tfrac{4}{5} \\
+\tfrac{1}{5}
+\end{pmatrix}
+= (2\; 2)
+\begin{pmatrix}
+\tfrac{4}{5} \\
+\tfrac{1}{5}
+\end{pmatrix}
+= 2
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10, fontupper=\small]
+En general, dada la estrategia $\sigma_1^*$ del jugador 1, cualquier estrategia del jugador 2 
+\[
+\sigma_2 = (p_2^l, 1 - p_2^l)
+\]
+genera una ganancia de 2 para el jugador 2:
+
+\[
+U_2(\sigma_1^*, \sigma_2) =
+\left(\tfrac{1}{2}\; 0\; \tfrac{1}{2}\right)
+\begin{pmatrix}
+2 & 4 \\
+3 & 1 \\
+2 & 0
+\end{pmatrix}
+\begin{pmatrix}
+p_2^l \\
+1 - p_2^l
+\end{pmatrix}
+= (2\; 2)
+\begin{pmatrix}
+p_2^l \\
+1 - p_2^l
+\end{pmatrix}
+= 2
+\]
+\end{tcolorbox}
+
+### Cálculo de EN en estrategias mixtas en juegos 2 x 2
+
+Una estrategia mixta será respuesta óptima a otra estrategia (pura o mixta) dada sólo si sus estrategias puras soporte son respuesta óptima. Esto implica que tales estrategias puras producen ganancias iguales y máximas, dada la estrategia del otro jugador.
+
+Esta propiedad permite calcular EN en estrategias mixtas de juegos 2 x 2, apoyándose en una representación gráfica, en los siguientes pasos:
+  
+  1. Se consideran estrategias mixtas genéricas para ambos jugadores. En concreto, (p, 1 - p) para el jugador 1 y (q, 1 - q) para el jugador 2
+
+  2. Para el jugador 1, se calcula la utilidad esperada que obtiene de cada una de sus estrategias puras cuando la estrategia del jugador 2 es (q, 1 - q).
+
+  3. A partir de 2 se calcula la correspondencia de respuesta óptima del jugador 1, $R_1(q)$.
+
+  4. De manera análoga, para el jugador 2 se calcula la utilidad esperada de cada una de sus estrategias puras cuando la estrategia del jugador 1 es (p, 1 - p).
+
+  5. A partir de 4 se calcula la correspondencia de respuesta óptima del jugador 2 $R_2(p)$.
+
+  6. Finalmente, se representan gráficamente en el plano p - q las correspondencias $R_1(q)$ y $R_2(p)$. Los puntos de intersección entre ambas determinan los EN en estrategias mixtas.
+
+Este procedimiento se basa en combinar las propiedades de las estrategias mixtas de equilibrio y el cálculo de las estrategias puras de respuesta óptima ante una estrategia mixta dada.
 
 ## Optimalidad de Pareto
 La eficiencia de Pareto (también denominada óptimo de Pareto) es un punto de equilibrio donde es imposible mejorar la situación de un individuo sin empeorar la de otro.
