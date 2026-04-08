@@ -597,6 +597,94 @@ Representación gráfica
 
 ### Equilibrio de Nash en estrategias mixtas
 
+**Estrategias mixtas**
+
+Sea $S_i = \{s_i^1, s_i^2, \dots, s_i^k\}$ el conjunto de estrategias puras del jugador $i$.  Llamamos **estrategia mixta** del jugador $i$ a cualquier lotería $\sigma_i = (\sigma_i^1, \sigma_i^2, \dots, \sigma_i^k)$ definida sobre $S_i$, es decir, a cualquier distribución de probabilidad sobre dicho conjunto. En consecuencia, $\sigma_i$ es una k-tupla cuyas componentes son no negativas y suma 1.
+
+Esta estrategia se interpreta de la siguiente forma: el jugador i elige la estrategia pura $s_i^1$ con probabilidad $\sigma_i^1$, la estrategia $s_i^2$ con probabilidad $\sigma_i^2$, y así sucesivamente hasta $s_i^k$, que se juega con probabilidad $\sigma_i^k$. Por tanto, se cumple $\sigma_i^j \geq 0$, para todo $j = 1, 2, \dots, k$, y $\sum_{j=1}^{k} \sigma_i^j = 1$.
+
+Al conjunto de estrategias mixtas del jugador $i$ lo denotaremos por $\Delta(S_i)$, indicando con ello que el conjunto de estrategias mixtas de un jugador está formado por todas las loterías sobre $S_i$:
+\[
+\Delta(S_i) = \left\{\sigma_i = (\sigma_i^1, \sigma_i^2, \dots, \sigma_i^k) \;:\; \sigma_i^j \geq 0 \text{ para } j=1,2,\dots,k, \text{ y } \sum_{j=1}^{k} \sigma_i^j = 1 \right\}.
+\]
+
+Entre las estrategias mixtas están aquellas que asignan probabilidad 1 a una de las estrategias puras y probabilidad cero a todas las demás. Por ello, toda estrategia pura es también estrategia mixta: así la estrategia pura $s^j_i$ se puede identificar con la estrategia mixta (0, ..., 1, ..., 0), en donde el 1 corresponde a la componente j-ésima de dicho vector. La ampliación del concepto de estrategia para dar cabida a las estrategias mixtas supone además convertir en estrategia a toda combinación lineal convexa de al menos dos estrategias puras.
+
+**Soporte**
+
+Sea  $S_i = \{s_i^1, s_i^2, \dots, s_i^k\}$ el conjunto de estrategias puras del jugador i. Se denomina **soporte** de una estrategia mixta $\sigma_i$ al subconjunto de las estrategias puras, denotado por $\mathbf{SOP}(\sigma_i \subset S_i, \mbox{tal que} \,\, s^j_i \,\, \mbox{pertenece a} \,\, \mathbf{SOP}(\sigma_i) \,\, \mbox{si y sólo si} \,\, \sigma^j_i > 0)$.
+
+Es decir, pertenecen al soporte de una estrategia mixta todas las estrategias puras a las que se asigna una probabilidad estrictamente positiva. Formalmente,
+
+$$\mathbf{SOP}(\sigma_i) = \{s^j_i \in S_i : \sigma^j_i > 0\}$$
+Es decir, una estrategia pura $s^j_i$ pertenece al soporte de $\sigma_i$ si y solo si su probabilidad asociada es mayor que cero.
+
+A partir de esta definición, diremos que una estrategia mixta es *completa* si su soporte coincide con el conjunto de estrategias puras del jugador, es decir, si $(\mathbf{SOP}(\sigma_i) = S_i)$.Es decir, una estrategia mixta es completa si asigna una probabilidad estrictamente positiva a cada estrategia pura de $S_i$. 
+
+Por otra parte, cualquier estrategia pura puede interpretarse como una estrategia mixta cuyo soporte esta formado por un solo elemento, es decir, un soporte unitario. Además, llamamos **estrategias mixtas propias** a aquellas estrategias mixtas que no son puras.
+
+\newpage
+
+**Equilibrio de Nash**
+
+**Definición 3.8.** En el juego $G = \{S_1, ..., S_n; u_1, ..., u_n\}$, decimos que el perfil de estrategias mixtas $\sigma^* = (\sigma^*_1 , ..., \sigma^*_i , ..., \sigma^*_n)$ es un **equilibrio de Nash** si para cada jugador i:
+
+$$U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_i , \sigma^*_{i+1}, ..., \sigma^*_n ) \geq U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma_i, \sigma^*_{i+1}, ..., \sigma^*_n) \,\,  \mbox{para todo} \,\, \sigma_i \,\, \mbox{de} \,\, \Delta(S_i)$$
+
+Es decir, para cada jugador i, $\sigma^*_i$ es una solución del problema
+
+$$\mbox{max} \, U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma_i, \sigma^*_{i+1}, ..., \sigma^*_n) \, \mbox{en la variable} \, \sigma_i, \, \mbox{donde} \, \sigma_i \, \mbox{pertenece a} \, \Delta(S_i)$$
+o dicho de otro modo, para cada jugador i, $\sigma^*_i$ es respuesta óptima a $\sigma^*_{-i}$.
+
+Téngase en cuenta que una estrategia mixta no es más que una lotería sobre estrategias puras y que la función de pagos es lineal, para cada jugador, en las probabilidades de sus distintas estrategias puras. Por tanto, el pago esperado para un jugador de una estrategia mixta, fijadas las estrategias de los otros jugadores, resulta ser una combinación convexa de los pagos de las estrategias puras soporte de dicha estrategia mixta, y en consecuencia, la ganancia esperada de una estrategia mixta tiene como límites inferior y superior las ganancias mínima y máxima de las estrategias puras soporte de dicha estrategia mixta.
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.95\textwidth}
+En el juego $G = \{S_1, \dots, S_n; u_1, \dots, u_n\}$, la combinación de estrategias mixtas 
+$p^* = (p_1^*, p_2^*, \dots, p_n^*)$ es un equilibrio de Nash si y sólo si para cada jugador $i$, 
+tener $p_{i}^{j*} > 0$ implica que la estrategia pura $s_i^j$ es una respuesta óptima a 
+$p_{-i}^* = (p_1^*, \dots, p_{i-1}^*, p_{i+1}^*, \dots, p_n^*)$.
+
+\medskip
+
+\textbf{Demostración:}
+
+$(\Rightarrow)$ Supongamos que el perfil $p^* = (p_1^*, p_2^*, \dots, p_n^*)$ cumple, para cada jugador $i$, 
+que todas sus estrategias puras $s_i^j$ en el soporte de $p_i^*$ son respuesta óptima a $p_{-i}^*$.
+
+Llamemos $M_i^*$ a la máxima utilidad que puede ser alcanzada por el jugador $i$ si los demás juegan $p_{-i}^*$, es decir,
+\[
+M_i^* = \max \{ u_i(p_1^*, \dots, p_{i-1}^*, s_i, p_{i+1}^*, \dots, p_n^*) : s_i \in S_i \}.
+\]
+
+En ese caso,
+\[
+u_i(p_1^*, \dots, p_{i-1}^*, s_i^j, p_{i+1}^*, \dots, p_n^*) = M_i^*, 
+\quad \forall s_i^j \in \operatorname{supp}(p_i^*).
+\]
+
+Y, en consecuencia,
+\[
+u_i(p_1^*, \dots, p_{i-1}^*, p_i^*, p_{i+1}^*, \dots, p_n^*) 
+= \sum_{j: \, p_i^{j*} > 0} p_i^{j*} \, 
+u_i(p_1^*, \dots, p_{i-1}^*, s_i^j, p_{i+1}^*, \dots, p_n^*)
+\]
+\[
+= \sum_{j: \, p_i^{j*} > 0} p_i^{j*} \, M_i^* = M_i^*.
+\]
+
+Por otra parte, para cualquier $p_i \in \Delta(S_i)$,
+\[
+u_i(p_1^*, \dots, p_{i-1}^*, p_i, p_{i+1}^*, \dots, p_n^*) \le M_i^*.
+\]
+
+Así pues, $p_i^*$ es respuesta óptima a $p_{-i}^*$ para todo jugador $i$, por lo que $p^*$ es un equilibrio de Nash.
+\end{minipage}
+}
+\end{center}
+
+
 ## Optimalidad de Pareto
 La eficiencia de Pareto (también denominada óptimo de Pareto) es un punto de equilibrio donde es imposible mejorar la situación de un individuo sin empeorar la de otro.
 

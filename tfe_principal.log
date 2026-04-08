@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.18)  6 APR 2026 18:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.8)  8 APR 2026 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **tfe_principal.tex
 (./tfe_principal.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
+L3 programming layer <2026-03-20>
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/base/bk12.clo
@@ -22,7 +22,7 @@ File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \c@table=\count283
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen148
+\bibindent=\dimen150
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -76,10 +76,10 @@ Package: amstext 2024/11/17 v2.01 AMS text
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen149
+\ex@=\dimen151
 )) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen150
+\pmbraise@=\dimen152
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -100,7 +100,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen151
+\big@size=\dimen153
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count289
@@ -118,12 +118,12 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \column@=\count294
 \maxfields@=\count295
 \andhelp@=\toks20
-\eqnshift@=\dimen152
-\alignsep@=\dimen153
-\tagshift@=\dimen154
-\tagwidth@=\dimen155
-\totwidth@=\dimen156
-\lineht@=\dimen157
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
 \@envbody=\toks21
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -156,14 +156,14 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@cnth=\count296
 \Gm@cntv=\count297
 \c@Gm@tempcnt=\count298
-\Gm@bindingoffset=\dimen158
-\Gm@wd@mp=\dimen159
-\Gm@odd@mp=\dimen160
-\Gm@even@mp=\dimen161
-\Gm@layoutwidth=\dimen162
-\Gm@layoutheight=\dimen163
-\Gm@layouthoffset=\dimen164
-\Gm@layoutvoffset=\dimen165
+\Gm@bindingoffset=\dimen160
+\Gm@wd@mp=\dimen161
+\Gm@odd@mp=\dimen162
+\Gm@even@mp=\dimen163
+\Gm@layoutwidth=\dimen164
+\Gm@layoutheight=\dimen165
+\Gm@layouthoffset=\dimen166
+\Gm@layoutvoffset=\dimen167
 \Gm@dimlist=\toks26
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
@@ -201,7 +201,7 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen166
+\@linkdim=\dimen168
 \Hy@linkcounter=\count301
 \Hy@pagecounter=\count302
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -230,15 +230,15 @@ Package hyperref Info: Bookmarks ON on input line 4468.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4807.
-\XeTeXLinkMargin=\dimen167
+\XeTeXLinkMargin=\dimen169
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count305
-\Field@Width=\dimen168
-\Fld@charsize=\dimen169
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
 Package hyperref Info: Hyper figures OFF on input line 6084.
 Package hyperref Info: Link nesting OFF on input line 6089.
 Package hyperref Info: Hyper index ON on input line 6092.
@@ -290,7 +290,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2026/03/08 v26.4 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+Package: babel 2026/03/24 v26.5 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count311
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
@@ -299,7 +299,7 @@ LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
-\U@D=\dimen170
+\U@D=\dimen172
 \l@unhyphenated=\language4
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -355,15 +355,15 @@ Package: chngcntr 2018/04/09 v1.1a change counter resetting
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count316
 \calc@Bcount=\count317
-\calc@Adimen=\dimen171
-\calc@Bdimen=\dimen172
+\calc@Adimen=\dimen173
+\calc@Bdimen=\dimen174
 \calc@Askip=\skip71
 \calc@Bskip=\skip72
 LaTeX Info: Redefining \setlength on input line 86.
@@ -372,8 +372,8 @@ LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Cskip=\skip73
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
-\ESO@tempdima=\dimen173
-\ESO@tempdimb=\dimen174
+\ESO@tempdima=\dimen175
+\ESO@tempdimb=\dimen176
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -385,14 +385,14 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 )
-\Gin@req@height=\dimen175
-\Gin@req@width=\dimen176
+\Gin@req@height=\dimen177
+\Gin@req@width=\dimen178
 )
-\AM@pagewidth=\dimen177
-\AM@pageheight=\dimen178
-\AM@fboxrule=\dimen179
+\AM@pagewidth=\dimen179
+\AM@pageheight=\dimen180
+\AM@fboxrule=\dimen181
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count319
 \AM@pagebox=\box57
@@ -404,8 +404,8 @@ File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 \AM@templatesizebox=\box58
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks34
-\pgfutil@tempdima=\dimen180
-\pgfutil@tempdimb=\dimen181
+\pgfutil@tempdima=\dimen182
+\pgfutil@tempdimb=\dimen183
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box59
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -420,16 +420,16 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen182
-\pgf@y=\dimen183
-\pgf@xa=\dimen184
-\pgf@ya=\dimen185
-\pgf@xb=\dimen186
-\pgf@yb=\dimen187
-\pgf@xc=\dimen188
-\pgf@yc=\dimen189
-\pgf@xd=\dimen190
-\pgf@yd=\dimen191
+\pgf@x=\dimen184
+\pgf@y=\dimen185
+\pgf@xa=\dimen186
+\pgf@ya=\dimen187
+\pgf@xb=\dimen188
+\pgf@yb=\dimen189
+\pgf@xc=\dimen190
+\pgf@yc=\dimen191
+\pgf@xd=\dimen192
+\pgf@yd=\dimen193
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
 \c@pgf@counta=\count322
@@ -457,7 +457,7 @@ File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen192
+\pgfmath@dimen=\dimen194
 \pgfmath@count=\count329
 \pgfmath@box=\box60
 \pgfmath@toks=\toks41
@@ -467,28 +467,28 @@ Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 \c@pgfmathroundto@lastzeros=\count330
 )) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen193
-\pgf@picmaxx=\dimen194
-\pgf@picminy=\dimen195
-\pgf@picmaxy=\dimen196
-\pgf@pathminx=\dimen197
-\pgf@pathmaxx=\dimen198
-\pgf@pathminy=\dimen199
-\pgf@pathmaxy=\dimen256
-\pgf@xx=\dimen257
-\pgf@xy=\dimen258
-\pgf@yx=\dimen259
-\pgf@yy=\dimen260
-\pgf@zx=\dimen261
-\pgf@zy=\dimen262
+\pgf@picminx=\dimen195
+\pgf@picmaxx=\dimen196
+\pgf@picminy=\dimen197
+\pgf@picmaxy=\dimen198
+\pgf@pathminx=\dimen199
+\pgf@pathmaxx=\dimen256
+\pgf@pathminy=\dimen257
+\pgf@pathmaxy=\dimen258
+\pgf@xx=\dimen259
+\pgf@xy=\dimen260
+\pgf@yx=\dimen261
+\pgf@yy=\dimen262
+\pgf@zx=\dimen263
+\pgf@zy=\dimen264
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen263
-\pgf@path@lasty=\dimen264
+\pgf@path@lastx=\dimen265
+\pgf@path@lasty=\dimen266
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen265
-\pgf@shorten@start@additional=\dimen266
+\pgf@shorten@end@additional=\dimen267
+\pgf@shorten@start@additional=\dimen268
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box61
@@ -497,12 +497,12 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picture@serial@count=\count331
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen267
+\pgflinewidth=\dimen269
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen268
-\pgf@pt@y=\dimen269
-\pgf@pt@temp=\dimen270
+\pgf@pt@x=\dimen270
+\pgf@pt@y=\dimen271
+\pgf@pt@temp=\dimen272
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -511,10 +511,10 @@ File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen271
+\pgfarrowsep=\dimen273
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen272
+\pgf@max=\dimen274
 \pgf@sys@shading@range@num=\count332
 \pgf@shadingcount=\count333
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
@@ -537,14 +537,14 @@ File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen273
-\pgf@nodesepend=\dimen274
+\pgf@nodesepstart=\dimen275
+\pgf@nodesepend=\dimen276
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 )) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen275
-\pgffor@skip=\dimen276
+\pgffor@iter=\dimen277
+\pgffor@skip=\dimen278
 \pgffor@stack=\toks44
 \pgffor@toks=\toks45
 )) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
@@ -552,16 +552,16 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count334
-\pgfplotmarksize=\dimen277
+\pgfplotmarksize=\dimen279
 )
-\tikz@lastx=\dimen278
-\tikz@lasty=\dimen279
-\tikz@lastxsaved=\dimen280
-\tikz@lastysaved=\dimen281
-\tikz@lastmovetox=\dimen282
-\tikz@lastmovetoy=\dimen283
-\tikzleveldistance=\dimen284
-\tikzsiblingdistance=\dimen285
+\tikz@lastx=\dimen280
+\tikz@lasty=\dimen281
+\tikz@lastxsaved=\dimen282
+\tikz@lastysaved=\dimen283
+\tikz@lastmovetox=\dimen284
+\tikz@lastmovetoy=\dimen285
+\tikzleveldistance=\dimen286
+\tikzsiblingdistance=\dimen287
 \tikz@figbox=\box66
 \tikz@figbox@bg=\box67
 \tikz@tempbox=\box68
@@ -604,9 +604,9 @@ File: here_the_logos 2004/09/21 KTH logo Swedish, colour
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/emptypage/emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty pages
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/lipsum/lipsum.sty (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2026-01-19 L3 programming layer (loader) 
+Package: expl3 2026-03-20 L3 programming layer (loader) 
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count343
 ))
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
@@ -764,7 +764,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \c@tcblayer=\count362
 \c@tcolorbox@number=\count363
 \l__tcobox_tmpa_box=\box79
-\l__tcobox_tmpa_dim=\dimen286
+\l__tcobox_tmpa_dim=\dimen288
 \tcb@temp=\box80
 \tcb@temp=\box81
 \tcb@temp=\box82
@@ -774,21 +774,21 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip155
 \multirow@cntb=\count364
 \multirow@dima=\skip156
-\bigstrutjot=\dimen287
+\bigstrutjot=\dimen289
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen288
+\col@sep=\dimen290
 \ar@mcellbox=\box84
-\extrarowheight=\dimen289
+\extrarowheight=\dimen291
 \NC@list=\toks54
 \extratabsurround=\skip157
 \backup@length=\skip158
 \ar@cellbox=\box85
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen290
-\WF@size=\dimen291
+\wrapoverhang=\dimen292
+\WF@size=\dimen293
 \c@WF@wrappedlines=\count365
 \WF@box=\box86
 \WF@everypar=\toks55
@@ -812,8 +812,8 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box87
 \sift@deathcycles=\count367
-\@vwid@loff=\dimen292
-\@vwid@roff=\dimen293
+\@vwid@loff=\dimen294
+\@vwid@roff=\dimen295
 )
 ==> First Aid for varwidth.sty applied!
 \c@taburow=\count368
@@ -822,15 +822,15 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@Xcol=\count371
 \tabu@alloc=\count372
 \tabu@nested=\count373
-\tabu@target=\dimen294
-\tabu@spreadtarget=\dimen295
-\tabu@naturalX=\dimen296
-\tabucolX=\dimen297
-\tabu@Xsum=\dimen298
-\extrarowdepth=\dimen299
-\abovetabulinesep=\dimen300
-\belowtabulinesep=\dimen301
-\tabustrutrule=\dimen302
+\tabu@target=\dimen296
+\tabu@spreadtarget=\dimen297
+\tabu@naturalX=\dimen298
+\tabucolX=\dimen299
+\tabu@Xsum=\dimen300
+\extrarowdepth=\dimen301
+\abovetabulinesep=\dimen302
+\belowtabulinesep=\dimen303
+\tabustrutrule=\dimen304
 \tabu@thebody=\toks57
 \tabu@footnotes=\toks58
 \tabu@box=\box88
@@ -847,14 +847,14 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen303
-\captionmargin=\dimen304
-\caption@leftmargin=\dimen305
-\caption@rightmargin=\dimen306
-\caption@width=\dimen307
-\caption@indent=\dimen308
-\caption@parindent=\dimen309
-\caption@hangindent=\dimen310
+\caption@tempdima=\dimen305
+\captionmargin=\dimen306
+\caption@leftmargin=\dimen307
+\caption@rightmargin=\dimen308
+\caption@width=\dimen309
+\caption@indent=\dimen310
+\caption@parindent=\dimen311
+\caption@hangindent=\dimen312
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count374
@@ -866,7 +866,7 @@ Package caption Info: wrapfig package is loaded.
 )
 \c@KVtest=\count376
 \sf@farskip=\skip161
-\sf@captopadj=\dimen311
+\sf@captopadj=\dimen313
 \sf@capskip=\skip162
 \sf@nearskip=\skip163
 \c@subfigure=\count377
@@ -893,23 +893,23 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box94
 )) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen312
-\lightrulewidth=\dimen313
-\cmidrulewidth=\dimen314
-\belowrulesep=\dimen315
-\belowbottomsep=\dimen316
-\aboverulesep=\dimen317
-\abovetopsep=\dimen318
-\cmidrulesep=\dimen319
-\cmidrulekern=\dimen320
-\defaultaddspace=\dimen321
+\heavyrulewidth=\dimen314
+\lightrulewidth=\dimen315
+\cmidrulewidth=\dimen316
+\belowrulesep=\dimen317
+\belowbottomsep=\dimen318
+\aboverulesep=\dimen319
+\abovetopsep=\dimen320
+\cmidrulesep=\dimen321
+\cmidrulekern=\dimen322
+\defaultaddspace=\dimen323
 \@cmidla=\count384
 \@cmidlb=\count385
-\@aboverulesep=\dimen322
-\@belowrulesep=\dimen323
+\@aboverulesep=\dimen324
+\@belowrulesep=\dimen325
 \@thisruleclass=\count386
 \@lastruleclass=\count387
-\@thisrulewidth=\dimen324
+\@thisrulewidth=\dimen326
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip168
@@ -917,7 +917,7 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTpre=\skip170
 \LTpost=\skip171
 \LTchunksize=\count388
-\LTcapwidth=\dimen325
+\LTcapwidth=\dimen327
 \LT@head=\box95
 \LT@firsthead=\box96
 \LT@foot=\box97
@@ -936,15 +936,15 @@ Package: threeparttablex 2013/07/23 v0.3 by daleif
 \UL@hyphenbox=\box101
 \UL@skip=\skip173
 \UL@hook=\toks61
-\UL@height=\dimen326
+\UL@height=\dimen328
 \UL@pe=\count393
-\UL@pixel=\dimen327
+\UL@pixel=\dimen329
 \ULC@box=\box102
 Package: ulem 2019/11/18
-\ULdepth=\dimen328
+\ULdepth=\dimen330
 ) (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen329
+\rotheadsize=\dimen331
 \c@nlinenum=\count394
 \TeXr@lab=\toks62
 ) (./tfe_principal.aux
@@ -1311,20 +1311,30 @@ LaTeX Info: Redefining \% on input line 2040.
 LaTeX Info: Redefining \. on input line 2040.
 LaTeX Info: Redefining \% on input line 2040.
 [22]
-LaTeX Info: Redefining \. on input line 2050.
-LaTeX Info: Redefining \% on input line 2050.
-LaTeX Info: Redefining \. on input line 2050.
-LaTeX Info: Redefining \% on input line 2050.
+LaTeX Info: Redefining \. on input line 2046.
+LaTeX Info: Redefining \% on input line 2046.
+LaTeX Info: Redefining \. on input line 2046.
+LaTeX Info: Redefining \% on input line 2046.
 [23 <./Correspondencia_Cournot.png>]
-LaTeX Info: Redefining \. on input line 2114.
-LaTeX Info: Redefining \% on input line 2114.
-LaTeX Info: Redefining \. on input line 2114.
-LaTeX Info: Redefining \% on input line 2114.
+LaTeX Info: Redefining \. on input line 2104.
+LaTeX Info: Redefining \% on input line 2104.
+LaTeX Info: Redefining \. on input line 2104.
+LaTeX Info: Redefining \% on input line 2104.
 [24]
+LaTeX Info: Redefining \. on input line 2204.
+LaTeX Info: Redefining \% on input line 2204.
+LaTeX Info: Redefining \. on input line 2204.
+LaTeX Info: Redefining \% on input line 2204.
+[25]
+LaTeX Info: Redefining \. on input line 2204.
+LaTeX Info: Redefining \% on input line 2204.
+LaTeX Info: Redefining \. on input line 2204.
+LaTeX Info: Redefining \% on input line 2204.
+[26]
 Cap\'{\i }tulo 4.
-[25
+[27
 
-] [26
+] [28
 
 ] (./tfe_principal.bbl
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotleft (encoding OT1) on input line 3.
@@ -1339,7 +1349,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 []$\T1/lmr/m/n/12 https : / / economia . uc3m . es / docencia / ME-[]MEIM-[]Game-[]Theory / classnotes /
  []
 
-) [27
+) [29
 
 ] (./tfe_principal.aux
 LaTeX Info: Redefining \. on input line 9.
@@ -1347,7 +1357,7 @@ LaTeX Info: Redefining \% on input line 9.
 )
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
+L3 programming layer <2026-03-20>
  ***********
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1356,18 +1366,18 @@ Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
 (rerunfilecheck)             Checksum: 5BE0BDA2133FABADADF38FFA9655FA03;6775.
  ) 
 Here is how much of TeX's memory you used:
- 31639 strings out of 469497
- 601766 string characters out of 5468082
- 1108193 words of memory out of 5000000
- 59564 multiletter control sequences out of 15000+600000
+ 31665 strings out of 469321
+ 602106 string characters out of 5464736
+ 1113148 words of memory out of 5000000
+ 59764 multiletter control sequences out of 15000+600000
  728265 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,13n,94p,1597b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfe_principal.pdf (37 pages, 527859 bytes).
+Output written on tfe_principal.pdf (39 pages, 536469 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 482 compressed objects within 5 object streams
- 121 named destinations out of 1000 (max. 500000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 488 compressed objects within 5 object streams
+ 123 named destinations out of 1000 (max. 500000)
  313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
