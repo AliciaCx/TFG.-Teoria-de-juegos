@@ -23,9 +23,9 @@ source("cabecera_chunk_inicio.R")
 
 # Implementación en R
 
-## Introducción a R como herramienta de análisis
+<!-- ## Introducción a R como herramienta de análisis -->
 
-## Represenacion de juegos en R
+<!-- ## Represenacion de juegos en R -->
 
-## Paquetes de R
+<!-- ## Paquetes de R -->
 

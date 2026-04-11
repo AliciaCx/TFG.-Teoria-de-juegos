@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.8)  8 APR 2026 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.8)  11 APR 2026 14:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -976,27 +976,30 @@ LaTeX Warning: Label `tab:dilema_prisionero' multiply defined.
 
 LaTeX Warning: Label `tab:dilema_prisionero' multiply defined.
 
+
+LaTeX Warning: Label `fig:subjuego_propios' multiply defined.
+
 )
 \openout1 = `tfe_principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 506.
-LaTeX Font Info:    ... okay on input line 506.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 507.
+LaTeX Font Info:    ... okay on input line 507.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1031,7 +1034,7 @@ LaTeX Font Info:    ... okay on input line 506.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 506.
+Package hyperref Info: Link coloring OFF on input line 507.
 (./tfe_principal.out) (./tfe_principal.out)
 \@outlinefile=\write4
 \openout4 = `tfe_principal.out'.
@@ -1042,8 +1045,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 506.
-LaTeX Info: Redefining \% on input line 506.
+LaTeX Info: Redefining \. on input line 507.
+LaTeX Info: Redefining \% on input line 507.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: longtable package is loaded.
@@ -1052,10 +1055,10 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<logo.png, id=151, 301.125pt x 262.9825pt>
+<logo.png, id=143, 301.125pt x 262.9825pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 564.
+Package pdftex.def Info: logo.png  used on input line 565.
 (pdftex.def)             Requested size: 170.71652pt x 149.09901pt.
 [1
 
@@ -1133,233 +1136,352 @@ Cap\'{\i }tulo 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.779 \chapter
+l.780 \chapter
               {Fundamentos de la Teoría de [1
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.779 \chapter
+l.780 \chapter
               {Fundamentos de la Teoría de [2
 
 ]
 Cap\'{\i }tulo 2.
 [3]
-LaTeX Info: Redefining \. on input line 908.
-LaTeX Info: Redefining \% on input line 908.
+LaTeX Info: Redefining \. on input line 909.
+LaTeX Info: Redefining \% on input line 909.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 908.
-LaTeX Info: Redefining \. on input line 908.
-LaTeX Info: Redefining \% on input line 908.
+(babel)             Reported on input line 909.
+LaTeX Info: Redefining \. on input line 909.
+LaTeX Info: Redefining \% on input line 909.
 [4{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-LaTeX Info: Redefining \. on input line 975.
-LaTeX Info: Redefining \% on input line 975.
-LaTeX Info: Redefining \. on input line 975.
-LaTeX Info: Redefining \% on input line 975.
+LaTeX Info: Redefining \. on input line 976.
+LaTeX Info: Redefining \% on input line 976.
+LaTeX Info: Redefining \. on input line 976.
+LaTeX Info: Redefining \% on input line 976.
 [5]
-LaTeX Info: Redefining \. on input line 1041.
-LaTeX Info: Redefining \% on input line 1041.
-LaTeX Info: Redefining \. on input line 1041.
-LaTeX Info: Redefining \% on input line 1041.
+LaTeX Info: Redefining \. on input line 1042.
+LaTeX Info: Redefining \% on input line 1042.
+LaTeX Info: Redefining \. on input line 1042.
+LaTeX Info: Redefining \% on input line 1042.
 [6]
-LaTeX Info: Redefining \. on input line 1162.
-LaTeX Info: Redefining \% on input line 1162.
-LaTeX Info: Redefining \. on input line 1162.
-LaTeX Info: Redefining \% on input line 1162.
+LaTeX Info: Redefining \. on input line 1163.
+LaTeX Info: Redefining \% on input line 1163.
+LaTeX Info: Redefining \. on input line 1163.
+LaTeX Info: Redefining \% on input line 1163.
 [7]
-LaTeX Info: Redefining \. on input line 1182.
-LaTeX Info: Redefining \% on input line 1182.
-LaTeX Info: Redefining \. on input line 1182.
-LaTeX Info: Redefining \% on input line 1182.
+LaTeX Info: Redefining \. on input line 1183.
+LaTeX Info: Redefining \% on input line 1183.
+LaTeX Info: Redefining \. on input line 1183.
+LaTeX Info: Redefining \% on input line 1183.
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 1202--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1203--1204
 
  []
 
-<arbol_juego.png, id=329, 432.61626pt x 243.91125pt>
+<arbol_juego.png, id=327, 432.61626pt x 243.91125pt>
 File: arbol_juego.png Graphic file (type png)
 <use arbol_juego.png>
-Package pdftex.def Info: arbol_juego.png  used on input line 1210.
+Package pdftex.def Info: arbol_juego.png  used on input line 1211.
 (pdftex.def)             Requested size: 254.37029pt x 143.4151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1219
+Underfull \hbox (badness 10000) in paragraph at lines 1219--1220
 
  []
 
-<arbol_juego2.png, id=331, 241.90375pt x 160.6pt>
+<arbol_juego2.png, id=329, 241.90375pt x 160.6pt>
 File: arbol_juego2.png Graphic file (type png)
 <use arbol_juego2.png>
-Package pdftex.def Info: arbol_juego2.png  used on input line 1228.
+Package pdftex.def Info: arbol_juego2.png  used on input line 1229.
 (pdftex.def)             Requested size: 254.37029pt x 168.88492pt.
-LaTeX Info: Redefining \. on input line 1260.
-LaTeX Info: Redefining \% on input line 1260.
-LaTeX Info: Redefining \. on input line 1260.
-LaTeX Info: Redefining \% on input line 1260.
+LaTeX Info: Redefining \. on input line 1261.
+LaTeX Info: Redefining \% on input line 1261.
+LaTeX Info: Redefining \. on input line 1261.
+LaTeX Info: Redefining \% on input line 1261.
 [9 <./arbol_juego.png>]
-LaTeX Info: Redefining \. on input line 1289.
-LaTeX Info: Redefining \% on input line 1289.
-LaTeX Info: Redefining \. on input line 1289.
-LaTeX Info: Redefining \% on input line 1289.
+LaTeX Info: Redefining \. on input line 1290.
+LaTeX Info: Redefining \% on input line 1290.
+LaTeX Info: Redefining \. on input line 1290.
+LaTeX Info: Redefining \% on input line 1290.
 [10 <./arbol_juego2.png>]
 Cap\'{\i }tulo 3.
 [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1389--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1396
 
  []
 
-LaTeX Info: Redefining \. on input line 1432.
-LaTeX Info: Redefining \% on input line 1432.
-LaTeX Info: Redefining \. on input line 1432.
-LaTeX Info: Redefining \% on input line 1432.
+LaTeX Info: Redefining \. on input line 1438.
+LaTeX Info: Redefining \% on input line 1438.
+LaTeX Info: Redefining \. on input line 1438.
+LaTeX Info: Redefining \% on input line 1438.
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1458
+Underfull \hbox (badness 10000) in paragraph at lines 1463--1464
 
  []
 
-LaTeX Info: Redefining \. on input line 1479.
-LaTeX Info: Redefining \% on input line 1479.
-LaTeX Info: Redefining \. on input line 1479.
-LaTeX Info: Redefining \% on input line 1479.
+LaTeX Info: Redefining \. on input line 1485.
+LaTeX Info: Redefining \% on input line 1485.
+LaTeX Info: Redefining \. on input line 1485.
+LaTeX Info: Redefining \% on input line 1485.
 [13]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1489.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1495.
 (/Users/aliciac/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1510--1511
+Underfull \hbox (badness 10000) in paragraph at lines 1516--1517
 
  []
 
-LaTeX Info: Redefining \. on input line 1558.
-LaTeX Info: Redefining \% on input line 1558.
-LaTeX Info: Redefining \. on input line 1558.
-LaTeX Info: Redefining \% on input line 1558.
+LaTeX Info: Redefining \. on input line 1564.
+LaTeX Info: Redefining \% on input line 1564.
+LaTeX Info: Redefining \. on input line 1564.
+LaTeX Info: Redefining \% on input line 1564.
 [14{/Users/aliciac/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Info: Redefining \. on input line 1566.
-LaTeX Info: Redefining \% on input line 1566.
-LaTeX Info: Redefining \. on input line 1566.
-LaTeX Info: Redefining \% on input line 1566.
+LaTeX Info: Redefining \. on input line 1572.
+LaTeX Info: Redefining \% on input line 1572.
+LaTeX Info: Redefining \. on input line 1572.
+LaTeX Info: Redefining \% on input line 1572.
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 1589--1590
+Package mdframed Info: mdframed works in twoside mode on input line 1598.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1598.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1599--1600
 
  []
 
-LaTeX Info: Redefining \. on input line 1656.
-LaTeX Info: Redefining \% on input line 1656.
-LaTeX Info: Redefining \. on input line 1656.
-LaTeX Info: Redefining \% on input line 1656.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1662.
+LaTeX Info: Redefining \. on input line 1662.
+LaTeX Info: Redefining \% on input line 1662.
+LaTeX Info: Redefining \. on input line 1662.
+LaTeX Info: Redefining \% on input line 1662.
 [16]
-LaTeX Info: Redefining \. on input line 1689.
-LaTeX Info: Redefining \% on input line 1689.
-LaTeX Info: Redefining \. on input line 1689.
-LaTeX Info: Redefining \% on input line 1689.
+LaTeX Info: Redefining \. on input line 1696.
+LaTeX Info: Redefining \% on input line 1696.
+LaTeX Info: Redefining \. on input line 1696.
+LaTeX Info: Redefining \% on input line 1696.
 [17]
-LaTeX Info: Redefining \. on input line 1774.
-LaTeX Info: Redefining \% on input line 1774.
-LaTeX Info: Redefining \. on input line 1774.
-LaTeX Info: Redefining \% on input line 1774.
+LaTeX Info: Redefining \. on input line 1781.
+LaTeX Info: Redefining \% on input line 1781.
+LaTeX Info: Redefining \. on input line 1781.
+LaTeX Info: Redefining \% on input line 1781.
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 1785--1786
+Underfull \hbox (badness 10000) in paragraph at lines 1792--1793
 
  []
 
-LaTeX Info: Redefining \. on input line 1837.
-LaTeX Info: Redefining \% on input line 1837.
-LaTeX Info: Redefining \. on input line 1837.
-LaTeX Info: Redefining \% on input line 1837.
+LaTeX Info: Redefining \. on input line 1844.
+LaTeX Info: Redefining \% on input line 1844.
+LaTeX Info: Redefining \. on input line 1844.
+LaTeX Info: Redefining \% on input line 1844.
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 1873--1875
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1876--1877
-
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 1879.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1883--1884
-
- []
-
+Package mdframed Info: mdframed works in twoside mode on input line 1883.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1883.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1885--1887
 
  []
 
-LaTeX Info: Redefining \. on input line 1924.
-LaTeX Info: Redefining \% on input line 1924.
-LaTeX Info: Redefining \. on input line 1924.
-LaTeX Info: Redefining \% on input line 1924.
-[20]
-LaTeX Info: Redefining \. on input line 1934.
-LaTeX Info: Redefining \% on input line 1934.
-LaTeX Info: Redefining \. on input line 1934.
-LaTeX Info: Redefining \% on input line 1934.
-[21]
-<Correspondencia_Cournot.png, id=408, 604.2575pt x 474.77374pt>
-File: Correspondencia_Cournot.png Graphic file (type png)
-<use Correspondencia_Cournot.png>
-Package pdftex.def Info: Correspondencia_Cournot.png  used on input line 2035.
-(pdftex.def)             Requested size: 254.37029pt x 199.86002pt.
-LaTeX Info: Redefining \. on input line 2041.
-LaTeX Info: Redefining \% on input line 2041.
-LaTeX Info: Redefining \. on input line 2041.
-LaTeX Info: Redefining \% on input line 2041.
-[22]
-LaTeX Info: Redefining \. on input line 2047.
-LaTeX Info: Redefining \% on input line 2047.
-LaTeX Info: Redefining \. on input line 2047.
-LaTeX Info: Redefining \% on input line 2047.
-[23 <./Correspondencia_Cournot.png>]
-LaTeX Info: Redefining \. on input line 2105.
-LaTeX Info: Redefining \% on input line 2105.
-LaTeX Info: Redefining \. on input line 2105.
-LaTeX Info: Redefining \% on input line 2105.
-[24]
-Package mdframed Info: mdframed works in twoside mode on input line 2136.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2136.
-LaTeX Info: Redefining \. on input line 2200.
-LaTeX Info: Redefining \% on input line 2200.
-LaTeX Info: Redefining \. on input line 2200.
-LaTeX Info: Redefining \% on input line 2200.
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 2220--2221
+
+Underfull \hbox (badness 10000) in paragraph at lines 1888--1889
 
  []
 
-LaTeX Info: Redefining \. on input line 2411.
-LaTeX Info: Redefining \% on input line 2411.
-LaTeX Info: Redefining \. on input line 2411.
-LaTeX Info: Redefining \% on input line 2411.
-[26]
-Overfull \vbox (7.26422pt too high) has occurred while \output is active []
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 1891.
 
-LaTeX Info: Redefining \. on input line 2411.
-LaTeX Info: Redefining \% on input line 2411.
-LaTeX Info: Redefining \. on input line 2411.
-LaTeX Info: Redefining \% on input line 2411.
+Underfull \hbox (badness 10000) in paragraph at lines 1893--1894
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1897
+
+ []
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1933.
+LaTeX Info: Redefining \. on input line 1933.
+LaTeX Info: Redefining \% on input line 1933.
+LaTeX Info: Redefining \. on input line 1933.
+LaTeX Info: Redefining \% on input line 1933.
+[20]
+LaTeX Info: Redefining \. on input line 1944.
+LaTeX Info: Redefining \% on input line 1944.
+LaTeX Info: Redefining \. on input line 1944.
+LaTeX Info: Redefining \% on input line 1944.
+[21]
+Package mdframed Info: mdframed works in twoside mode on input line 1990.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1990.
+<Correspondencia_Cournot.png, id=406, 604.2575pt x 474.77374pt>
+File: Correspondencia_Cournot.png Graphic file (type png)
+<use Correspondencia_Cournot.png>
+Package pdftex.def Info: Correspondencia_Cournot.png  used on input line 2048.
+(pdftex.def)             Requested size: 215.62206pt x 169.41881pt.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 2053.
+LaTeX Info: Redefining \. on input line 2053.
+LaTeX Info: Redefining \% on input line 2053.
+LaTeX Info: Redefining \. on input line 2053.
+LaTeX Info: Redefining \% on input line 2053.
+[22]
+LaTeX Info: Redefining \. on input line 2060.
+LaTeX Info: Redefining \% on input line 2060.
+LaTeX Info: Redefining \. on input line 2060.
+LaTeX Info: Redefining \% on input line 2060.
+[23 <./Correspondencia_Cournot.png>]
+LaTeX Info: Redefining \. on input line 2118.
+LaTeX Info: Redefining \% on input line 2118.
+LaTeX Info: Redefining \. on input line 2118.
+LaTeX Info: Redefining \% on input line 2118.
+[24]
+Package mdframed Info: mdframed works in twoside mode on input line 2149.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2149.
+LaTeX Info: Redefining \. on input line 2213.
+LaTeX Info: Redefining \% on input line 2213.
+LaTeX Info: Redefining \. on input line 2213.
+LaTeX Info: Redefining \% on input line 2213.
+[25]
+Package mdframed Info: mdframed works in twoside mode on input line 2219.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2219.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2235--2236
+
+ []
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 2451.
+LaTeX Info: Redefining \. on input line 2451.
+LaTeX Info: Redefining \% on input line 2451.
+LaTeX Info: Redefining \. on input line 2451.
+LaTeX Info: Redefining \% on input line 2451.
+[26]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 2451.
+LaTeX Info: Redefining \. on input line 2451.
+LaTeX Info: Redefining \% on input line 2451.
+LaTeX Info: Redefining \. on input line 2451.
+LaTeX Info: Redefining \% on input line 2451.
 [27]
-LaTeX Info: Redefining \. on input line 2503.
-LaTeX Info: Redefining \% on input line 2503.
-LaTeX Info: Redefining \. on input line 2503.
-LaTeX Info: Redefining \% on input line 2503.
+Package mdframed Info: mdframed works in twoside mode on input line 2497.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2497.
+
+LaTeX Warning: Command \' invalid in math mode on input line 2520.
+
+<batalla_sexos.png, id=437, 265.99374pt x 194.7275pt>
+File: batalla_sexos.png Graphic file (type png)
+<use batalla_sexos.png>
+Package pdftex.def Info: batalla_sexos.png  used on input line 2559.
+(pdftex.def)             Requested size: 194.05853pt x 142.06966pt.
+
+LaTeX Warning: Command \' invalid in math mode on input line 2567.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 2567.
+
+Package mdframed Info: Not enough space on this page on input line 2570.
+LaTeX Info: Redefining \. on input line 2570.
+LaTeX Info: Redefining \% on input line 2570.
+LaTeX Info: Redefining \. on input line 2570.
+LaTeX Info: Redefining \% on input line 2570.
 [28]
-LaTeX Info: Redefining \. on input line 2550.
-LaTeX Info: Redefining \% on input line 2550.
-LaTeX Info: Redefining \. on input line 2550.
-LaTeX Info: Redefining \% on input line 2550.
-[29] [30
+Package mdframed Info: Not enough space on this page on input line 2570.
+LaTeX Info: Redefining \. on input line 2570.
+LaTeX Info: Redefining \% on input line 2570.
+LaTeX Info: Redefining \. on input line 2570.
+LaTeX Info: Redefining \% on input line 2570.
+[29]
+LaTeX Info: Redefining \. on input line 2619.
+LaTeX Info: Redefining \% on input line 2619.
+LaTeX Info: Redefining \. on input line 2619.
+LaTeX Info: Redefining \% on input line 2619.
+[30 <./batalla_sexos.png>]
+LaTeX Info: Redefining \. on input line 2692.
+LaTeX Info: Redefining \% on input line 2692.
+LaTeX Info: Redefining \. on input line 2692.
+LaTeX Info: Redefining \% on input line 2692.
+[31]
+Package mdframed Info: mdframed works in twoside mode on input line 2731.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2731.
+<subjuego_propio.png, id=470, 306.14375pt x 157.58875pt>
+File: subjuego_propio.png Graphic file (type png)
+<use subjuego_propio.png>
+Package pdftex.def Info: subjuego_propio.png  used on input line 2737.
+(pdftex.def)             Requested size: 301.86955pt x 155.39534pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2753--2755
+
+ []
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 2761.
+LaTeX Info: Redefining \. on input line 2761.
+LaTeX Info: Redefining \% on input line 2761.
+LaTeX Info: Redefining \. on input line 2761.
+LaTeX Info: Redefining \% on input line 2761.
+[32 <./subjuego_propio.png>]
+LaTeX Info: Redefining \. on input line 2790.
+LaTeX Info: Redefining \% on input line 2790.
+LaTeX Info: Redefining \. on input line 2790.
+LaTeX Info: Redefining \% on input line 2790.
+[33]
+<induccion_a.png, id=485, 349.305pt x 162.6075pt>
+File: induccion_a.png Graphic file (type png)
+<use induccion_a.png>
+Package pdftex.def Info: induccion_a.png  used on input line 2830.
+(pdftex.def)             Requested size: 211.97308pt x 98.67682pt.
+<induccion_b.png, id=486, 349.305pt x 157.58875pt>
+File: induccion_b.png Graphic file (type png)
+<use induccion_b.png>
+Package pdftex.def Info: induccion_b.png  used on input line 2835.
+(pdftex.def)             Requested size: 211.97308pt x 95.63123pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2840--2841
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2842--2843
+
+ []
+
+LaTeX Info: Redefining \. on input line 2846.
+LaTeX Info: Redefining \% on input line 2846.
+LaTeX Info: Redefining \. on input line 2846.
+LaTeX Info: Redefining \% on input line 2846.
+[34]
+LaTeX Info: Redefining \. on input line 2875.
+LaTeX Info: Redefining \% on input line 2875.
+LaTeX Info: Redefining \. on input line 2875.
+LaTeX Info: Redefining \% on input line 2875.
+[35 <./induccion_a.png> <./induccion_b.png>] [36
 
 ]
 Cap\'{\i }tulo 4.
-[31] [32
+[37] [38
 
 ] (./tfe_principal.bbl
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotleft (encoding OT1) on input line 3.
@@ -1374,7 +1496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 []$\T1/lmr/m/n/12 https : / / economia . uc3m . es / docencia / ME-[]MEIM-[]Game-[]Theory / classnotes /
  []
 
-) [33
+) [39
 
 ] (./tfe_principal.aux
 LaTeX Info: Redefining \. on input line 9.
@@ -1388,21 +1510,21 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
-(rerunfilecheck)             Checksum: 3379BD2C2A64E7E1CE582170B1C3F7E2;7125.
+(rerunfilecheck)             Checksum: 7C531C7E13CF344BC116FEC47CE6CE6D;6716.
  ) 
 Here is how much of TeX's memory you used:
- 31688 strings out of 469321
- 602457 string characters out of 5464736
- 1125148 words of memory out of 5000000
- 59775 multiletter control sequences out of 15000+600000
+ 31751 strings out of 469321
+ 603522 string characters out of 5464736
+ 1155138 words of memory out of 5000000
+ 59811 multiletter control sequences out of 15000+600000
  728265 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,13n,94p,1597b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfe_principal.pdf (43 pages, 560796 bytes).
+Output written on tfe_principal.pdf (49 pages, 670358 bytes).
 PDF statistics:
- 628 PDF objects out of 1000 (max. 8388607)
- 522 compressed objects within 6 object streams
- 135 named destinations out of 1000 (max. 500000)
- 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 683 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 

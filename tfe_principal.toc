@@ -26,11 +26,9 @@
 \contentsline {subsection}{\numberline {3.2.1}Equilibrio de Nash en estrategias puras}{20}{subsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.1.1}Correspondencia de respuesta óptima}{22}{subsubsection.3.2.1.1}%
 \contentsline {subsection}{\numberline {3.2.2}Equilibrio de Nash en estrategias mixtas}{24}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Cálculo de EN en estrategias mixtas en juegos 2 x 2}{28}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Optimalidad de Pareto}{28}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Equilibrio perfecto en subjuegos}{29}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Implementación en R}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducción a R como herramienta de análisis}{31}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Represenacion de juegos en R}{31}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Paquetes de R}{31}{section.4.3}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{33}{chapter*.25}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}Cálculo de EN en estrategias mixtas en juegos 2 x 2}{28}{subsubsection.3.2.2.1}%
+\contentsline {section}{\numberline {3.3}Optimalidad de Pareto}{30}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Equilibrio de Nash perfecto en subjuegos}{31}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Inducción hacia atrás}{33}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Implementación en R}{37}{chapter.4}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{39}{chapter*.30}%

@@ -23,7 +23,7 @@ source("cabecera_chunk_inicio.R")
 
 # Concepto de solución
 
-En la teoría de juegos, un **concepto de solución** es una regla formal para predecir cómo se jugará un juego. Estas predicciones se denominan "soluciones", y describen las estrategias que adoptarán los jugadores y, por tanto, el resultado que puede esperarse del juego. 
+En la teoría de juegos, un **concepto de solución** es una regla formal que permite predecir cómo se jugará un juego. Estas predicciones se denominan "soluciones", y describen las estrategias que adoptarán los jugadores y, por tanto, el resultado que puede esperarse del juego. 
 
 En general, los conceptos de solución tratan de identificar perfiles de estrategias que puedan considerarse racionales o estables, teniendo en cuenta que cada jugador toma sus decisiones considerando las posibles acciones de los demás participantes.
 
@@ -31,7 +31,9 @@ Los conceptos de solución más comúnmente utilizados son conceptos de equilibr
 
 En muchos juegos, un mismo concepto de solución puede dar lugar a varias soluciones posibles. Por este motivo, la teoría de juegos introduce en ocasiones refinamientos de equilibrio, cuyo objetivo es reducir el conjunto de soluciones y seleccionar aquellas que resultan más razonables.
 
-A continuación, se presentan algunos conceptos de solución:
+En este trabajo no se abordarán los conceptos de solución correspondientes a juegos con información incompleta, que se centran principalmente en el equilibrio bayesiano.
+
+A continuación, se presentan algunos conceptos de solución para **juegos estáticos y dinámicos con información completa**:
 
 ## Estrategias dominadas y dominantes
 Una estrategia de un jugador se dice **dominante** si es tan buena o mejor que cualquier otra como respuesta a cualquier combinación de estrategias que elijan los demás jugadores. Por otro lado, una estrategia $s_i$ de un jugador se dice que está **dominada** por otra estrategia $s'_i$ del mismo jugador si la segunda le proporciona un resultado al menos tan bueno, y en algún caso mejor, independientemente de lo que hagan los otros jugadores. 
@@ -217,7 +219,11 @@ A diferencia de lo que ocurre con la eliminación iterativa estricta, en este ca
 
 Este concepto de solución determina como solución $\mathbf{S^{EID}}$.
 
-\begin{tcolorbox}[colback=blue!10]
+\begin{mdframed}[
+  backgroundcolor=blue!10,
+  linecolor=gray,
+  linewidth=2pt,
+  roundcorner=20pt]
 \textbf{Ejemplo 3.4} \\
 
 Dado el juego
@@ -241,9 +247,6 @@ El jugador 1 (J1), que es racional, compara sus estrategias \textbf{A}, \textbf{
 
 El jugador 2 (J2) sabe que J1 es racional y por tanto sabe que J1 ha eliminado la estrategia \textbf{B}. En consecuencia, J2 compara ahora sus estrategias considerando únicamente las estrategias \textbf{A} y \textbf{M} de J1. Al comparar \textbf{I} con \textbf{C}, observa que \textbf{C} proporciona siempre un pago mayor que \textbf{I} (pagos 2 frente a 1 si J1 juega \textbf{A}, y 5 frente a 4 si J1 juega \textbf{M}). Por tanto, \textbf{C} domina estrictamente a \textbf{I} y J2 elimina la estrategia \textbf{I}.
 
-\end{tcolorbox}
-
-\begin{tcolorbox}[colback=blue!10]
 \begin{table}[H]
 \centering
 \begin{tabular}{c|cc}
@@ -284,7 +287,7 @@ A & (4,2)
 \end{table}
 
 En conclusión, las únicas estrategias supervivientes al proceso de eliminación iterativa de estrategias débilmente dominadas son \textbf{A} para el jugador 1 y \textbf{C} para el jugador 2. Ambas constituyen el único perfil solución del juego, es decir, $\mathbf{S^{EID}}$ = \{(A,C)\}.
-\end{tcolorbox}
+\end{mdframed}
 
 Cabe mencionar que todos estos métodos son evidentemente aplicables a juegos expresados en su forma extensiva:
 
@@ -453,7 +456,12 @@ No obstante, esto no implica que cada jugador esté obteniendo el mejor resultad
 
 En un mismo juego pueden existir varios equilibrios de Nash y, llamaremos $\mathbf{S^{EN}}$ al conjunto de perfiles que son equilibrios de Nash.
 
-\begin{tcolorbox}[colback=blue!10, fontupper=\small]
+\begin{mdframed}[
+  backgroundcolor=blue!10,
+  linecolor=gray,
+  linewidth=2pt,
+  roundcorner=20pt]
+\small
 \textbf{Ejemplo 3.6} \\
 Para el dilema del prisionero (Tabla 3.1), y siguiendo la definición, vamos a intentar encontrar el equilibrio de Nash. Ello nos obliga a enumerar todos los perfiles de estrategias posibles y ver si fijada una estrategia del perfil para un jugador, la otra estrategia maximiza los pagos del otro jugador. \\
 
@@ -461,9 +469,7 @@ El dilema del prisionero presenta cuatro perfiles como posibles soluciones EN de
 
 Comencemos analizando el perfil (Callar, Callar) y supongamos que es un EN. Si
 J1 prevé que J2 jugará Callar, ¿le interesará a J1 seguir pensando en jugar Callar? La respuesta es no. Dada la estrategia Callar de J2, el jugador J1 preferirá desviarse de la estrategia indicada para él en el perfil propuesto como solución puesto que con la estrategia Confesar obtiene un pago superior $u_1(Confesar,Callar) = 5 > 4 = u_1(Callar, Callar)$. Este argumento también es aplicable al jugador J2 (por la simetría del juego). 
-\end{tcolorbox}
 
-\begin{tcolorbox}[colback=blue!10, fontupper=\small]
 Supongamos que se propone como solución EN el perfil (Confesar, Callar). En este caso, si el jugador J2 supusiera que J1 iba a jugar Confesar, a él le convendría jugar la estrategia Confesar pues con ello maximiza su utilidad en este caso particular $u_2(Confesar, Confesar)=1 > 0 = u_2(Confesar, Callar)$. Por tanto, el perfil (Confesar, Callar) tampoco es un EN. El caso (Callar, Confesar) es análogo al anterior intercambiando la posición de los jugadores.\\
 
 Finalmente, nos queda el caso (Confesar, Confesar). Este sí que es un perfil de
@@ -504,7 +510,7 @@ Confesar & ($\underline{5}$,0) & ($\underline{1}$,$\underline{1}$)
 \end{itemize}
 
 Procediendo de manera análoga para el Preso 2, se concluye que el único equilibrio de Nash es el perfil $(\textit{Confesar}, \textit{Confesar})$, ya que es el único perfil en cuyo vector de pagos están todos los pagos subrayados. En consecuencia, $\mathbf{S^{EN}} = \{(\textit{Confesar}, \textit{Confesar})\}$.
-\end{tcolorbox}
+\end{mdframed}
 
 #### Correspondencia de respuesta óptima
 El cálculo de los EN en estrategias puras depende del tipo de juego. En los juegos finitos y pequeños, se pueden analizar todas las combinaciones posibles, mientras que en los juegos infinitos o más complejos, es necesario un planteamiento más analítico, que suele implicar varios problemas de optimización simultáneos (uno por cada jugador).
@@ -528,7 +534,12 @@ Podemos ahora automatizar el cálculo de los EN mediante un proceso en dos etapa
 
   - Después, identificamos los EN como los perfiles estratégicos que son puntos de intersección de todas las correspondencias de respuesta óptima.
 
-\begin{tcolorbox}[colback=blue!10, fontupper=\small]
+\begin{mdframed}[
+  backgroundcolor=blue!10,
+  linecolor=gray,
+  linewidth=2pt,
+  roundcorner=20pt]
+\small
 \textbf{Ejemplo 3.7. Juego básico de Cournot}
 
 Sean dos jugadores, $J_1$ y $J_2$, que eligen simultáneamente cantidades $q_1, q_2 \in [0,1]$. Las funciones de pago vienen dadas por:
@@ -542,9 +553,7 @@ La correspondencia $R_1(q_2)$ de respuesta óptima de J1 se obtiene resolviendo,
 \[
 \max_{q_1 \in [0,1]} u_1(q_1,q_2) = \; q_1(1 - q_1 - q_2).
 \]
-\end{tcolorbox}
 
-\begin{tcolorbox}[colback=blue!10, fontupper=\small]
 La condición de primer orden (ignorando inicialmente las restricciones) es:
 \[
 \frac{\partial u_1(q_1, q_2)}{\partial q_1} = 1 - 2q_1 - q_2 = 0,
@@ -587,13 +596,12 @@ Representación gráfica
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{Correspondencia_Cournot.png}
+    \includegraphics[width=0.5\textwidth]{Correspondencia_Cournot.png}
     \caption{Correspondencia de respuesta óptima del juego básico de Cournot}
     \label{fig:Correspondencia_Cournot}
 \end{figure}
 
-\end{tcolorbox}
-
+\end{mdframed}
 
 ### Equilibrio de Nash en estrategias mixtas
 
@@ -705,8 +713,13 @@ U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma'_i, \sigma^*_{i+1}, ..., \sigma^*_n
 En consecuencia, $\sigma^*_i$ no es respuesta óptima a $\sigma^*_{-i}$ , lo que contradice la hipótesis y prueba la condición «solo si».
 \end{mdframed}
 
-\begin{tcolorbox}[colback=blue!10, fontupper=\small]
-\textbf{Ejemplo 3.7.}
+\begin{mdframed}[
+  backgroundcolor=blue!10,
+  linecolor=gray,
+  linewidth=2pt,
+  roundcorner=20pt]
+\small
+\textbf{Ejemplo 3.8.}
 \begin{table}[H]
 \centering
 \begin{tabular}{c|cc}
@@ -720,9 +733,6 @@ B & 2, 2 & 2, 0
 \label{tab:EN}
 \end{table}
 
-\end{tcolorbox}
-
-\begin{tcolorbox}[colback=blue!10, fontupper=\small]
 Este juego tiene un único EN en estrategias mixtas consistente en el perfil [(1/2, 0, 1/2), (1/2, 1/2)]. Como se demuestra a continuación, cualquier estrategia del jugador 1 cuyo soporte esté contenido en el conjunto \{A, B\}, incluidas las estrategias puras A y B, es respuesta óptima a la estrategia mixta del jugador 2, $\sigma^*_2 = (1/2, 1/2)$. Del mismo modo, cualquier estrategia del jugador 2 (pura o mixta) es respuesta óptima a la estrategia $\sigma^*_1 = (1/2, 0, 1/2)$ del jugador 1. \\
 
 \textbf{a)} Dada la estrategia $\sigma_2^* = \left(\tfrac{1}{2}, \tfrac{1}{2}\right)$ del jugador 2, el jugador 1 obtiene las mismas ganancias al utilizar distintas estrategias con soporte $\{A, B\}$:
@@ -913,9 +923,7 @@ U_2\left(\sigma_1^*, \left(\tfrac{4}{5}, \tfrac{1}{5}\right)\right)
 \end{pmatrix}
 = 2
 \]
-\end{tcolorbox}
 
-\begin{tcolorbox}[colback=blue!10, fontupper=\small]
 En general, dada la estrategia $\sigma_1^*$ del jugador 1, cualquier estrategia del jugador 2 
 \[
 \sigma_2 = (p_2^l, 1 - p_2^l)
@@ -941,9 +949,9 @@ p_2^l \\
 \end{pmatrix}
 = 2
 \]
-\end{tcolorbox}
+\end{mdframed}
 
-### Cálculo de EN en estrategias mixtas en juegos 2 x 2
+#### Cálculo de EN en estrategias mixtas en juegos 2 x 2
 
 Una estrategia mixta será respuesta óptima a otra estrategia (pura o mixta) dada sólo si sus estrategias puras soporte son respuesta óptima. Esto implica que tales estrategias puras producen ganancias iguales y máximas, dada la estrategia del otro jugador.
 
@@ -963,20 +971,240 @@ Esta propiedad permite calcular EN en estrategias mixtas de juegos 2 x 2, apoyá
 
 Este procedimiento se basa en combinar las propiedades de las estrategias mixtas de equilibrio y el cálculo de las estrategias puras de respuesta óptima ante una estrategia mixta dada.
 
+\begin{mdframed}[
+  backgroundcolor=blue!10,
+  linecolor=gray,
+  linewidth=2pt,
+  roundcorner=20pt]
+\small
+\textbf{Ejemplo 3.9. Batalla de sexos}
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cc}
+ & \multicolumn{2}{c}{\textbf{Jugadora 2}} \\ 
+\textbf{Jugador 1} & Cine & Fútbol\\ \hline
+Cine & 1, 2 & 0, 0 \\
+Fútbol & 0, 0 & 2, 1
+\end{tabular}
+\caption{Batalla de sexos}
+\label{tab:batalla}
+\end{table}
+
+Este juego presenta dos EN en estrategias puras: (Cine, Cine) y (Fútbol, Fútbol).
+
+Sea (q, 1 - q) una estrategia mixta de 2. La utilidad que el jugador 1 obtiene con cada una de sus estrategias puras es:
+\[
+U_1(Cine, (q, 1 - q)) = 1 \cdot q + (1 - q) \cdot 0 = q 
+\]
+
+\[
+U_1(Fútbol, (q, 1 - q)) = q \cdot 0 + (1 - q) \cdot 2 = 2 - 2q
+\]
+
+Se produce la igualdad q = 2 - 2q si y sólo si q = 2/3. Cuando q = 2/3 el jugador 1 obtiene la misma ganancia de sus dos estrategias puras, y por tanto de cualquiera de sus estrategias mixtas.
+
+La correspondencia de respuesta óptima del jugador 1 es:
+\[
+R_1(q) =
+\begin{cases}
+p = 1 \; (\text{Cine}) & \text{si } q > \frac{2}{3} \\
+p = 0 \; (\text{Fútbol}) & \text{si } q < \frac{2}{3} \\
+p \in [0,1] \; (\text{cualquier estrategia}) & \text{si } q = \frac{2}{3}
+\end{cases}
+\]
+
+Sea $(p, 1-p)$ una estrategia mixta del jugador 1. La utilidad que la jugadora 2 obtiene con cada una de sus estrategias puras es:
+\[
+U_2((p,1-p), \text{Cine}) = p \cdot 2 + (1-p)\cdot 0 = 2p
+\]
+\[
+U_2((p,1-p), \text{Fútbol}) = p \cdot 0 + (1-p)\cdot 1 = 1 - p
+\]
+
+Se produce la igualdad $2p = 1 - p$ si y sólo si $p = \frac{1}{3}$. Cuando $p = \frac{1}{3}$ la jugadora 2 obtiene la misma ganancia de sus dos estrategias puras, y por tanto de cualquiera de sus estrategias mixtas. En consecuencia, cualquier estrategia pura o mixta es respuesta óptima de la jugadora 2 a $(p, 1-p) = \left(\frac{1}{3}, \frac{2}{3}\right)$ del jugador 1.
+
+Se tiene que:
+\[
+R_2(p) =
+\begin{cases}
+q = 1 \; (\text{Cine}) & \text{si } p > \frac{1}{3} \\
+q = 0 \; (\text{Fútbol}) & \text{si } p < \frac{1}{3} \\
+q \in [0,1] \; (\text{cualquier estrategia}) & \text{si } p = \frac{1}{3}
+\end{cases}
+\]
+
+Gráficamente, los equilibrios de Nash surgen de la intersección de las correspondencias de respuesta óptima.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{batalla_sexos.png}
+    \caption{Correspondencias de respuesta óptima en la Batalla de los Sexos}
+    \label{fig:batalla_sexos}
+\end{figure}
+
+Así pues, el conjunto de perfiles de estrategias que forman un EN es:
+
+\[
+S^{EN} = \{(Cine, Cine), (Fútbol, Fútbol) \, y \, [(1/3, 2/3), (2/3, 1/3)]\}
+\]
+
+\end{mdframed}
+
 ## Optimalidad de Pareto
-La eficiencia de Pareto (también denominada óptimo de Pareto) es un punto de equilibrio donde es imposible mejorar la situación de un individuo sin empeorar la de otro.
+La eficiencia de Pareto (también llamada **óptimo de Pareto**) es un punto de equilibrio donde es imposible mejorar la situación de un individuo sin empeorar la de otro.
 
 Dado el juego $G = \{S_1, \ldots, S_n; u_1, \ldots, u_n\}$,
 
-  a) Decimos que el perfil de estrategias $s=(s_1, s_2, ..., s_i, ..., s_n)$ está dominado en el sentido de Pareto por el perfil $s'=(s'_1, s'_2, \ldots, s'_i, \ldots, s'_n)$ si y sólo si la desigualdad $u_i(s'_1, \ldots, s'_n) \geq u_i(s_1, \ldots, s_n)$ se cumple para todo jugador i, y para alguno de ellos se cumple de modo estricto.
+  a) Decimos que un perfil de estrategias $s=(s_1, s_2, ..., s_i, ..., s_n)$ está dominado en el sentido de Pareto por otro perfil $s'=(s'_1, s'_2, \ldots, s'_i, \ldots, s'_n)$ si y solo si se cumple que $u_i(s'_1, \ldots, s'_n) \geq u_i(s_1, \ldots, s_n)$ para todo jugador i, y además la desigualdad se cumple estrictamente para alguno de ellos.
   
-  b) Decimos que el perfil de estrategias  $s=(s_1, s_2, ..., s_i, ..., s_n)$ es un óptimo de Pareto (o que es eficiente en sentido de Pareto) si y sólo si no está dominado en el sentido de Pareto por ningún otro perfil. Diremos que es ineficiente en el sentido de Pareto si algún otro lo domina.
+  b) Decimos que el perfil de estrategias $s$ es un **Óptimo de Pareto** (o que es eficiente en sentido de Pareto) si y solo si no existe ningún otro perfil que lo domine en el sentido de Pareto. En caso contrario, diremos que es ineficiente en el sentido de Pareto. 
   
-Es decir, si un perfil de estrategias es eficiente no se puede cambiar a ningún otro perfil, de modo que ningún jugador salga perdiendo y alguno salga ganando estrictamente.
+Es decir, un perfil es eficiente si no se puede cambiar a ningún otro perfil, de modo que ningún jugador salga perdiendo y alguno salga ganando estrictamente.
 
-Este concepto de dominación hace referencia a perfiles completos que aluden a todos los jugadores a la vez, mientras que el concepto de estrategia dominada se refería a cada jugador individual. 
+Este concepto de dominación hace referencia a perfiles completos de estrategias, es decir, tienen en cuenta simultáneamente a todos los jugadores. En cambio, el concepto de estrategia dominada se refiere a las decisiones individuales de cada jugador 
 
-De manera aparentemente sorprendente, en el dilema del prisionero, el único perfil constituido por estrategias no estrictamente dominadas (y por tanto el único EN), que es (Confesar, Confesar), es ineficiente en el sentido de Pareto. Mientras que el perfil (Callar, Callar) lo domina en el sentido de Pareto.
+De manera aparentemente sorprendente, en el dilema del prisionero, el único perfil constituido por estrategias no estrictamente dominadas (y por tanto el único EN), que es (Confesar, Confesar), y resulta ser ineficiente en el sentido de Pareto. Por el contrario, el perfil (Callar, Callar) lo domina en el sentido de Pareto, ya que ambos jugadores obtendrían un resultado mejor. 
 
-## Equilibrio perfecto en subjuegos
+Esto pone de manifiesto que el comportamiento racional individual no siempre conduce a resultados socialmente óptimos. En el dilema del prisionero, independientemente de lo que haga el otro jugador, siempre le resultará beneficioso delatarlo. Sin embargo, si ambos cooperasen callando, el resultado sería más favorable para los dos.
 
+Si los jugadores tuvieran en cuenta no solo su propio beneficio, sino también el resultado conjunto, o si se modificasen algunas características del juego, probablemente la solución del mismo fuese otra.
+
+## Equilibrio de Nash perfecto en subjuegos
+
+En esta sección se presenta el concepto de **equilibrio de Nash perfecto en subjuegos**, que constituye una mejora del equilibrio de Nash para el caso de los juegos dinámicos con información completa.
+
+Puesto que todo juego en forma extensiva puede representarse en forma normal una vez identificadas las estrategias de todos los jugadores, una posible propuesta de solución consistiría en considerar los equilibrios de Nash de dicha forma normal.
+
+Sin embargo, debemos de tomar con cautela esta propuesta de solución ya que se pierde información al pasar de forma extensiva a forma normal. Como consecuencia, algunos o todos los EN obtenidos pueden ser razonables desde una perspectiva estática del juego, pero no desde una vista dinámica que tiene en cuenta detalles omitidos en la forma normal
+
+**Subjuegos**
+
+Dado un juego G con información completa en forma extensiva, y sea $\mathbf{x}$ un nodo de decisión de G. Decimos que G' es un **subjuego** de G con inicio en $\mathbf{x}$ si G' es una parte de G que cumple lo siguiente:
+
+  a) Contiene al nodo $\mathbf{x}$ y a todos los nodos que le siguen, y únicamente a estos.
+
+  b) El nodo $\mathbf{x}$ es un conjunto de información unitario.
+  
+  c) Si el nodo $\mathbf{y}$ pertenece a G', entonces también pertenecen a G' todos los nodos del conjunto de información al que pertenece y, es decir, G' no rompe ningún conjunto de información.
+  
+\textbf{Observación 3.1:}
+
+  1.  El propio juego G es siempre subjuego de si mismo. Se denominan **subjuegos propios** de G a aquellos subjuegos que no coinciden con G (es decir, los que no comienzan en el nodo inicial de G)
+
+  2.  Si G es de información perfecta, cualquier parte que comience en un nodo de decisión y contenga todos los nodos que le siguen es un subjuego (debido a que todos los conjuntos de información son unitarios).
+
+  3.  Un subjuego puede empezar en un nodo de azar, dado que se considera un conjunto de información unitario.
+
+  4.  También se consideran subjuegos aquellos en los que ya sólo va a intervenir uno de los jugadores.
+
+  5.  Los juegos estáticos representados en forma extensiva no tienen subjuegos propio, ya que el único conjunto de información unitario es el nodo inicial.
+  
+**Definición 3.9.** Sea G un juego en forma extensiva
+
+  a) Sea $\mathbf{s}$ un perfil de estrategias de G que constituye un EN. Decimos que  $\mathbf{s}$ es un **Equilibrio de Nash Perfecto en Subjuegos** (ENPS) de G si la restricción de  $\mathbf{s}$ a cualquier subjuego de G es un EN de dicho subjuego.
+
+  b) Sea  $\mathbf{r}$ un resultado o desarrollo posible de G. Decimos que  $\mathbf{r}$ es un **Resultado Perfecto en Subjuegos** (RPS) de G si puede obtenerse como la realización de algún perfil de estrategias $\mathbf{s}$ que sea un ENPS.
+  
+El concepto de equilibrio de Nash perfecto en subjuegos constituye un **refinamiento** del equilibrio de Nash. Pretende ser una solución mejor, basándose en el criterio de la credibilidad, descarta aquellos equilibrios de Nash basados en amenazas no creíbles o promesas no sostenibles (es decir, proposiciones que no serán cumplidas) dado el desarrollo temporal del juego. 
+
+Al exigir respuestas óptimas en cada punto que sea inicio de un subjuego, el
+concepto de ENPS es un paso en la puesta en práctica del principio de racionalidad secuencial. Según este principio, la estrategia (en el equilibrio) de cualquier jugador debe ser una respuesta óptima en cada punto del juego, independientemente de que dicho punto se encuentre o no en la trayectoria del equilibrio.
+
+**Teorema 3.3. Teorema de existencia de ENPS**
+Si G es un juego dinámico finito (número finito de jugadores, cada uno de ellos con un conjunto finito de estrategias), existe un equilibrio de Nash perfecto en subjuegos de G.
+
+\textbf{Observación 3.2:}
+Puede ocurrir que no exista ningún ENPS en estrategias puras, lo que implicaría que alguna (o todas) las estrategias que constituyen ese ENPS que ha de existir, sean estrategias mixtas propias. 
+
+\begin{mdframed}[
+  backgroundcolor=blue!10,
+  linecolor=gray,
+  linewidth=2pt,
+  roundcorner=20pt]
+\textbf{Ejemplo 3.10}
+En el juego del reparto con n=4, hay cinco subjuegos propios, en todos los cuales juega solamente J2, uno tras cada una de las posibles jugadas de J1.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{subjuego_propio.png}
+    \caption{Subjuegos propios del juego del reparto con 4 monedas}
+    \label{fig:subjuego_propios}
+\end{figure}
+
+\medskip
+
+Los equilibrios de Nash de los distintos subjuegos son los siguientes (de izquierda a derecha):
+\begin{itemize}
+  \item Del primer subjuego (tras la jugada 0 de J1): Resto.
+  \item Del segundo subjuego (tras la jugada 1 de J1): Resto.
+  \item Del tercer subjuego (tras la jugada 2 de J1): Resto y Sí.
+  \item Del cuarto subjuego (tras la jugada 3 de J1): Sí.
+  \item Del quinto subjuego (tras la jugada 4 de J1): Sí.
+\end{itemize}
+
+Dado que no se ha representado en forma normal este juego, debido a sus
+dimensiones (J1 y J2 disponen, respectivamente, de 5 y de 32 estrategias puras), no se calcularán todos sus EN. Sin embargo, sí podemos identificar fácilmente todos los EN del juego global cuya restricción a cada uno de los subjuegos propios sea un EN de dicho subjuego. \\
+
+En efecto, estos equilibrios deben ser perfiles $s^* = (s^*_1 , s^*_2)$ cuya segunda componente $s^*_2$ sea o bien Resto-Resto-Resto-Sí-Sí o bien Resto-Resto-Sí-Sí-Sí. Además, la primera componente $s^*_1$ es necesariamente una respuesta óptima de J1 frente a $s^*_2$, y en consecuencia J1 elegirá la estrategia 2.
+
+Así pues, (2, Resto-Resto-Resto-Sí-Sí) y (2, Resto-Resto-Sí-Sí-Sí) son los únicos ENPS en estrategias puras del juego. 
+
+Obsérvese que, en ambos casos, el desarrollo del juego es el mismo: J1 juega 2 (ofrece 2 monedas) y J2 responde con Sí o Resto. El resultado final es que ambos jugadores obtienen un pago de 2 monedas.
+\end{mdframed}
+
+## Inducción hacia atrás
+En los juegos dinámicos con información completa y perfecta, existe un algoritmo denominado **inducción hacia atrás** (también conocido como inducción retroactiva, algoritmo de Zermelo o algoritmo de Kuhn) que permite identificar con claridad, y hallar de manera sistemática, los ENPS del juego. 
+
+**Definición 3.10.** Dado un juego G finito en forma extensiva con información completa y perfecta, llamamos **algoritmo de inducción hacia atrás** al que procede así:
+
+  1. Se identifican todos los subjuegos que se producen en último lugar (es decir, aquellos que comienzan en nodos de decisión que preceden únicamente a nodos terminales. Estos subjuegos tienen un único jugador, cuyo EN consiste en elegir su acción óptima). A continuación se elimina cada uno de esos subjuegos, salvo su nodo de comienzo, y se considera que dicho nodo pasa a ser nodo terminal del juego global, y se le atribuyen los pagos que se habrían hecho efectivos de haberse jugado la acción óptima correspondiente a ese nodo. De esta manera, se simplifica el árbol del juego.
+
+  2. Este procedimiento se repite de manera iterativa sobre el árbol reducido hasta que se llega al nodo inicial del juego de partida.
+
+Al finalizar el proceso, habremos identificado una acción óptima en cada nodo de decisión. Estas acciones definen un perfil de estrategias óptimas para cada jugador, dando lugar a un desarrollo del juego que podríamos calificar también como óptimo en todos los subjuegos. Por tanto, el perfil estratégico obtenido constituye un ENPS. 
+
+\textbf{Observación 3.3:}
+
+\begin{enumerate}
+    \item Existen dos situaciones que requieren una aclaración adicional:
+    \begin{itemize}
+        \item Si en algún nodo de decisión hay varias acciones óptimas, el procedimiento sólo cambia en que deben considerarse todas las combinaciones posibles. Habría que formar tantos árboles reducidos para la etapa siguiente del análisis (anterior en el tiempo) como combinaciones hubiera de acciones óptimas en la etapa actual. Esto puede dar lugar a varios ENPS, uno por cada proceso de reducción del árbol.
+        \item Si en algún nodo de decisión hay un número infinito de acciones, pero manteniendo finita la longitud de cualquier desarrollo posible del juego. El proceso sigue siendo válido siempre que en cada nodo de decisión exista alguna acción factible óptima.
+    \end{itemize}
+    \item El algoritmo de inducción hacia atrás no es, en general, aplicable a juegos con información imperfecta. En estos casos, la existencia de conjuntos de información no unitarios impide determinar cuáles son las acciones óptimas del jugador al que le toca jugar, ya que a distintos nodos dentro de ese conjunto de información pueden corresponder distintas acciones óptimas, y puede ocurrir que el jugador no conozca el nodo exacto en el que se encuentra.
+    \item Algunos juegos clásicos como el ajedrez o las damas son juegos finitos con información perfecta, por lo que el algoritmo es aplicable en teoría. Sin embargo, en la práctica, la complejidad computacional hace inviable su resolución completa. Que la inducción hacia atrás sea aplicable es muy importante en cuanto a la búsqueda de buenas estrategias de juego, pues de ello se deduce que necesariamente ha de ser cierta una, y sólo una, de las siguientes afirmaciones:
+    \begin{enumerate}
+        \item Existe una estrategia de juego ganadora para las piezas blancas. (Es decir, el jugador con piezas blancas puede garantizarse la victoria, pues existe para él un plan completo de acción tal que, si sigue ese plan, ganará con seguridad.)
+        \item Existe una estrategia de juego ganadora para las piezas negras.
+        \item Ambos jugadores tienen una estrategia que les garantiza tablas (empate).
+    \end{enumerate}
+
+Nadie sabe cuál de las tres afirmaciones anteriores es cierta. Si pudiera realizarse efectivamente, de manera práctica, la inducción hacia atrás para ambos juegos, ambos dejarían de ser juegos interesantes.
+\end{enumerate}
+
+**Teorema 3.4**
+Cada juego finito con información completa y perfecta G tiene un Equilibrio de Nash Perfecto en Subjuegos (ENPS) en estrategias puras que se obtiene por el método de inducción hacia atrás. Además, si ningún jugador tiene más de una acción óptima en cada nodo de decisión, tal ENPS es único.
+
+\begin{tcolorbox}[colback=blue!10]
+\textbf{Ejemplo 3.11.}
+En el juego del reparto, con n = 4 monedas, el proceso de inducción hacia atrás conduce, expresado de modo resumido, a las dos situaciones posibles siguientes, según sea la
+acción óptima elegida por el jugador 2 tras la acción 2 del jugador 1:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{induccion_a.png} \\
+\end{figure}
+\medskip
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{induccion_b.png}
+    \caption{Inducción hacia atrás en el juego del reparto, con n = 4 monedas}
+    \label{fig:subjuego_propios}
+\end{figure}
+
+En (a) el resultado perfecto en subjuegos es $2 \rightarrow \text{Resto}$, el vector de pagos resultante es (2, 2), y el ENPS es el perfil (2, Resto-Resto-Resto-Sí-Sí). \\
+
+Mientras que en (b) el resultado perfecto en subjuegos es $2 \rightarrow \text{Sí}$, el vector de pagos resultante es (2, 2), y el ENPS es el perfil (2, Resto-Resto-Sí-Sí-Sí). \\
+
+En conclusión, los dos ENPS son el perfil (2, Resto-Resto-Resto-Sí-Sí) y el perfil (2, Resto-Resto-Sí-Sí-Sí).
+\end{tcolorbox}
