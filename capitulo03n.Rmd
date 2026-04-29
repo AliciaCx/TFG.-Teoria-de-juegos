@@ -40,7 +40,6 @@ Una estrategia de un jugador se dice **dominante** si es tan buena o mejor que c
 
 El argumento básico de dominación consiste en que un jugador racional no debería jugar estrategias dominadas y que, si sabe que otros jugadores son racionales, puede suponer que éstos tampoco jugarán este tipo de estrategias.
 
-
 **Definición 3.1.** En el juego $G = \{S_1, \ldots, S_n; u_1,\ldots,u_n\}$, sean $s'_i$ y $s''_i$ dos estrategias del jugador *i*.
 
   a)  Decimos que $s'_i$ está **dominada**, o también **débilmente dominada**, por $s''_i$ cuando la desigualdad
@@ -53,8 +52,6 @@ El argumento básico de dominación consiste en que un jugador racional no deber
   se cumple para toda combinación de estrategias $s_{-i}$ de los otros jugadores. (Es decir, siempre le conviene usar más $s''_i$ que $s'_i$, hagan lo que hagan los demás)
   
   c)  Decimos que $s'_i$ es **no dominada** si no existe ninguna otra estrategia del jugador *i* que la domine, y que es **no dominada estrictamente** si no existe ninguna otra estrategia que la domine estrictamente.
-  
-
   
 Por otra parte, el concepto de estrategia dominante que se define a continuación, se aplica a aquellas estrategias que son óptimas frente a cualquier comportamiento de los demás jugadores.
 
@@ -85,7 +82,7 @@ Confesar & (5,0) & (1,1)
 
 \textbf{Análisis:}  
 
-Para el jugador 1:
+Para el jugador 1, se observa que:
 
 \[
 u_1(\text{Callar, Callar}) = 4 < 5 = u_1(\text{Confesar, Callar})
@@ -95,7 +92,9 @@ u_1(\text{Callar, Callar}) = 4 < 5 = u_1(\text{Confesar, Callar})
 u_1(\text{Callar, Confesar}) = 0 < 1 = u_1(\text{Confesar, Confesar})
 \]
 
-De manera análoga, para el jugador 2:
+Por tanto, independientemente de la decisión del jugador 2, al jugador 1 le conviene elegir \textbf{Confesar}.
+
+De forma análoga, para el jugador 2 se cumple que:
 
 \[
 u_2(\text{Callar, Callar}) = 4 < 5 = u_2(\text{Callar, Confesar})
@@ -105,11 +104,15 @@ u_2(\text{Callar, Callar}) = 4 < 5 = u_2(\text{Callar, Confesar})
 u_2(\text{Confesar, Callar}) = 0 < 1 = u_2(\text{Confesar, Confesar})
 \]
 
+Por consiguiente, \textbf{Confesar} también es la mejor respuesta para el jugador 2 en todos los casos.
+
 \textbf{Conclusión:}  
 
-Para ambos jugadores, la estrategia \textbf{Callar} está \textbf{estrictamente dominada} por la estrategia \textbf{Confesar}.  
-Por lo tanto, si los jugadores son racionales, ambos elegirán \textbf{Confesar} y el equilibrio estrictamente dominante es \((\text{Confesar}, \text{Confesar})\).
+La estrategia \textbf{Callar} está estrictamente dominada por \textbf{Confesar} para ambos jugadores.  
+En consecuencia, el único equilibrio en estrategias dominantes es \((\text{Confesar}, \text{Confesar})\).
 \end{tcolorbox}
+
+
 
 ### Uso de Estrategias Dominantes (UED)
 Según este concepto de solución, pertenecen a la solución del juego todos aquellos perfiles de estrategias en los cuales cada jugador usa una estrategia dominante.
@@ -119,27 +122,32 @@ Cuando es aplicable, este concepto resulta muy natural, pues cualquier jugador r
 Por desgracia, este concepto de solución no siempre es aplicable.  Los juegos en los que todos los jugadores disponen de una estrategia dominante son poco frecuentes; más bien constituyen la excepción que la regla.
 
 \begin{tcolorbox}[colback=blue!10]
-\textbf{Ejemplo 3.2} \\
+\textbf{Ejemplo 3.2}
 
 En el dilema del prisionero, este concepto sí es aplicable, pues en este caso cada jugador tiene una estrategia estrictamente dominante, que es confesar.
 
-Mientras en el siguiente ejemplo  
+Mientras en el siguiente ejemplo: dos empresas compiten en una región y pueden elegir entre tres estrategias de marketing: redes sociales (R), publicidad tradicional (T) o estrategia mixta (M).
 
 \begin{table}[H]
 \centering
 \begin{tabular}{c|ccc}
- & \multicolumn{3}{c}{\textbf{Jugador 2}} \\ 
-\textbf{Jugador 1} & I & C & D \\ \hline
-A & (3,y) & (4,2) & (1,x) \\
-M & (2,4) & (3,5) & (4,0) \\
-B & (1,0) & (2,1) & (0,3)
+ & \multicolumn{3}{c}{\textbf{Empresa 2}} \\ 
+\textbf{Empresa 1} & R & T & M \\ \hline
+R & (3,1) & (4,2) & (1,1) \\
+T & (2,4) & (3,5) & (4,0) \\
+M & (1,0) & (2,1) & (0,3)
 \end{tabular}
-\caption{Juego con estrategias estrictamente dominadas pero sin estrategias dominantes}
-\label{tab:contraejemplo_UED}
+\caption{Juego con estrategias dominadas sin estrategias dominantes}
+\label{tab:juego_dominancia}
 \end{table}
 
-\textbf{Conclusión:}  
-En este juego, con x = y = 1, la estrategia B del jugador 1 (J1) está estrictamente dominada por las estrategias A y M. Pero ni A ni M son estrategias dominantes. Por otra parte, para el jugador 2 (J2) la estrategia I está estrictamente dominada por la estrategia C, pero ni C ni D son dominantes. Así pues, aunque el concepto de solución anterior no es aplicable, el argumento básico de dominación (ningún jugador racional debería jugar estrategias dominadas) nos permite concluir inmediatamente que ni J1 jugará B ni J2 jugará I, pero sólo nos permite esa conclusión
+\textbf{Conclusión:}
+
+Para el jugador 1, la estrategia M está estrictamente dominada por R y por T, ya que en todos los casos obtiene un pago menor que con dichas alternativas. Sin embargo, ni R ni T son estrategias dominantes.
+
+Para el jugador 2, la estrategia R está estrictamente dominada por T, aunque ni T ni M dominan a todas las demás estrategias.
+
+En consecuencia, el criterio de eliminación de estrategias estrictamente dominadas permite descartar M para el jugador 1 y R para el jugador 2, pero no permite ir más allá de esa conclusión.
 \end{tcolorbox}
 
 
@@ -173,9 +181,13 @@ Baja & (3,3) & (4,2)
 \label{tab:EIE}
 \end{table}
 
-Puesto que la racionalidad de ambos jugadores es una información de dominio público, ambos jugadores son racionales y cada uno sabe que el otro lo es y además sabe que el otro lo sabe. En consecuencia, puede razonarse así:
+Suponemos que la racionalidad de ambos jugadores es conocimiento común: ambos son racionales, cada uno sabe que el otro lo es, y así sucesivamente.
 
-El jugador 1 (J1), que es racional, elimina la estrategia \textbf{Media} porque está estrictamente dominada por \textbf{Baja} (pagos 1 frente a 3 y 2 frente a 4). El jugador 2 (J2) sabe que J1 es racional y por tanto sabe que J1 ha eliminado \textbf{Media}. Al comparar \textbf{Izquierda} con \textbf{Derecha} en ausencia de Media de J1, el jugador J2, que también es racional, deduce que \textbf{Izquierda} domina estrictamente a \textbf{Derecha} (pagos 2 frente a 1 y 3 frente a 2), por lo que elimina \textbf{Derecha}.
+Aplicamos el procedimiento de eliminación iterada de estrategias estrictamente dominadas (EIE):
+
+El jugador 1 (J1), siendo racional, elimina la estrategia \textbf{Media}, ya que está estrictamente dominada por \textbf{Baja} (paga menos en ambos casos: 1 frente a 3 si J2 juega Izquierda, y 2 frente a 4 si J2 juega Derecha).
+
+El jugador 2 (J2), sabiendo que J1 es racional y ha eliminado \textbf{Media}, analiza el juego reducido. En este juego reducido, la estrategia \textbf{Izquierda} domina estrictamente a \textbf{Derecha} para J2, pues obtiene mayores pagos en ambos casos (2 frente a 1 si J1 juega Alta, y 3 frente a 2 si J1 juega Baja). Por tanto, J2 elimina \textbf{Derecha}.
 
 \begin{table}[H]
 \centering
@@ -189,7 +201,7 @@ Baja & (3,3)
 \label{tab:EIE}
 \end{table}
 
-El jugador J1 sabe que J2 es racional y que además J2 sabe que J1 es racional, y por tanto sabe que J2 ha eliminado \textbf{Derecha} como consecuencia de la eliminación por J1 de \textbf{Media}. Al comparar \textbf{Alta} con \textbf{Baja} en ausencia de \textbf{Derecha}, J1 deduce que \textbf{Alta} domina estrictamente a \textbf{Baja} (pago 4 frente a 3) por lo que elimina \textbf{Baja}.
+A continuación, J1 sabe que J2 es racional y que este ha eliminado \textbf{Derecha}. En el juego reducido, al comparar \textbf{Alta} y \textbf{Baja}, se observa que \textbf{Alta} domina estrictamente a \textbf{Baja} (4 frente a 3), por lo que J1 elimina \textbf{Baja}.
 
 \begin{table}[H]
 \centering
@@ -202,7 +214,11 @@ Alta & (4,2)\\
 \label{tab:EIE}
 \end{table}
 
-En conclusión, las únicas estrategias supervivientes al proceso EIE son \textbf{Alta} de J1 e \textbf{Izquierda} de J2. Ambas constituyen el único perfil solución del juego, es decir, $\mathbf{S^{EIE}}$ = \{(Alta, Izquierda)\}
+En conclusión, las únicas estrategias que sobreviven al proceso de EIE son \textbf{Alta} para el jugador 1 y \textbf{Izquierda} para el jugador 2. Por tanto, el único perfil superviviente es
+
+\[
+\mathbf{S^{EIE}} = \{(\text{Alta}, \text{Izquierda})\}.
+\]
 \end{tcolorbox}
 
 
@@ -526,7 +542,8 @@ $$u_i(s_1, s_2, ..., s_{i-1}, s'_i, s_{i+1}, ..., s_n) \geq u_i(s_1, s_2, ..., s
 
 **Teorema 3.1.** En el juego $G = \{S_1, ..., S_n; u_1, ..., u_n\}$, el perfil de estrategias
 $$s^* = (s^*_1 , s^*_2 , ..., s^*_i , ..., s^*_n )$$
-es un equilibrio de Nash si y sólo si $s^*_i \in R_i(s^*_{-i})$ para cada jugador i.
+es un equilibrio de Nash si y sólo si $s^*_i \in R_i(s^*_{-i})$ para cada jugador i. \cite{CerdaTena2004}
+
 
 Podemos ahora automatizar el cálculo de los EN mediante un proceso en dos etapas:
   
@@ -649,11 +666,11 @@ Téngase en cuenta que una estrategia mixta no es más que una lotería sobre es
 \begin{mdframed}
 \textbf{Teorema 3.2.} \\
 En el juego $G=\{S_1, ..., S_n; u_1, ..., u_n\}$, la combinación de estrategias mixtas $\sigma^* = (\sigma^*_1 , \sigma^*_2 , ..., \sigma^*_n)$ es un equilibrio de Nash si y sólo si para cada jugador i con estrategia mixta
-$\sigma^*_i=(\sigma^{1*}_i , \sigma^{2*}_i , ..., \sigma^{j*}_i , ...)$ tener $\sigma^{j*}_i > 0$ implica que la estrategia pura $s^j_i$ es una respuesta óptima a $\sigma^*_{-i} = (\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_{i+1}, ..., \sigma^*_n)$.
+$\sigma^*_i=(\sigma^{1*}_i , \sigma^{2*}_i , ..., \sigma^{j*}_i , ...)$ tener $\sigma^{j*}_i > 0$ implica que la estrategia pura $s^j_i$ es una respuesta óptima a $\sigma^*_{-i} = (\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_{i+1}, ..., \sigma^*_n)$. \cite{CerdaTena2004}
 
-\medskip
+\begin{proof}[Demostración tomada de \cite{CerdaTena2004}]
 
-\textbf{Demostración:}
+\par
 
 $(\Leftarrow)$ Supongamos que el perfil $\sigma^* = (\sigma^*_1 , \sigma^*_2 , ..., \sigma^*_n)$ cumple, para cada jugador i, que todas sus estrategias puras $s^j_i$ soporte de $\sigma^*_i$ son respuesta óptima a 
 $$\sigma^*_{-i} = (\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma^*_{i+1}, ..., \sigma^*_n)$$
@@ -711,7 +728,9 @@ U_i(\sigma^*_1 , ..., \sigma^*_{i-1}, \sigma'_i, \sigma^*_{i+1}, ..., \sigma^*_n
 \]
 
 En consecuencia, $\sigma^*_i$ no es respuesta óptima a $\sigma^*_{-i}$ , lo que contradice la hipótesis y prueba la condición «solo si».
+\end{proof}
 \end{mdframed}
+
 
 \begin{mdframed}[
   backgroundcolor=blue!10,
@@ -1110,8 +1129,8 @@ El concepto de equilibrio de Nash perfecto en subjuegos constituye un **refinami
 Al exigir respuestas óptimas en cada punto que sea inicio de un subjuego, el
 concepto de ENPS es un paso en la puesta en práctica del principio de racionalidad secuencial. Según este principio, la estrategia (en el equilibrio) de cualquier jugador debe ser una respuesta óptima en cada punto del juego, independientemente de que dicho punto se encuentre o no en la trayectoria del equilibrio.
 
-**Teorema 3.3. Teorema de existencia de ENPS**
-Si G es un juego dinámico finito (número finito de jugadores, cada uno de ellos con un conjunto finito de estrategias), existe un equilibrio de Nash perfecto en subjuegos de G.
+**Teorema 3.3. Teorema de existencia de ENPS.**
+Si G es un juego dinámico finito (número finito de jugadores, cada uno de ellos con un conjunto finito de estrategias), existe un equilibrio de Nash perfecto en subjuegos de G. \cite{CerdaTena2004}
 
 \textbf{Observación 3.2:}
 Puede ocurrir que no exista ningún ENPS en estrategias puras, lo que implicaría que alguna (o todas) las estrategias que constituyen ese ENPS que ha de existir, sean estrategias mixtas propias. 
@@ -1183,7 +1202,7 @@ Nadie sabe cuál de las tres afirmaciones anteriores es cierta. Si pudiera reali
 \end{enumerate}
 
 **Teorema 3.4**
-Cada juego finito con información completa y perfecta G tiene un Equilibrio de Nash Perfecto en Subjuegos (ENPS) en estrategias puras que se obtiene por el método de inducción hacia atrás. Además, si ningún jugador tiene más de una acción óptima en cada nodo de decisión, tal ENPS es único.
+Cada juego finito con información completa y perfecta G tiene un Equilibrio de Nash Perfecto en Subjuegos (ENPS) en estrategias puras que se obtiene por el método de inducción hacia atrás. Además, si ningún jugador tiene más de una acción óptima en cada nodo de decisión, tal ENPS es único. \cite{CerdaTena2004}
 
 \begin{tcolorbox}[colback=blue!10]
 \textbf{Ejemplo 3.11.}

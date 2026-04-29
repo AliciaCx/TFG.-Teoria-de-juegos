@@ -22,7 +22,7 @@ source("cabecera_chunk_inicio.R")
 
 # Introducción
 
-La teoría de juegos constituye un rama de las matemáticas que estudia situaciones de toma de decisiones estratégicas en las que intervienen más de un agente decisor y en las que las decisiones de un jugador influyen en los resultados obtenidos por los demás. Este tipo de situaciones aparece de forma natural en numerosos contextos reales. Por ejemplo, en economía es habitual encontrar escenarios que se pueden modelizar en forma de un juego, ya que las decisiones de una empresa, como la fijación del precio de un determinado producto, están claramente condicionadas por las decisiones adoptadas por otra compañía de la competencia. 
+La teoría de juegos constituye una rama de las matemáticas que estudia situaciones de toma de decisiones estratégicas en las que intervienen más de un agente decisor y en las que las decisiones de un jugador influyen en los resultados obtenidos por los demás. Este tipo de situaciones aparece de forma natural en numerosos contextos reales. Por ejemplo, en economía es habitual encontrar escenarios que se pueden modelizar en forma de un juego, ya que las decisiones de una empresa, como la fijación del precio de un determinado producto, están claramente condicionadas por las decisiones adoptadas por otra compañía de la competencia. 
 
 El origen de la teoría de juegos suele situarse en el año 1944, con la publicación del libro *"Theory of Games and Economic Behavior"* escrito por el matemático John von Neumann y el economista Oskar Morgenstern. 
 
@@ -45,3 +45,5 @@ Las aplicaciones de nivel intermedio (redes inalámbricas, sistemas energéticos
 Por último, las aplicaciones de nivel inferior (blockchain, teledetección, gestión de desastres y computación en el borde móvil) permanecen mayoritariamente en el ámbito teórico, con evidencia limitada de implementación, aunque algunas muestran potencial de crecimiento debido al aumento de la atención investigadora.
 
 El objetivo de este trabajo es explorar los aspectos teóricos fundamentales de la teoría de juegos y aplicar dichos conceptos mediante el uso del programa informático R. Para ello, se estudiarán los principales tipos de juegos y conceptos de solución. Además, se analizarán distintos ejemplos a través de su implementación práctica.
+
+La parte teórica de este trabajo se apoya principalmente en \cite{Binmore2007}, \cite{Gibbons1992} y \cite{OsborneRubinstein1994}, así como en los apuntes de clase del profesor José Luis Pino Mejías \cite{PinoMejias2024Apuntes}, para el desarrollo del capítulo 2. Para el capítulo 3, se ha utilizado como referencia la obra \cite{CerdaTena2004}.

@@ -195,7 +195,7 @@ Los juegos estáticos (o simultaneos) se representan normalmente en **forma norm
 
   - 1.  $N = \{1, \ldots, n\}$ es el conjunto de tomadores de decisiones, es decir, lo jugadores
   
-  - 2.  $S = S_1$ x $S_2$ x ... x $S_n$ describe las acciones factibles de los jugadores. Los juagdores eligen simultaneamente una estrategia $s = (s_1, \ldots, s_n) \in S$. Se obtienen los resultados
+  - 2.  $S = S_1$ x $S_2$ x ... x $S_n$ describe las acciones factibles de los jugadores. Los jugadores eligen simultaneamente una estrategia $s = (s_1, \ldots, s_n) \in S$. Se obtienen los resultados
   
   - 3.  $u = (u_1, \ldots, u_n)$ describe la satisfacción (los pagos) de los jugadores ante los resultados. Para cada $i = 1, \ldots, n, u_i : S \to \mathbb{R}$
   

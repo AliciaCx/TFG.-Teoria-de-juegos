@@ -31,4 +31,7 @@
 \contentsline {section}{\numberline {3.4}Equilibrio de Nash perfecto en subjuegos}{31}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Inducción hacia atrás}{33}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Implementación en R}{37}{chapter.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{39}{chapter*.30}%
+\contentsline {section}{\numberline {4.1}Representación y análisis de juego con rgamer}{37}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Representación de juegos en forma normal}{37}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Representación de juegos en forma extensiva}{43}{subsection.4.1.2}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{47}{chapter*.31}%

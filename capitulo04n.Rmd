@@ -7,6 +7,8 @@ output:
     template: latex/templateMemoriaTFE.tex
     pandoc_args: ["--metadata-file=cabecera_capitulos.yaml"]
   html_document: default
+  header-includes:
+  - \usepackage{float}
 #bibliography: bib/library.bib # descomentar si: editor visual RStudio  
 ---
 
@@ -18,14 +20,163 @@ output:
 
 ```{r include=FALSE}
 source("cabecera_chunk_inicio.R")
+library(kableExtra)
 ```
 
 
 # Implementación en R
 
-<!-- ## Introducción a R como herramienta de análisis -->
+En este capítulo se presenta la implementación práctica de los conceptos desarrollados en los capítulos anteriores mediante el lenguaje de programación R. En particular, se utilizarán los paquetes rgamer, GNE y gtree de Gambit. A través de estas herramientas se estudiarán ejemplos representativos de la teoria de juegos, con el objetivo de obtener los equilibrios y la resolución de juegos estratégicos tanto en forma normal como extensiva.
 
-<!-- ## Represenacion de juegos en R -->
+## Representación y análisis de juego con rgamer
 
-<!-- ## Paquetes de R -->
+La instalación del paquete rgamer se realiza a través de GitHub, ya que no se encuentra disponible en los repositorios estándar de CRAN. Además, es necesario tener en cuenta que algunas dependencias antiguas del paquete han quedado obsoletas en versiones recientes de R. En particular, el paquete tuple ya no está disponible en CRAN, por lo que se ha procedido a instalar manualmente la última versión compatible.
 
+El proceso de instalación y carga del paquete se ha realizado de la siguiente forma:
+```{r}
+# install.packages("remotes")
+# install.packages("tuple_0.4-02.tar.gz", repos = NULL, type = "source")
+# remotes::install_github("yukiyanai/rgamer")
+library(rgamer)
+```
+
+### Representación de juegos en forma normal
+
+Un juego en forma normal puede definirse mediante la función normal_form(), donde se especifican los jugadores, sus estrategias y la matriz de pagos asociada. Algunos ejemplos:
+
+```{r}
+# Dilema del prisionero
+game1 <- normal_form(
+  players = c("Jugador 1", "Jugador 2"),
+  s1 = c("Callar", "Confesar"), 
+  s2 = c("Callar", "Confesar"), 
+  payoffs1 = c(4, 5, 0, 1), 
+  payoffs2 = c(4, 0, 5,1))
+
+# Juego con estrategias dominadas sin estrategias dominantes
+game2 <- normal_form(
+  players = c("Empresa 1", "Empresa 2"),
+  s1 = c("R", "T", "M"), 
+  s2 = c("R", "T", "M"), 
+  payoffs1 = c(3,2,1,4,3,2,1,4,0), 
+  payoffs2 = c(1,4,0,2,5,1,1,0,3))
+
+# Juego diseñado para aplicar eliminación iterativa de estrategias
+game3 <- normal_form(
+  players = c("Jugador 1", "Jugador 2"),
+  s1 = c("Alta", "Media", "Baja"), 
+  s2 = c("Izquierda", "Derecha"), 
+  payoffs1 = c(4,1,3,0,2,4), 
+  payoffs2 = c(2,2,3,1,4,2))
+```
+
+**Análisis de estrategias dominadas y dominantes**
+
+El paquete rgamer permite analizar estrategias dominadas y dominantes mediante la función dom(). Por defecto, esta función identifica estrategias dominadas. Si se desea analizar estrategias dominantes, debe especificarse el argumento type = "dominant":
+
+```{r}
+dom(game1)
+dom(game1, type = "dominant")
+```
+
+```{r}
+dom(game2)
+dom(game2, type = "dominant")
+```
+
+A partir de esta función, es posible implementar procedimientos como el uso estrategias dominantes (UED) y la eliminación iterativa de estrategias estrictamente dominadas (EIE).
+
+En el caso de la eliminación iterativa de estrategias débilmente dominadas (EID), aunque la función permite identificar dichas estrategias, su eliminación requiere un tratamiento más cuidadoso, ya que el resultado puede depender del orden en que se eliminen.
+
+Finalmente, una vez identificadas las estrategias dominadas, su eliminación se realiza mediante la función eliminate_strategy(). 
+
+```{r}
+dom(game3)
+game31 <- eliminate_strategy(game3, player = "Jugador 1", eliminated = "Media")
+dom(game31)
+game32 <- eliminate_strategy(game31, player = "Jugador 2", eliminated = "Derecha")
+dom(game32)
+eliminate_strategy(game32, player = "Jugador 1", eliminated = "Baja")
+```
+
+**Equilibrio Nash**
+
+A continuación, mediante la función solve_nfg() se obtienen los equilibrios de Nash de los juegos en forma normal. En primer lugar, se presentan los resultados correspondientes a estrategias puras, junto con la representación de la matriz de pagos.
+
+```{r, results='asis'}
+s_game1 <- solve_nfg(game1, show_table = FALSE)
+# Pure-strategy NE: [Confesar, Confesar]
+
+s_game1$table %>%
+  kable_styling(latex_options = "hold_position")
+```
+
+En el caso del Dilema del Prisionero, el equilibrio se alcanza en (Confesar, Confesar), ya que, independientemente de la decisión del otro jugador, confesar proporciona un mayor pago individual que callar, lo que conduce a una situación estable no cooperativa.
+
+En aquellos juegos en los que no existe un equilibrio en estrategias puras o se desea ampliar el análisis estratégico, es posible calcular equilibrios en estrategias mixtas mediante la misma función solve_nfg(), incorporando el argumento mixed = TRUE.
+
+A modo ilustrativo, se considera el juego de las monedas, en el que los jugadores obtienen pagos opuestos en función de si eligen la misma o distinta cara.
+
+```{r}
+game4 <- normal_form(
+  players = c("Jugador 1", "Jugador 2"),
+  s1 = c("Cara", "Cruz"), 
+  s2 = c("Cara", "Cruz"), 
+  payoffs1 = c(1,-1,-1,1), 
+  payoffs2 = c(-1,1,1,-1))
+s_game2 <- solve_nfg(game4, mixed = TRUE, show_table = FALSE)
+
+# Pure strategy NE does not exist.
+# 
+# Mixed-strategy NE: [(1/2, 1/2), (1/2, 1/2)]
+# 
+# The obtained mixed-strategy NE might be only a part of the solutions.
+# Please examine br_plot (best response plot) carefully.
+
+s_game2$br_plot
+```
+
+### Representación de juegos en forma extensiva
+
+Un juego en forma extensiva puede representarse mediante la función extensive_form(), que permite definir la estructura secuencial del juego, especificando los jugadores, sus conjuntos de acciones en cada nodo de decisión y los pagos asociados a cada resultado terminal.
+
+Este tipo de representación resulta especialmente útil para modelizar situaciones en las que el orden de decisión es relevante y existe información secuencial entre los jugadores.
+
+```{r}
+game5 <- extensive_form(
+  players = list(
+    "J1",                 # nodo inicial
+    rep("J2", 5),         # 5 nodos de decisión de J2
+    rep(NA, 10)           # 10 nodos terminales
+  ),
+  
+  actions = list(
+    c("0", "1", "2", "3", "4"),   # acciones de J1
+    
+    c("Sí", "Resto"),            # J2 si J1 juega 0
+    c("Sí", "Resto"),            # J2 si J1 juega 1
+    c("Sí", "Resto"),            # J2 si J1 juega 2
+    c("Sí", "Resto"),            # J2 si J1 juega 3
+    c("Sí", "Resto")             # J2 si J1 juega 4
+  ),
+  
+  payoffs = list(
+    J1 = c(4,0,   3,1,   2,2,   1,3,   0,4),
+    J2 = c(0,4,   1,3,   2,2,   3,1,   4,0)
+  ),
+  direction = "right"
+)
+```
+
+En este juego, el jugador 1 realiza la primera decisión eligiendo un nivel de acción entre 0 y 4, mientras que el jugador 2 observa esta elección y responde en cada uno de los nodos correspondientes. 
+
+La solución del juego puede obtenerse mediante la función solve_efg(), que permite analizar el equilibrio en forma extensiva y, en su caso, obtener una solución consistente con el concepto de equilibrio perfecto en subjuegos.
+```{r}
+s_game5 <- solve_efg(game5)
+s_game5$sols
+s_game5$trees
+```
+
+Los resultados proporcionan, por un lado, los perfiles estratégicos que constituyen el equilibrio del juego y, por otro, la representación del árbol de decisión con la trayectoria de equilibrio asociada.
+
+Este procedimiento es coherente con el concepto de inducción hacia atrás, ya que la resolución del juego se basa en la determinación secuencial de las decisiones óptimas desde los nodos terminales hasta el nodo inicial.
