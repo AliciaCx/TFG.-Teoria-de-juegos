@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.29)  29 APR 2026 14:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.29)  4 MAY 2026 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,7 +1070,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<logo.png, id=155, 301.125pt x 262.9825pt>
+<logo.png, id=163, 301.125pt x 262.9825pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 609.
@@ -1198,7 +1198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1312--1313
 
  []
 
-<arbol_juego.png, id=351, 432.61626pt x 243.91125pt>
+<arbol_juego.png, id=361, 432.61626pt x 243.91125pt>
 File: arbol_juego.png Graphic file (type png)
 <use arbol_juego.png>
 Package pdftex.def Info: arbol_juego.png  used on input line 1320.
@@ -1208,7 +1208,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1328--1329
 
  []
 
-<arbol_juego2.png, id=353, 241.90375pt x 160.6pt>
+<arbol_juego2.png, id=363, 241.90375pt x 160.6pt>
 File: arbol_juego2.png Graphic file (type png)
 <use arbol_juego2.png>
 Package pdftex.def Info: arbol_juego2.png  used on input line 1338.
@@ -1338,7 +1338,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 2117.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2117.
-<Correspondencia_Cournot.png, id=431, 604.2575pt x 474.77374pt>
+<Correspondencia_Cournot.png, id=442, 604.2575pt x 474.77374pt>
 File: Correspondencia_Cournot.png Graphic file (type png)
 <use Correspondencia_Cournot.png>
 Package pdftex.def Info: Correspondencia_Cournot.png  used on input line 2175.
@@ -1405,7 +1405,7 @@ Package mdframed Info: mdframed detected package amsthm
 
 LaTeX Warning: Command \' invalid in math mode on input line 2648.
 
-<batalla_sexos.png, id=465, 265.99374pt x 194.7275pt>
+<batalla_sexos.png, id=475, 265.99374pt x 194.7275pt>
 File: batalla_sexos.png Graphic file (type png)
 <use batalla_sexos.png>
 Package pdftex.def Info: batalla_sexos.png  used on input line 2687.
@@ -1442,7 +1442,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 2859.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2859.
-<subjuego_propio.png, id=499, 306.14375pt x 157.58875pt>
+<subjuego_propio.png, id=509, 306.14375pt x 157.58875pt>
 File: subjuego_propio.png Graphic file (type png)
 <use subjuego_propio.png>
 Package pdftex.def Info: subjuego_propio.png  used on input line 2865.
@@ -1465,12 +1465,12 @@ LaTeX Info: Redefining \% on input line 2918.
 LaTeX Info: Redefining \. on input line 2918.
 LaTeX Info: Redefining \% on input line 2918.
 [33]
-<induccion_a.png, id=515, 349.305pt x 162.6075pt>
+<induccion_a.png, id=525, 349.305pt x 162.6075pt>
 File: induccion_a.png Graphic file (type png)
 <use induccion_a.png>
 Package pdftex.def Info: induccion_a.png  used on input line 2958.
 (pdftex.def)             Requested size: 211.97308pt x 98.67682pt.
-<induccion_b.png, id=516, 349.305pt x 157.58875pt>
+<induccion_b.png, id=526, 349.305pt x 157.58875pt>
 File: induccion_b.png Graphic file (type png)
 <use induccion_b.png>
 Package pdftex.def Info: induccion_b.png  used on input line 2963.
@@ -1530,7 +1530,7 @@ LaTeX Info: Redefining \% on input line 3364.
 LaTeX Info: Redefining \. on input line 3364.
 LaTeX Info: Redefining \% on input line 3364.
 [42]
-<figurasR/unnamed-chunk-32-1.pdf, id=569, 375.4025pt x 297.11pt>
+<figurasR/unnamed-chunk-32-1.pdf, id=579, 375.4025pt x 297.11pt>
 File: figurasR/unnamed-chunk-32-1.pdf Graphic file (type pdf)
 <use figurasR/unnamed-chunk-32-1.pdf>
 Package pdftex.def Info: figurasR/unnamed-chunk-32-1.pdf  used on input line 3366.
@@ -1540,7 +1540,7 @@ LaTeX Info: Redefining \% on input line 3406.
 LaTeX Info: Redefining \. on input line 3406.
 LaTeX Info: Redefining \% on input line 3406.
 [43 <./figurasR/unnamed-chunk-32-1.pdf>]
-<figurasR/unnamed-chunk-33-1.pdf, id=585, 459.7175pt x 315.1775pt>
+<figurasR/unnamed-chunk-33-1.pdf, id=595, 459.7175pt x 315.1775pt>
 File: figurasR/unnamed-chunk-33-1.pdf Graphic file (type pdf)
 <use figurasR/unnamed-chunk-33-1.pdf>
 Package pdftex.def Info: figurasR/unnamed-chunk-33-1.pdf  used on input line 3408.
@@ -1550,12 +1550,12 @@ LaTeX Info: Redefining \% on input line 3428.
 LaTeX Info: Redefining \. on input line 3428.
 LaTeX Info: Redefining \% on input line 3428.
 [44 <./figurasR/unnamed-chunk-33-1.pdf>]
-<figurasR/unnamed-chunk-34-1.pdf, id=597, 459.7175pt x 315.1775pt>
+<figurasR/unnamed-chunk-34-1.pdf, id=607, 459.7175pt x 315.1775pt>
 File: figurasR/unnamed-chunk-34-1.pdf Graphic file (type pdf)
 <use figurasR/unnamed-chunk-34-1.pdf>
 Package pdftex.def Info: figurasR/unnamed-chunk-34-1.pdf  used on input line 3444.
 (pdftex.def)             Requested size: 432.48051pt x 296.52177pt.
-<figurasR/unnamed-chunk-34-2.pdf, id=598, 459.7175pt x 315.1775pt>
+<figurasR/unnamed-chunk-34-2.pdf, id=608, 459.7175pt x 315.1775pt>
 File: figurasR/unnamed-chunk-34-2.pdf Graphic file (type pdf)
 <use figurasR/unnamed-chunk-34-2.pdf>
 Package pdftex.def Info: figurasR/unnamed-chunk-34-2.pdf  used on input line 3451.
@@ -1565,11 +1565,51 @@ LaTeX Info: Redefining \% on input line 3451.
 LaTeX Info: Redefining \. on input line 3451.
 LaTeX Info: Redefining \% on input line 3451.
 [45 <./figurasR/unnamed-chunk-34-1.pdf>]
-LaTeX Info: Redefining \. on input line 3465.
-LaTeX Info: Redefining \% on input line 3465.
-LaTeX Info: Redefining \. on input line 3465.
-LaTeX Info: Redefining \% on input line 3465.
-[46 <./figurasR/unnamed-chunk-34-2.pdf>] (./tfe_principal.bbl
+LaTeX Info: Redefining \. on input line 3495.
+LaTeX Info: Redefining \% on input line 3495.
+LaTeX Info: Redefining \. on input line 3495.
+LaTeX Info: Redefining \% on input line 3495.
+[46 <./figurasR/unnamed-chunk-34-2.pdf>]
+LaTeX Info: Redefining \. on input line 3589.
+LaTeX Info: Redefining \% on input line 3589.
+LaTeX Info: Redefining \. on input line 3589.
+LaTeX Info: Redefining \% on input line 3589.
+[47]
+LaTeX Info: Redefining \. on input line 3617.
+LaTeX Info: Redefining \% on input line 3617.
+LaTeX Info: Redefining \. on input line 3617.
+LaTeX Info: Redefining \% on input line 3617.
+[48]
+Overfull \hbox (51.06412pt too wide) in paragraph at lines 3654--3654
+[]\T1/lmtt/m/n/12 ## Optimal (vector) value: 0 0 1.005564e-07 1.005564e-07 1.293464e-07 1.293464e-07[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3676.
+LaTeX Info: Redefining \% on input line 3676.
+LaTeX Info: Redefining \. on input line 3676.
+LaTeX Info: Redefining \% on input line 3676.
+[49]
+Overfull \hbox (186.90018pt too wide) in paragraph at lines 3680--3680
+[]\T1/lmtt/m/n/12 ## Optimal (vector) value: 2.337144e-09 2.337144e-09 1.888004e-08 1.888004e-08 4.067756e-09 4.067756e-09[] 
+ []
+
+<figurasR/unnamed-chunk-39-1.pdf, id=645, 453.695pt x 313.17pt>
+File: figurasR/unnamed-chunk-39-1.pdf Graphic file (type pdf)
+<use figurasR/unnamed-chunk-39-1.pdf>
+Package pdftex.def Info: figurasR/unnamed-chunk-39-1.pdf  used on input line 3720.
+(pdftex.def)             Requested size: 432.48051pt x 298.52763pt.
+LaTeX Info: Redefining \. on input line 3720.
+LaTeX Info: Redefining \% on input line 3720.
+LaTeX Info: Redefining \. on input line 3720.
+LaTeX Info: Redefining \% on input line 3720.
+[50]
+LaTeX Info: Redefining \. on input line 3725.
+LaTeX Info: Redefining \% on input line 3725.
+LaTeX Info: Redefining \. on input line 3725.
+LaTeX Info: Redefining \% on input line 3725.
+[51 <./figurasR/unnamed-chunk-39-1.pdf>] [52
+
+] (./tfe_principal.bbl
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotleft (encoding OT1) on input line 3.
 LaTeX Encoding Info:    Ignoring declaration for text command \guillemotright (encoding OT1) on input line 3.
 
@@ -1587,8 +1627,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--52
 []$\T1/lmr/m/n/12 https : / / skranz . github . io / gtree/$[]. R pac-ka-ge avai-la-ble at
  []
 
-[47
-
+[53
 
 ])
 
@@ -1598,7 +1637,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[48] (./tfe_principal.aux
+[54] (./tfe_principal.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 )
@@ -1610,21 +1649,21 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `tfe_principal.out' has not changed.
-(rerunfilecheck)             Checksum: A00ED3F51970FCCFDAB83FCE6E7844AA;7595.
+(rerunfilecheck)             Checksum: CB73BECC84B5762BA78113960307DAD3;8120.
  ) 
 Here is how much of TeX's memory you used:
- 32399 strings out of 469321
- 615858 string characters out of 5464735
+ 32423 strings out of 469321
+ 616433 string characters out of 5464735
  1168057 words of memory out of 5000000
- 60426 multiletter control sequences out of 15000+600000
- 729220 words of font info for 93 fonts, out of 8000000 for 9000
+ 60441 multiletter control sequences out of 15000+600000
+ 729595 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,13n,94p,1597b,1107s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></Users/aliciac/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfe_principal.pdf (58 pages, 811208 bytes).
+Output written on tfe_principal.pdf (64 pages, 831584 bytes).
 PDF statistics:
- 814 PDF objects out of 1000 (max. 8388607)
- 664 compressed objects within 7 object streams
- 180 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 864 PDF objects out of 1000 (max. 8388607)
+ 703 compressed objects within 8 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 390 words of extra memory for PDF output out of 10000 (max. 10000000)
 

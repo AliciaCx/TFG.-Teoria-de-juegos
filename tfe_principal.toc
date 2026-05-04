@@ -34,4 +34,6 @@
 \contentsline {section}{\numberline {4.1}Representación y análisis de juego con rgamer}{37}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Representación de juegos en forma normal}{37}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Representación de juegos en forma extensiva}{43}{subsection.4.1.2}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{47}{chapter*.31}%
+\contentsline {section}{\numberline {4.2}Resolución de equilibrios de Nash mediante GNE}{46}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Aplicación: modelo de Cournot}{47}{subsection.4.2.1}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{53}{chapter*.31}%

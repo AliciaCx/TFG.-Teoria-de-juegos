@@ -26,7 +26,7 @@ library(kableExtra)
 
 # Implementación en R
 
-En este capítulo se presenta la implementación práctica de los conceptos desarrollados en los capítulos anteriores mediante el lenguaje de programación R. En particular, se utilizarán los paquetes rgamer, GNE y gtree de Gambit. A través de estas herramientas se estudiarán ejemplos representativos de la teoria de juegos, con el objetivo de obtener los equilibrios y la resolución de juegos estratégicos tanto en forma normal como extensiva.
+En este capítulo se presenta la implementación práctica de los conceptos desarrollados en los capítulos anteriores mediante el lenguaje de programación R. En particular, se utilizarán los paquetes rgamer, GNE y gtree de Gambit. A través de estas herramientas se estudiarán ejemplos representativos de la teoría de juegos, con el objetivo de obtener los equilibrios y la resolución de juegos estratégicos tanto en forma normal como extensiva.
 
 ## Representación y análisis de juego con rgamer
 
@@ -99,7 +99,7 @@ dom(game32)
 eliminate_strategy(game32, player = "Jugador 1", eliminated = "Baja")
 ```
 
-**Equilibrio Nash**
+**Equilibrio de Nash**
 
 A continuación, mediante la función solve_nfg() se obtienen los equilibrios de Nash de los juegos en forma normal. En primer lugar, se presentan los resultados correspondientes a estrategias puras, junto con la representación de la matriz de pagos.
 
@@ -180,3 +180,186 @@ s_game5$trees
 Los resultados proporcionan, por un lado, los perfiles estratégicos que constituyen el equilibrio del juego y, por otro, la representación del árbol de decisión con la trayectoria de equilibrio asociada.
 
 Este procedimiento es coherente con el concepto de inducción hacia atrás, ya que la resolución del juego se basa en la determinación secuencial de las decisiones óptimas desde los nodos terminales hasta el nodo inicial.
+
+## Resolución de equilibrios de Nash mediante GNE
+Para la resolución de equilibrios de Nash en juegos no cooperativos se emplea el paquete **GNE** de R, el cual proporciona distintos métodos numéricos para calcular tanto equilibrios de Nash estándar como equilibrios de Nash generalizados (GNE), en función de la formulación del problema.
+
+La función principal del paquete es:
+
+GNE(approach = 
+      c("non smooth", "fixed point", "minimization", "constrained equation"),
+    method = "default", 
+    xinit, 
+    control = list(), 
+    ...)
+
+donde:
+
+  - approach determina el enfoque de resolución adoptado:
+  
+    - "non smooth": métodos diseñados para problemas no diferenciables.
+
+    - "fixed point": reformulación del equilibrio como un problema de punto fijo.
+
+    - "minimization": formulación del problema como un problema de optimización.
+
+    - "constrained equation": reformulación mediante un sistema de ecuaciones restringidas basado en las condiciones KKT.
+
+  - method especifica el algoritmo numérico concreto empleado dentro de cada enfoque.
+
+  - xinit define el punto inicial a partir del cual se inicia el procedimiento iterativo.
+
+  - control permite ajustar los parámetros del algoritmo, como el número máximo de iteraciones o los criterios de convergencia.
+
+Esta función actúa como una interfaz general que selecciona automáticamente el procedimiento interno adecuado en función del enfoque elegido. En particular, el paquete delega en funciones especializadas como GNE.ceq, GNE.fpeq, GNE.minpb o GNE.nseq, lo que permite un mayor control sobre la formulación del problema.
+
+En este trabajo se emplea específicamente la reformulación mediante ecuaciones restringidas, utilizando la función GNE.ceq, ya que permite incorporar directamente las condiciones de optimalidad de tipo Karush-Kuhn-Tucker y resulta especialmente adecuada para modelos diferenciables como el de Cournot.
+
+La función empleada es:
+
+GNE.ceq(init, dimx, dimlam, grobj, heobj,
+        constr, grconstr, heconstr,
+        method = "PR", control = list(), ...)
+        
+donde se especifican:
+
+  - Las dimensiones del problema.
+
+  - Los gradientes y hessianos de las funciones de utilidad.
+
+  - Las restricciones (si existen).
+
+  - El método numérico utilizado.
+  
+### Aplicación: modelo de Cournot
+Se considera un modelo de Cournot con dos empresas que compiten en cantidades. Cada empresa elige su nivel de producción con el objetivo de maximizar su beneficio.
+
+Las funciones de beneficio son: \[
+u_1(q_1, q_2) = q_1(1 - q_1 - q_2), \qquad
+u_2(q_1, q_2) = q_2(1 - q_1 - q_2).
+\]
+
+En primer lugar, se definen las dimensiones del problema y las funciones necesarias para la reformulación mediante condiciones KKT: gradientes y Hessianos de las funciones de utilidad.
+```{r}
+library(GNE)
+# Dimensión de las variables de decisión
+dimx <- c(1, 1)
+
+# Gradiente de las utilidades
+grobj <- function(x, i, j){
+  q1 <- x[1]
+  q2 <- x[2]
+  
+  if(i == 1){
+    grad <- c(1 - 2*q1 - q2, -q1)
+  }
+  if(i == 2){
+    grad <- c(-q2, 1 - q1 - 2*q2)
+  }
+  
+  grad[j]
+}
+
+# Hessiano de las utilidades. El Hessiano se construye a partir de las 
+# derivadas de segundo orden de las funciones de utilidad de cada jugador. 
+heobj <- function(x, i, j, k){
+  if(i == 1){
+    H <- matrix(c(-2, -1,
+                  -1,  0), nrow=2, byrow=TRUE)
+  }
+  if(i == 2){
+    H <- matrix(c( 0, -1,
+                   -1, -2), nrow=2, byrow=TRUE)
+  }
+  
+  H[j, k]
+}
+```
+
+
+En este caso no existen restricciones de acoplamiento entre los jugadores, por lo que dichas funciones se definen como nulas.
+```{r}
+dimlam <- c(1, 1)
+
+g <- function(x, i) 0
+grg <- function(x, i, j) 0
+heg <- function(x, i, j, k) 0
+```
+
+A continuación, se establece un punto inicial para el algoritmo:
+```{r}
+x0 <- c(0, 0)
+
+z0 <- c(
+  x0,
+  2, 2,
+  max(10, 5 - g(x0, 1)),
+  max(10, 5 - g(x0, 2))
+)
+```
+
+El equilibrio de Nash se obtiene mediante la función GNE.ceq, utilizando distintos métodos numéricos: 
+
+  - El método "PR" (Projection-Residual), basado en técnicas de proyección, que presenta un comportamiento robusto aunque puede requerir un mayor número de iteraciones.
+
+  - El método "AS" (Active-Set), que identifica iterativamente las restricciones activas del problema, lo que en muchos casos permite una convergencia más rápida.
+
+```{r}
+GNE.ceq(
+  z0, dimx, dimlam,
+  grobj = grobj,
+  heobj = heobj,
+  constr = g,
+  grconstr = grg,
+  heconstr = heg,
+  method = "PR",
+  control = list(trace = 0, maxit = 50)
+)
+
+GNE.ceq(
+  z0, dimx, dimlam,
+  grobj = grobj,
+  heobj = heobj,
+  constr = g,
+  grconstr = grg,
+  heconstr = heg,
+  method = "AS",
+  global = "pwldog",
+  xscalm = "auto",
+  control = list(trace = 0, maxit = 100)
+)
+```
+
+Ambos métodos convergen al mismo equilibrio de Nash: $q^*_1 = q^*_2 = \frac{1}{3}$
+
+Para visualizar el equilibrio, se representan las funciones de mejor respuesta de ambas empresas:
+```{r}
+library(ggplot2)
+
+q <- seq(0, 1, length.out = 100)
+
+df <- rbind(
+  data.frame(q1 = (1 - q)/2, q2 = q, tipo = "R1(q2) = (1 - q2)/2"),
+  data.frame(q1 = q, q2 = (1 - q)/2, tipo = "R2(q1) = (1 - q1)/2")
+)
+
+q_star <- 1/3
+
+ggplot(df, aes(x = q1, y = q2, linetype = tipo)) +
+  geom_line(linewidth = 1) +
+  annotate("point", x = q_star, y = q_star, color = "red", size = 3) +
+  annotate("text", x = q_star + 0.05, y = q_star,
+           label = "(1/3, 1/3)", color = "red", hjust = 0) +
+  geom_vline(xintercept = q_star, linetype = "dotted") +
+  geom_hline(yintercept = q_star, linetype = "dotted") +
+  labs(
+    x = expression(q[1]),
+    y = expression(q[2]),
+    linetype = "Funciones de mejor respuesta",
+    title = "Equilibrio de Nash en el modelo de Cournot"
+  ) +
+  xlim(0, 1) + ylim(0, 1) +
+  theme_minimal()
+```
+
+
