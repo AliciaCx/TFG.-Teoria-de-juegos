@@ -191,7 +191,7 @@ Hundir la flota: cada jugador desconoce la ubicación de los barcos del rival y 
 ## Representaciones de los juegos
 
 ### Forma normal
-Los juegos estáticos (o simultaneos) se representan normalmente en **forma normal** G que consta de tres elementos $$G = (N,S,u)$$ donde,
+Los juegos estáticos (o simultaneos) se representan normalmente en **forma normal** G \cite{UC3MGameTheory2020Ch1} que consta de tres elementos $$G = (N,S,u)$$ donde,
 
   - 1.  $N = \{1, \ldots, n\}$ es el conjunto de tomadores de decisiones, es decir, lo jugadores
   
@@ -259,7 +259,7 @@ entendiendo que el juego siempre muestra la matriz de pago del jugador I, siendo
 
 
 ### Forma extensiva
-Los juegos dinámicos (o secuencales) se representan en **forma extensiva** tienen una estructura similar a la de los juegos en forma normal. Es decir, también constan de un conjunto de jugadores, sus conjuntos de estrategias y sus pagos. Se especifica:
+Los juegos dinámicos (o secuencales) se representan en **forma extensiva** \cite{Gibbons1992} tienen una estructura similar a la de los juegos en forma normal. Es decir, también constan de un conjunto de jugadores, sus conjuntos de estrategias y sus pagos. Se especifica:
 
   1.  Los jugadores del juego
   
@@ -293,7 +293,7 @@ Además, todo juego en forma extensiva puede transformarse en forma normal, pero
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!10] 
-\textbf{Ejemplo 2} \\
+\textbf{Ejemplo 2 \cite{UC3MGameTheory2020Ch2}} \\
 
 Un monopolista (M) en un mercado que genera beneficios de 100 millones de dólares se enfrenta a la posibilidad de que un competidor (E) entre en el mercado. En primer lugar, el competidor decide si entrar (I) o no entrar (O) en el mercado.
 

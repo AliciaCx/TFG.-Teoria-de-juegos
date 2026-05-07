@@ -2,4 +2,8 @@
 output: pdf_document
 ---
 
-Resumen...
+Este trabajo trata de estudiar la Teoría de Juegos y su desarrollo computacional a través del lenguaje de programación R. Para comenzar, se presentan los conceptos fundamentales, que incluyen los componentes que definen un juego y las clasificaciones más importantes basadas en diferentes criterios. Además, se muestran las modalidades de representación más comunes, como la formal normal y la forma extensa.
+
+Posteriormente, se analizan los principales conceptos de solución, enfocándose sobre todo en juegos dinámicos y estáticos con información completa. En particular, se estudian herramientas como las estrategias dominantes, la eliminación de estrategias dominadas y el equilibrio de Nash, tanto en estrategias puras como mixtas. 
+
+Finalmente, se desarrolla una parte práctica en la que se implementan distintos modelos de teoría de juegos utilizando R, lo que permite la representación de juegos y el cáculo de sus soluciones. 

@@ -2,4 +2,8 @@
 output: pdf_document
 ---
 
-Abstract...
+This work focuses on the study of Game Theory and its computational development using the R programming language. First, the fundamental concepts are presented, including the elements that define a game and the most important classifications based on different criteria. In addition, the most common representation forms are introduced, such as the normal form and the extensive form.
+
+Subsequently, the main solution concepts are analyzed, with particular emphasis on static and dynamic games with complete information. In particular, tools such as dominant strategies, the elimination of dominated strategies, and Nash equilibrium are studied, both in pure and mixed strategies.
+
+Finally, a practical section is developed in which different game theory models are implemented using R, allowing for the representation of games and the computation of their solutions.

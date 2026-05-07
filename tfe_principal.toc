@@ -36,4 +36,5 @@
 \contentsline {subsection}{\numberline {4.1.2}Representación de juegos en forma extensiva}{43}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Resolución de equilibrios de Nash mediante GNE}{46}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Aplicación: modelo de Cournot}{47}{subsection.4.2.1}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{53}{chapter*.31}%
+\contentsline {section}{\numberline {4.3}Introducción a Gambit}{51}{section.4.3}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{55}{chapter*.31}%

@@ -23,7 +23,7 @@ source("cabecera_chunk_inicio.R")
 
 # Concepto de solución
 
-En la teoría de juegos, un **concepto de solución** es una regla formal que permite predecir cómo se jugará un juego. Estas predicciones se denominan "soluciones", y describen las estrategias que adoptarán los jugadores y, por tanto, el resultado que puede esperarse del juego. 
+En la teoría de juegos, un **concepto de solución** \cite{WikipediaConceptoSolucion} es una regla formal que permite predecir cómo se jugará un juego. Estas predicciones se denominan "soluciones", y describen las estrategias que adoptarán los jugadores y, por tanto, el resultado que puede esperarse del juego. 
 
 En general, los conceptos de solución tratan de identificar perfiles de estrategias que puedan considerarse racionales o estables, teniendo en cuenta que cada jugador toma sus decisiones considerando las posibles acciones de los demás participantes.
 

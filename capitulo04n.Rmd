@@ -30,7 +30,7 @@ En este capítulo se presenta la implementación práctica de los conceptos desa
 
 ## Representación y análisis de juego con rgamer
 
-La instalación del paquete rgamer se realiza a través de GitHub, ya que no se encuentra disponible en los repositorios estándar de CRAN. Además, es necesario tener en cuenta que algunas dependencias antiguas del paquete han quedado obsoletas en versiones recientes de R. En particular, el paquete tuple ya no está disponible en CRAN, por lo que se ha procedido a instalar manualmente la última versión compatible.
+La instalación del paquete rgamer se realiza a través de GitHub, ya que no se encuentra disponible en los repositorios estándar de CRAN. Además, es necesario tener en cuenta que algunas dependencias antiguas del paquete han quedado obsoletas en versiones recientes de R. En particular, el paquete tuple ya no está disponible en CRAN, por lo que se ha procedido a instalar manualmente la última versión compatible \cite{R-tuple}.
 
 El proceso de instalación y carga del paquete se ha realizado de la siguiente forma:
 ```{r}
@@ -362,4 +362,61 @@ ggplot(df, aes(x = q1, y = q2, linetype = tipo)) +
   theme_minimal()
 ```
 
+## Introducción a Gambit
+Además de los paquetes desarrollados, en este trabajo se introduce el software Gambit, un conjunto de herramientas computacionales diseñado para el análisis de juegos finitos no cooperativos, tanto en forma estratégica como en forma extensiva. Este software permite la representación, almacenamiento y resolución de juegos mediante distintos algoritmos de cálculo de equilibrios.
 
+Dado que Gambit no se integra de forma nativa en R, su utilización se realiza a través del paquete gtree, que actúa como interfaz entre ambos entornos. Este paquete permite construir juegos en forma extensiva mediante una estructura basada en etapas, facilitando la definición de jugadores, acciones disponibles en cada nodo de decisión, información observada y funciones de pago.
+
+A continuación, se presenta un ejemplo sencillo de implementación de un juego en forma extensiva utilizando el paquete gtree, con el objetivo de ilustrar su funcionamiento básico. En este caso, se modeliza un juego tipo ultimátum simplificado, donde un jugador realiza una oferta de reparto y el segundo jugador decide si aceptarla o rechazarla.
+
+```{r}
+library(gtree)
+
+game_gt <- new_game(
+  gameId = "Ultimatum_simple",
+  params = list(numPlayers = 2, cake = 4),
+  
+  stages = list(
+    
+    stage("oferta",
+      player = 1,
+      actions = list(
+        action("offer", ~0:cake)
+      )
+    ),
+    
+    stage("respuesta",
+      player = 2,
+      observe = "offer",
+      actions = list(
+        action("accept", c(FALSE, TRUE))
+      )
+    ),
+    
+    stage("pagos",
+      player = 1:2,
+      compute = list(
+        payoff_1 ~ ifelse(accept, cake - offer, 0),
+        payoff_2 ~ ifelse(accept, offer, 0)
+      )
+    )
+  )
+)
+```
+
+El juego se organiza en tres etapas. En la primera, el jugador 1 elige una oferta entre 0 y 4 unidades. En la segunda, el jugador 2 observa dicha oferta y decide si la acepta o la rechaza. Finalmente, en la tercera etapa se determinan los pagos finales de ambos jugadores en función de las decisiones tomadas, de forma que si la oferta es aceptada, se produce el reparto correspondiente, mientras que si es rechazada, ambos jugadores obtienen un pago nulo.
+
+El análisis del juego se realiza mediante la función de resolución de gtree:
+```{r}
+game_solve(game_gt)
+```
+
+La función eq_expected_outcomes() permite obtener los resultados de equilibrio del juego en términos de acciones y pagos esperados, mostrando las combinaciones consistentes de estrategias entre los jugadores.
+
+```{r}
+eq_expected_outcomes(game_gt)
+```
+
+La tabla obtenida muestra la existencia de dos equilibrios de Nash. En el primer equilibrio, el jugador 1 realiza una oferta de 1 unidad, la cual es aceptada por el jugador 2, generando pagos de 3 para el jugador 1 y 1 para el jugador 2. En el segundo equilibrio, el jugador 1 realiza una oferta de 0, que también es aceptada por el jugador 2, obteniéndose pagos de 4 y 0 respectivamente. 
+
+En conjunto, las herramientas empleadas permiten abordar de manera computacional una amplia variedad de juegos, facilitando tanto su representación como su resolución. De este modo, se pone de manifiesto la utilidad de R y de los paquetes empleados como una herramienta muy práctica para el análisis de la teoría de juegos.
