@@ -80,10 +80,10 @@ Un objetivo primordial de la teoría de juegos es desarrollar criterios racional
 Los juegos se pueden clasificar de diversas maneras y atendiendo a varios criterios. 
 
 ### Juegos según el número de jugadores
-Atendiendo el número de jugadores se distinguen juegos **bipersinales**, si participan dos jugadores, y juegos **n-personales**, cuando participan más de dos.
+Atendiendo el número de jugadores se distinguen juegos **bipersonales**, si participan dos jugadores, y juegos **n-personales**, cuando participan más de dos.
 
 ### Juegos finitos e infinitos
-Atendiendo al número de alternativas que posee cada jugador, señalaremos los juegos finitos, cuando éstas son un numero finito e infinitos, en otro caso.
+Atendiendo al número de alternativas que posee cada jugador, señalaremos los juegos finitos, cuando éstas son un número finito e infinitos, en otro caso.
 
 ### Juegos cooperativos y no cooperativos
 Los **juegos cooperativos** permiten la formación en grupos entre jugadores, conocidos como coaliciones, para que no compitan entre ellos sino que colaboren para conseguir el mismo objetivo coordinando sus decisiones y repartiendo los beneficios obtenidos, por tanto ganan o pierden en conjunto. 

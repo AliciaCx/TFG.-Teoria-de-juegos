@@ -6,4 +6,4 @@ Este trabajo trata de estudiar la Teoría de Juegos y su desarrollo computaciona
 
 Posteriormente, se analizan los principales conceptos de solución, enfocándose sobre todo en juegos dinámicos y estáticos con información completa. En particular, se estudian herramientas como las estrategias dominantes, la eliminación de estrategias dominadas y el equilibrio de Nash, tanto en estrategias puras como mixtas. 
 
-Finalmente, se desarrolla una parte práctica en la que se implementan distintos modelos de teoría de juegos utilizando R, lo que permite la representación de juegos y el cáculo de sus soluciones. 
+Finalmente, se desarrolla una parte práctica en la que se implementan distintos modelos de teoría de juegos utilizando R, lo que permite la representación de juegos y el cálculo de sus soluciones. 

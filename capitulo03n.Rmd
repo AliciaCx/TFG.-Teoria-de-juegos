@@ -157,7 +157,7 @@ En consecuencia, el criterio de eliminación de estrategias estrictamente domina
 
   **1º Paso.** Para todos los jugadores simultáneamente, se eliminan del juego inicial G aquellas estrategias que estén estrictamente dominadas. Se construye el juego reducido $G_1$ que resulta de tal eliminación.
   
-  **2º Paso.** En el juego $G_1$, se vuelven a eliminar simultáneamente para todos los jugadores las estrategias que estén estrictamente dominadas. De este modo se obtiene un nuevo juego reducido $G_2$ 
+  **2º Paso.** En el juego $G_1$, se vuelven a eliminar simultáneamente para todos los jugadores las estrategias que estén estrictamente dominadas. De este modo se obtiene un nuevo juego reducido $G_2$. 
   
   Y así sucesivamente. El proceso finaliza cuando no es posible eliminar más estrategias para ningún jugador. Denotamos $S^S_i$ al conjunto de las estrategias supervivientes del jugador i, y las llamamos **estrategias iterativamente no dominadas**.
   
@@ -185,7 +185,7 @@ Suponemos que la racionalidad de ambos jugadores es conocimiento común: ambos s
 
 Aplicamos el procedimiento de eliminación iterada de estrategias estrictamente dominadas (EIE):
 
-El jugador 1 (J1), siendo racional, elimina la estrategia \textbf{Media}, ya que está estrictamente dominada por \textbf{Baja} (paga menos en ambos casos: 1 frente a 3 si J2 juega Izquierda, y 2 frente a 4 si J2 juega Derecha).
+El jugador 1 (J1), siendo racional, elimina la estrategia \textbf{Media}, ya que está estrictamente dominada por \textbf{Baja} (cobra menos en ambos casos: 1 frente a 3 si J2 juega Izquierda, y 2 frente a 4 si J2 juega Derecha).
 
 El jugador 2 (J2), sabiendo que J1 es racional y ha eliminado \textbf{Media}, analiza el juego reducido. En este juego reducido, la estrategia \textbf{Izquierda} domina estrictamente a \textbf{Derecha} para J2, pues obtiene mayores pagos en ambos casos (2 frente a 1 si J1 juega Alta, y 3 frente a 2 si J1 juega Baja). Por tanto, J2 elimina \textbf{Derecha}.
 
@@ -259,9 +259,9 @@ B & (1,0) & (2,1) & (0,3)
 
 Puesto que la racionalidad de ambos jugadores es información de dominio público, ambos jugadores son racionales y cada uno sabe que el otro lo es y además sabe que el otro lo sabe. En consecuencia, puede razonarse del siguiente modo:
 
-El jugador 1 (J1), que es racional, compara sus estrategias \textbf{A}, \textbf{M} y \textbf{B}. Al comparar \textbf{A} con \textbf{B}, observa que \textbf{A} proporciona siempre un pago mayor que \textbf{B} independientemente de la estrategia elegida por el jugador 2 (pagos 3 frente a 1 si J2 juega \textbf{I}, 4 frente a 2 si J2 juega \textbf{C}, y 1 frente a 0 si J2 juega \textbf{D}). Por tanto, la estrategia \textbf{B} está estrictamente dominada por \textbf{A} y J1 elimina \textbf{B}.
+El jugador 1 (J1), que es racional, compara sus estrategias \textbf{A}, \textbf{M} y \textbf{B}. Al comparar \textbf{A} con \textbf{B}, observa que \textbf{A} proporciona siempre una ganancia mayor que \textbf{B} independientemente de la estrategia elegida por el jugador 2 (ganancias de 3 frente a 1 si J2 juega \textbf{I}, 4 frente a 2 si J2 juega \textbf{C}, y 1 frente a 0 si J2 juega \textbf{D}). Por tanto, la estrategia \textbf{B} está estrictamente dominada por \textbf{A} y J1 elimina \textbf{B}.
 
-El jugador 2 (J2) sabe que J1 es racional y por tanto sabe que J1 ha eliminado la estrategia \textbf{B}. En consecuencia, J2 compara ahora sus estrategias considerando únicamente las estrategias \textbf{A} y \textbf{M} de J1. Al comparar \textbf{I} con \textbf{C}, observa que \textbf{C} proporciona siempre un pago mayor que \textbf{I} (pagos 2 frente a 1 si J1 juega \textbf{A}, y 5 frente a 4 si J1 juega \textbf{M}). Por tanto, \textbf{C} domina estrictamente a \textbf{I} y J2 elimina la estrategia \textbf{I}.
+El jugador 2 (J2) sabe que J1 es racional y por tanto sabe que J1 ha eliminado la estrategia \textbf{B}. En consecuencia, J2 compara ahora sus estrategias considerando únicamente las estrategias \textbf{A} y \textbf{M} de J1. Al comparar \textbf{I} con \textbf{C}, observa que \textbf{C} proporciona siempre una ganancia mayor que \textbf{I} (ganancias de 2 frente a 1 si J1 juega \textbf{A}, y 5 frente a 4 si J1 juega \textbf{M}). Por tanto, \textbf{C} domina estrictamente a \textbf{I} y J2 elimina la estrategia \textbf{I}.
 
 \begin{table}[H]
 \centering
@@ -275,7 +275,7 @@ M & (3,5) & (4,0)
 \label{tab:EID}
 \end{table}
 
-El jugador J1 sabe que J2 es racional y que además J2 sabe que J1 es racional, por lo que sabe que J2 ha eliminado \textbf{I}. Considerando el juego reducido, vemos que para J1 ninguna estrategia domina a otra, es decir, no hay dominancia débil, mientras que J2 compara ahora las estrategias \textbf{C} y \textbf{D}. Observa que \textbf{C} proporciona un pago al menos igual que \textbf{D} cuando J1 juega \textbf{A} (pagos 2 frente a 2) y un pago mayor cuando J1 juega \textbf{M} (pagos 5 frente a 0). Por tanto, \textbf{D} está débilmente dominada por \textbf{C}, y J2 elimina la estrategia \textbf{D}.
+El jugador J1 sabe que J2 es racional y que además J2 sabe que J1 es racional, por lo que sabe que J2 ha eliminado \textbf{I}. Considerando el juego reducido, vemos que para J1 ninguna estrategia domina a otra, es decir, no hay dominancia débil, mientras que J2 compara ahora las estrategias \textbf{C} y \textbf{D}. Observa que \textbf{C} proporciona una ganancia al menos igual que \textbf{D} cuando J1 juega \textbf{A} (ganancias de 2 frente a 2) y una ganancia mayor cuando J1 juega \textbf{M} (ganancias de 5 frente a 0). Por tanto, \textbf{D} está débilmente dominada por \textbf{C}, y J2 elimina la estrategia \textbf{D}.
 
 \begin{table}[H]
 \centering
@@ -289,7 +289,7 @@ M & (3,5)
 \label{tab:EID}
 \end{table}
 
-Finalmente, el jugador J1 compara sus estrategias \textbf{A} y \textbf{M}. Observa que \textbf{A} proporciona un pago mayor que \textbf{M} (4 frente a 3), por lo que \textbf{M} está dominada por \textbf{A}. En consecuencia, J1 elimina la estrategia \textbf{M}.
+Finalmente, el jugador J1 compara sus estrategias \textbf{A} y \textbf{M}. Observa que \textbf{A} proporciona una ganancia mayor que \textbf{M} (4 frente a 3), por lo que \textbf{M} está dominada por \textbf{A}. En consecuencia, J1 elimina la estrategia \textbf{M}.
 
 \begin{table}[H]
 \centering
@@ -401,9 +401,11 @@ child {node[circle,draw]{J2}
 };
 
 \end{tikzpicture}
-\caption{Eliminación iterativa de estrategias: J1 elimina B porque A domina estrictamente a B, J2 elimina I porque C domina estrictamente a I, J2 elimina D porque C domina débilmente a D, y finalmente J1 elimina M. El perfil superviviente único es $(A,C)$.}
+\caption{Eliminación iterativa de estrategias}
 \label{fig:arbol}
 \end{figure}
+
+Se observa que J1 elimina B porque A domina estrictamente a B, mientras que J2 elimina I porque C domina estrictamente a I. A continuación, J2 elimina D debido a que C domina débilmente a D, y finalmente J1 elimina M. El perfil superviviente único es $(A,C)$.
 
 **Juegos resolubles por dominación**
 
@@ -531,7 +533,7 @@ Procediendo de manera análoga para el Preso 2, se concluye que el único equili
 #### Correspondencia de respuesta óptima
 El cálculo de los EN en estrategias puras depende del tipo de juego. En los juegos finitos y pequeños, se pueden analizar todas las combinaciones posibles, mientras que en los juegos infinitos o más complejos, es necesario un planteamiento más analítico, que suele implicar varios problemas de optimización simultáneos (uno por cada jugador).
 
-Sin embrago, en todos los casos es útil seguir un procedimiento sistemático, calculando las estrategias óptimas que cada jugador podría elegir en respuesta a cualquier combinación de estrategias que puedan elegir los otros jugadores.
+Sin embargo, en todos los casos es útil seguir un procedimiento sistemático, calculando las estrategias óptimas que cada jugador podría elegir en respuesta a cualquier combinación de estrategias que puedan elegir los otros jugadores.
 
 Para ello fijamos un jugador i y consideramos cualquier combinación de estrategias de los demás jugadores, que denotamos por $s_{-i}$. Entonces buscamos cuáles son las mejores respuestas posibles de i ante esta situación, a este conjunto de estrategias lo llamaremos $R_i(s_{-i})$.
 
@@ -647,8 +649,6 @@ Es decir, una estrategia pura $s^j_i$ pertenece al soporte de $\sigma_i$ si y so
 A partir de esta definición, diremos que una estrategia mixta es *completa* si su soporte coincide con el conjunto de estrategias puras del jugador, es decir, si $(\mathbf{SOP}(\sigma_i) = S_i)$.Es decir, una estrategia mixta es completa si asigna una probabilidad estrictamente positiva a cada estrategia pura de $S_i$. 
 
 Por otra parte, cualquier estrategia pura puede interpretarse como una estrategia mixta cuyo soporte esta formado por un solo elemento, es decir, un soporte unitario. Además, llamamos **estrategias mixtas propias** a aquellas estrategias mixtas que no son puras.
-
-\newpage
 
 **Equilibrio de Nash**
 
@@ -1201,7 +1201,7 @@ Al finalizar el proceso, habremos identificado una acción óptima en cada nodo 
 Nadie sabe cuál de las tres afirmaciones anteriores es cierta. Si pudiera realizarse efectivamente, de manera práctica, la inducción hacia atrás para ambos juegos, ambos dejarían de ser juegos interesantes.
 \end{enumerate}
 
-**Teorema 3.4**
+**Teorema 3.4.**
 Cada juego finito con información completa y perfecta G tiene un Equilibrio de Nash Perfecto en Subjuegos (ENPS) en estrategias puras que se obtiene por el método de inducción hacia atrás. Además, si ningún jugador tiene más de una acción óptima en cada nodo de decisión, tal ENPS es único. \cite{CerdaTena2004}
 
 \begin{tcolorbox}[colback=blue!10]
