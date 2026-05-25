@@ -462,10 +462,10 @@ Por otra parte, las estrategias dominadas nunca pueden estar en los puntos de eq
 
 ### Equilibrio de Nash en estrategias puras
 **Definición 3.6.** En el juego $G = \{S_1, \ldots, S_n; u_1, \ldots, u_n\}$, decimos que el perfil de estrategias puras $(s^*_1, s^*_2, \ldots,s^*_i, \ldots, s^*_n)$ es un **equilibrio de Nash (EN)** si para cada jugador i,
-$$u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \geq u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \,\, \mbox{para todo} \,\, s_i \,\, \mbox{de} \,\, S_i $$
+$$u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \geq u_i(s^*_1,\ldots, s^*_{i-1}, s_i, s^*_{i+1}, \ldots, s^*_n) \,\, \mbox{para todo} \,\, s_i \,\, \mbox{de} \,\, S_i $$
 
 Es decir, para cada jugador i, la estrategia $s^*_i$ resuelve el problema de maximización de su función de pago, dadas las estrategias de los demás jugadores
-$$\mbox{max} \, u_i(s^*_1,\ldots, s^*_{i-1}, s^*_i, s^*_{i+1}, \ldots, s^*_n) \,\, \mbox{donde} \,\, s_i \,\, \mbox{es la variable de decisión y pertenece a} \,\, S_i$$
+$$\mbox{max} \, u_i(s^*_1,\ldots, s^*_{i-1}, s_i, s^*_{i+1}, \ldots, s^*_n) \,\, \mbox{donde} \,\, s_i \,\, \mbox{es la variable de decisión y pertenece a} \,\, S_i$$
 En otras palabras, $s^*_i$ es una respuesta óptima frente a $s^*_{-i}$.
 
 De esta definición se deduce que un Equilibrio de Nash (EN) es un perfil de estrategias del que ningún jugador desearía desviarse unilateralmente, es decir, cada jugador está tomando la mejor decisión posible dadas las decisiones de los demás. Un EN está formado por estrategias que son óptimas para cada jugador dadas las estrategias del resto de jugadores.
@@ -591,7 +591,7 @@ garantiza que se trata de un máximo.
 De manera análoga, la correspondencia $R_2(q_1)$ de respuesta óptima de J2 se obtiene resolviendo, para cada $q_1 \in [0, 1]$, el problema de optimización:
 
 \[
-\max_{q_2 \in [0,1]} u_2(q_1,q_2) \; q_2(1 - q_1 - q_2),
+\max_{q_2 \in [0,1]} u_2(q_1,q_2) = \; q_2(1 - q_1 - q_2),
 \]
 lo que conduce a:
 \[
@@ -976,7 +976,7 @@ Una estrategia mixta será respuesta óptima a otra estrategia (pura o mixta) da
 
 Esta propiedad permite calcular EN en estrategias mixtas de juegos 2 x 2, apoyándose en una representación gráfica, en los siguientes pasos:
   
-  1. Se consideran estrategias mixtas genéricas para ambos jugadores. En concreto, (p, 1 - p) para el jugador 1 y (q, 1 - q) para el jugador 2
+  1. Se consideran estrategias mixtas genéricas para ambos jugadores. En concreto, (p, 1 - p) para el jugador 1 y (q, 1 - q) para el jugador 2.
 
   2. Para el jugador 1, se calcula la utilidad esperada que obtiene de cada una de sus estrategias puras cuando la estrategia del jugador 2 es (q, 1 - q).
 
@@ -1080,7 +1080,7 @@ Dado el juego $G = \{S_1, \ldots, S_n; u_1, \ldots, u_n\}$,
   
 Es decir, un perfil es eficiente si no se puede cambiar a ningún otro perfil, de modo que ningún jugador salga perdiendo y alguno salga ganando estrictamente.
 
-Este concepto de dominación hace referencia a perfiles completos de estrategias, es decir, tienen en cuenta simultáneamente a todos los jugadores. En cambio, el concepto de estrategia dominada se refiere a las decisiones individuales de cada jugador 
+Este concepto de dominación hace referencia a perfiles completos de estrategias, es decir, tienen en cuenta simultáneamente a todos los jugadores. En cambio, el concepto de estrategia dominada se refiere a las decisiones individuales de cada jugador.
 
 De manera aparentemente sorprendente, en el dilema del prisionero, el único perfil constituido por estrategias no estrictamente dominadas (y por tanto el único EN), que es (Confesar, Confesar), y resulta ser ineficiente en el sentido de Pareto. Por el contrario, el perfil (Callar, Callar) lo domina en el sentido de Pareto, ya que ambos jugadores obtendrían un resultado mejor. 
 
@@ -1094,7 +1094,7 @@ En esta sección se presenta el concepto de **equilibrio de Nash perfecto en sub
 
 Puesto que todo juego en forma extensiva puede representarse en forma normal una vez identificadas las estrategias de todos los jugadores, una posible propuesta de solución consistiría en considerar los equilibrios de Nash de dicha forma normal.
 
-Sin embargo, debemos de tomar con cautela esta propuesta de solución ya que se pierde información al pasar de forma extensiva a forma normal. Como consecuencia, algunos o todos los EN obtenidos pueden ser razonables desde una perspectiva estática del juego, pero no desde una vista dinámica que tiene en cuenta detalles omitidos en la forma normal
+Sin embargo, debemos de tomar con cautela esta propuesta de solución ya que se pierde información al pasar de forma extensiva a forma normal. Como consecuencia, algunos o todos los EN obtenidos pueden ser razonables desde una perspectiva estática del juego, pero no desde una vista dinámica que tiene en cuenta detalles omitidos en la forma normal.
 
 **Subjuegos**
 
@@ -1108,7 +1108,7 @@ Dado un juego G con información completa en forma extensiva, y sea $\mathbf{x}$
   
 \textbf{Observación 3.1:}
 
-  1.  El propio juego G es siempre subjuego de si mismo. Se denominan **subjuegos propios** de G a aquellos subjuegos que no coinciden con G (es decir, los que no comienzan en el nodo inicial de G)
+  1.  El propio juego G es siempre subjuego de si mismo. Se denominan **subjuegos propios** de G a aquellos subjuegos que no coinciden con G (es decir, los que no comienzan en el nodo inicial de G).
 
   2.  Si G es de información perfecta, cualquier parte que comience en un nodo de decisión y contenga todos los nodos que le siguen es un subjuego (debido a que todos los conjuntos de información son unitarios).
 
